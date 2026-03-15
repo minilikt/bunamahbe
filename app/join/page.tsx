@@ -3,7 +3,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ArrowLeft, User, MapPin, Coffee, Sparkles } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { joinAssociation } from "@/app/actions/membership";
 import { authClient } from "@/lib/auth-client";
 
 const ethiopianCities = [

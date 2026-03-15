@@ -8,6 +8,7 @@ import { BunaLogo } from "@/components/BunaLogo";
 import { coffeeRegions } from "@/constants";
 import Footer from "@/components/Footer";
 import { authClient } from "@/lib/auth-client";
+import Image from "next/image";
 
 
 export default function Page() {
@@ -17,13 +18,13 @@ export default function Page() {
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden ethiopian-pattern">
         <div className="container mx-auto px-4 md:px-8 pt-20">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl  mx-auto text-center">
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.23, 1, 0.32, 1] }}
-              className="font-ethiopic text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 tracking-tightest"
+              className="font-ethiopic text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-12 tracking-tightest"
             >
               ቡና ጠጪዎች ማህበር
             </motion.h1>
@@ -32,7 +33,7 @@ export default function Page() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-display text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
+              className="font-display text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed"
               style={{ lineHeight: 1.4 }}
             >
               ET Coffee Lovers' Association
@@ -42,7 +43,7 @@ export default function Page() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-4"
+              className="flex flex-col sm:flex-row items-center mb-10 justify-center gap-4"
             >
               
             <Link href={session ? "/dashboard" : "/join"}>
@@ -75,6 +76,7 @@ export default function Page() {
                 className="w-28 h-28 md:w-40 md:h-40 object-contain drop-shadow-lg"
               />
             </div> */}
+            <Image src="/pat.png" alt="Ethiopian coffee cup" width={1000} height={2000} className="mt-5" />
           </div>
         </div>
       </section>
@@ -120,10 +122,13 @@ export default function Page() {
                 What is the Buna Association?
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-                It started as a joke on the internet. Then it became a movement. The Buna Association is a digital community celebrating Ethiopia's 1,000-year coffee heritage — one cup, one ceremony, one meme at a time.
+                It started as a simple idea on the internet. Then it became a movement. ET Coffee Lovers' Association is a digital community celebrating Ethiopia's thousands of years of coffee heritage.
+              </p>
+              <p className="font-body text-lg text-muted-foreground mb-6">
+                one cup, one ceremony, one coffee at a time.
               </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                From the three rounds of the traditional coffee ceremony — <span className="font-ethiopic text-foreground font-medium">አቦል፣ ቶና፣ በረካ</span> — to your daily macchiato run, we believe coffee isn't just a drink. It's culture. It's community. It's home.
+                From the three rounds of the traditional coffee ceremony —  <span className="font-ethiopic text-foreground font-medium">አቦል፣ ቶና፣ በረካ</span> — to your daily macchiato run, we believe coffee isn't just a drink. It's culture. It's community. It's home.
               </p>
             </motion.div>
           </div>

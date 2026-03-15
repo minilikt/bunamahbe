@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link href="/" className="flex items-center gap-2 group">
-          <Image src="/ethiopian-coffee-cup.jpg" alt="Buna Logo" width={50} height={50} />
+          <Image src="/ethiopian-coffee-cup.png" alt="Buna Logo" width={50} height={50} />
             <span className="font-ethiopic font-bold text-lg text-foreground">ቡጠማ</span>
           </Link>
 
