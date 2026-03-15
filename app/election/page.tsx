@@ -3,35 +3,75 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Timer, Award, Watch } from "lucide-react";
 import CandidateCard from "@/components/CandidateCard";
-import { candidates as initialCandidates } from "@/constants";
+import { castVote, getCandidates } from "@/app/actions/election";
 
 export default function Election() {
-  const [candidates, setCandidates] = useState(initialCandidates);
+  const [candidates, setCandidates] = useState<any[]>([]);
   const [votedFor, setVotedFor] = useState<string | null>(null);
-  const [timeLeft, setTimeLeft] = useState({ days: 12, hours: 8, minutes: 34, seconds: 21 });
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [userId, setUserId] = useState<string>("");
+
+  useEffect(() => {
+    // Fetch real candidates
+    const loadCandidates = async () => {
+      const data = await getCandidates();
+      setCandidates(data);
+    };
+    loadCandidates();
+
+    // Get membership ID for voting
+    let id = localStorage.getItem("buna_membership_id");
+    if (!id) {
+      // Allow viewing but handle voting restriction in handleVote
+      setUserId("");
+    } else {
+      setUserId(id);
+    }
+  }, []);
 
   // Countdown timer
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft((prev) => {
-        let { days, hours, minutes, seconds } = prev;
-        seconds--;
-        if (seconds < 0) { seconds = 59; minutes--; }
-        if (minutes < 0) { minutes = 59; hours--; }
-        if (hours < 0) { hours = 23; days--; }
-        if (days < 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
-        return { days, hours, minutes, seconds };
+    const targetDate = new Date("2026-03-17T00:00:00");
+
+    const updateTimer = () => {
+      const now = new Date();
+      const difference = targetDate.getTime() - now.getTime();
+
+      if (difference <= 0) {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+        return;
+      }
+
+      setTimeLeft({
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
       });
-    }, 1000);
+    };
+
+    updateTimer(); // Run once immediately
+    const timer = setInterval(updateTimer, 1000);
     return () => clearInterval(timer);
   }, []);
 
-  const handleVote = (id: string) => {
+  const handleVote = async (id: string) => {
+    if (!userId) {
+      alert("Only registered members can vote! Please go to the 'Join Association' page first.");
+      return;
+    }
     if (votedFor) return;
-    setVotedFor(id);
-    setCandidates((prev) =>
-      prev.map((c) => (c.id === id ? { ...c, voteCount: c.voteCount + 1 } : c))
-    );
+    
+    const result = await castVote(id, userId);
+    
+    if (result.success) {
+      setVotedFor(id);
+      // Refresh candidates list to show updated score
+      const updated = await getCandidates();
+      setCandidates(updated);
+    } else {
+      alert(result.error);
+    }
   };
 
   const totalVotes = candidates.reduce((sum, c) => sum + c.voteCount, 0);

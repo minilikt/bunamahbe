@@ -1,9 +1,48 @@
 "use client"
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Award, Vote, Coffee, MessageSquare, ArrowRight, MapPin, HelpCircle } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { getMember } from "@/app/actions/membership";
 
 export default function Page() {
+  const router = useRouter();
+  const [member, setMember] = useState<any>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadMember = async () => {
+      const id = localStorage.getItem("buna_membership_id");
+      if (!id) {
+        router.push("/join");
+        return;
+      }
+      const data = await getMember(id);
+      if (!data) {
+        router.push("/join");
+        return;
+      }
+      setMember(data);
+      setIsLoading(false);
+    };
+    loadMember();
+  }, [router]);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center ethiopian-pattern">
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+          className="text-4xl"
+        >
+          ☕
+        </motion.div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen pt-20 ethiopian-pattern">
       <div className="container mx-auto px-4 md:px-8 py-16 md:py-24">
@@ -21,21 +60,21 @@ export default function Page() {
               transition={{ type: "spring", delay: 0.2 }}
               className="w-24 h-24 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4 gold-ring"
             >
-              <span className="text-4xl">🌱</span>
+              <span className="text-4xl">{member.badgeEmoji}</span>
             </motion.div>
             <h2 className="font-display text-sm uppercase tracking-widest text-muted-foreground mb-1">Your Coffee Badge</h2>
             <h1 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-1" style={{ lineHeight: 1.1 }}>
-              🌱 Buna Beginner
+              {member.badgeEmoji} {member.badgeTitle}
             </h1>
-            <p className="font-body text-sm text-muted-foreground">Badge progress</p>
+            <p className="font-body text-sm text-muted-foreground">{member.name}'s Progress</p>
           </motion.div>
 
           {/* Quick Stats */}
           <div className="grid grid-cols-3 gap-4 mb-6">
             {[
-              { label: "Badge Level", value: "0 / 1" },
-              { label: "Votes Cast", value: "Pending" },
-              { label: "Quiz Status", value: "—" },
+              { label: "Badge Level", value: "Level 1" },
+              { label: "Location", value: member.city },
+              { label: "Fave Type", value: member.favoriteType },
             ].map((stat, i) => (
               <motion.div
                 key={stat.label}
@@ -44,7 +83,7 @@ export default function Page() {
                 transition={{ delay: 0.1 + i * 0.08 }}
                 className="ceramic-surface p-4 text-center"
               >
-                <div className="font-display text-lg md:text-xl font-bold text-foreground">{stat.value}</div>
+                <div className="font-display text-lg md:text-xl font-bold text-foreground truncate">{stat.value}</div>
                 <div className="font-body text-xs text-muted-foreground mt-1">{stat.label}</div>
               </motion.div>
             ))}

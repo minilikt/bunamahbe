@@ -2,7 +2,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ArrowLeft, User, MapPin, Coffee, Sparkles } from "lucide-react";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { joinAssociation } from "@/app/actions/membership";
 
 const ethiopianCities = [
   "Addis Ababa",
@@ -47,17 +48,40 @@ const getBadge = () => ({
 });
 
 export default function JoinMembership() {
+  const router = useRouter();
   const [step, setStep] = useState(1);
   const [name, setName] = useState("");
   const [city, setCity] = useState("");
   const [customCity, setCustomCity] = useState("");
   const [frequency, setFrequency] = useState("");
   const [favoriteType, setFavoriteType] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const badge = getBadge();
 
   const canProceedStep1 = name.trim() && (city !== "Other" ? city : customCity.trim());
   const canProceedStep2 = frequency && favoriteType;
+
+  const handleJoin = async () => {
+    setIsSubmitting(true);
+    const result = await joinAssociation({
+      name,
+      city: city === "Other" ? customCity : city,
+      frequency,
+      favoriteType,
+      badgeEmoji: badge.emoji,
+      badgeTitle: badge.title,
+      badgeDescription: badge.description,
+    });
+
+    if (result.success && result.member) {
+      localStorage.setItem("buna_membership_id", result.member.id);
+      router.push("/dashboard");
+    } else {
+      alert("Failed to join. Please try again.");
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="min-h-screen pt-20 ethiopian-pattern">
@@ -281,10 +305,11 @@ export default function JoinMembership() {
                 <motion.button
                   whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgba(78,52,46,0.2)" }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={() => redirect("/dashboard")}
+                  disabled={isSubmitting}
+                  onClick={handleJoin}
                   className="btn-mahber text-base w-full inline-flex items-center justify-center gap-2"
                 >
-                  Go to Dashboard <ArrowRight className="w-4 h-4" />
+                  {isSubmitting ? "Joining..." : "Go to Dashboard"} <ArrowRight className="w-4 h-4" />
                 </motion.button>
               </motion.div>
             )}
@@ -293,4 +318,4 @@ export default function JoinMembership() {
       </div>
     </div>
   );
-};
+}

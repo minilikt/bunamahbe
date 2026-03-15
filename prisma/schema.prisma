@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Member {
+  id               String   @id @default(auto()) @map("_id") @db.ObjectId
+  name             String
+  city             String
+  frequency        String
+  favoriteType     String
+  badgeEmoji       String
+  badgeTitle       String
+  badgeDescription String
+  createdAt        DateTime @default(now())
+}
+
+model Candidate {
+  id        String @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  role      String
+  image     String
+  bio       String
+  voteCount Int    @default(0)
+  votes     Vote[]
+}
+
+model Vote {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  candidate   Candidate @relation(fields: [candidateId], references: [id])
+  candidateId String    @db.ObjectId
+  userId      String    @unique // We can use a session ID or similar to prevent double voting
+  createdAt   DateTime  @default(now())
+}

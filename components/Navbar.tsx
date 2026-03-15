@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Coffee, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -22,7 +23,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link href="/" className="flex items-center gap-2 group">
-            <Coffee className="w-6 h-6 text-clay transition-transform group-hover:rotate-12" />
+          <Image src="/ethiopian-coffee-cup.jpg" alt="Buna Logo" width={50} height={50} />
             <span className="font-ethiopic font-bold text-lg text-foreground">ቡጠማ</span>
           </Link>
 
