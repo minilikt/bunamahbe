@@ -1,9 +1,10 @@
 "use client"
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, ArrowLeft, User, MapPin, Coffee, Sparkles } from "lucide-react";
+import { ArrowRight, ArrowLeft, User, MapPin, Coffee, Sparkles, KeyRound } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
+import { InputOTP, InputOTPGroup, InputOTPSlot } from '@/components/ui/input-otp';
 
 const ethiopianCities = [
   "Addis Ababa",
@@ -57,22 +58,44 @@ export default function JoinMembership() {
   const [customCity, setCustomCity] = useState("");
   const [frequency, setFrequency] = useState("");
   const [favoriteType, setFavoriteType] = useState("");
+  const [otp, setOtp] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const badge = getBadge();
 
   const canProceedStep1 = name.trim() && email.trim() && password.length >= 6 && (city !== "Other" ? city : customCity.trim());
   const canProceedStep2 = frequency && favoriteType;
+  const canProceedStep4 = otp.length === 6;
 
-  const handleJoin = async () => {
+  const handleSendOtp = async () => {
     setIsSubmitting(true);
     try {
-      const { error } = await authClient.signUp.email({
+      const { error } = await authClient.emailOtp.sendVerificationOtp({
         email,
+        type: "sign-in", // "sign-in" type creates accounts if disableSignUp isn't true
+      });
+      if (error) {
+        alert(error.message || "Failed to send code. Please try again.");
+      } else {
+        setStep(4);
+      }
+    } catch (err) {
+      console.error("Send OTP error:", err);
+      alert("An unexpected error occurred.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleVerifyAndJoin = async () => {
+    setIsSubmitting(true);
+    try {
+      const { error } = await authClient.signIn.emailOtp({
+        email,
+        otp,
         password,
         name,
         image: `https://api.dicebear.com/7.x/avataaars/svg?seed=${name}`,
-        // Additional fields must be supported by the adapter/server config
         // @ts-ignore - custom fields are handled dynamically by Better Auth
         city: city === "Other" ? customCity : city,
         // @ts-ignore
@@ -88,7 +111,7 @@ export default function JoinMembership() {
       });
 
       if (error) {
-        alert(error.message || "Failed to join. Please try again.");
+        alert(error.message || "Invalid or expired code. Please try again.");
       } else {
         router.push("/dashboard");
       }
@@ -106,7 +129,7 @@ export default function JoinMembership() {
         <div className="max-w-lg mx-auto">
           {/* Progress */}
           <div className="flex items-center justify-center gap-2 mb-10">
-            {[1, 2, 3].map((s) => (
+            {[1, 2, 3, 4].map((s) => (
               <div
                 key={s}
                 className={`h-2 rounded-full transition-all duration-300 ${
@@ -349,11 +372,70 @@ export default function JoinMembership() {
                   whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgba(78,52,46,0.2)" }}
                   whileTap={{ scale: 0.98 }}
                   disabled={isSubmitting}
-                  onClick={handleJoin}
+                  onClick={handleSendOtp}
                   className="btn-mahber text-base w-full inline-flex items-center justify-center gap-2"
                 >
-                  {isSubmitting ? "Joining..." : "Go to Dashboard"} <ArrowRight className="w-4 h-4" />
+                  {isSubmitting ? "Sending Code..." : "Send Verification Code"} <ArrowRight className="w-4 h-4" />
                 </motion.button>
+              </motion.div>
+            )}
+
+            {/* Step 4: OTP Verification */}
+            {step === 4 && (
+              <motion.div
+                key="step4"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="ceramic-surface p-8 md:p-12 text-center"
+              >
+                <div className="flex items-center gap-3 mb-6 justify-center">
+                  <div className="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center">
+                    <KeyRound className="w-6 h-6 text-accent" />
+                  </div>
+                </div>
+
+                <h2 className="font-display text-2xl font-bold text-foreground mb-4" style={{ lineHeight: 1.1 }}>
+                  Check your console
+                </h2>
+                <p className="font-body text-muted-foreground mb-8">
+                  We sent a 6-digit verification code to <strong>{email}</strong> (check your server terminal).
+                </p>
+
+                <div className="flex justify-center mb-8">
+                  <InputOTP maxLength={6} value={otp} onChange={setOtp} disabled={isSubmitting}>
+                    <InputOTPGroup>
+                      <InputOTPSlot index={0} />
+                      <InputOTPSlot index={1} />
+                      <InputOTPSlot index={2} />
+                      <InputOTPSlot index={3} />
+                      <InputOTPSlot index={4} />
+                      <InputOTPSlot index={5} />
+                    </InputOTPGroup>
+                  </InputOTP>
+                </div>
+
+                <div className="flex flex-col gap-4">
+                  <motion.button
+                    whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgba(78,52,46,0.2)" }}
+                    whileTap={{ scale: 0.98 }}
+                    disabled={isSubmitting || !canProceedStep4}
+                    onClick={handleVerifyAndJoin}
+                    className="btn-mahber text-base w-full inline-flex items-center justify-center gap-2"
+                  >
+                    {isSubmitting ? "Verifying..." : "Verify & Complete Profile"} <ArrowRight className="w-4 h-4" />
+                  </motion.button>
+                  
+                  <p className='text-muted-foreground text-sm'>
+                    Didn&apos;t get the code?{' '}
+                    <button 
+                      onClick={handleSendOtp}
+                      disabled={isSubmitting}
+                      className='text-accent hover:underline font-medium'
+                    >
+                      Resend code
+                    </button>
+                  </p>
+                </div>
               </motion.div>
             )}
           </AnimatePresence>

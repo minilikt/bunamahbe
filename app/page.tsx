@@ -80,7 +80,7 @@ export default function Page() {
         </div>
         
         {/* Full-width bottom bleed pattern */}
-        <div className="absolute bottom-16 md:bottom-24 left-0 w-full h-22 md:h-24">
+        <div className="absolute bottom-12 left-0 w-full h-12 md:h-16">
           <Image 
             src="/pat.png" 
             alt="Ethiopian pattern" 
