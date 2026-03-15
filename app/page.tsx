@@ -76,8 +76,18 @@ export default function Page() {
                 className="w-28 h-28 md:w-40 md:h-40 object-contain drop-shadow-lg"
               />
             </div> */}
-            <Image src="/pat.png" alt="Ethiopian coffee cup" width={1000} height={2000} className="mt-5" />
           </div>
+        </div>
+        
+        {/* Full-width bottom bleed pattern */}
+        <div className="absolute bottom-16 md:bottom-24 left-0 w-full h-22 md:h-24">
+          <Image 
+            src="/pat.png" 
+            alt="Ethiopian pattern" 
+            fill 
+            className="object-cover" 
+            priority 
+          />
         </div>
       </section>
 

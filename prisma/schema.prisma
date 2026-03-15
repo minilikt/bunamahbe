@@ -78,6 +78,7 @@ model Verification {
 model Candidate {
   id        String @id @default(auto()) @map("_id") @db.ObjectId
   name      String
+  username  String?
   role      String
   image     String
   bio       String
