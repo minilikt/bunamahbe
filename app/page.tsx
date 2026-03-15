@@ -7,9 +7,11 @@ import Link from "next/link";
 import { BunaLogo } from "@/components/BunaLogo";
 import { coffeeRegions } from "@/constants";
 import Footer from "@/components/Footer";
+import { authClient } from "@/lib/auth-client";
 
 
 export default function Page() {
+    const { data: session } = authClient.useSession();
   return (
     <div className="min-h-screen">
       {/* Hero */}
@@ -42,15 +44,16 @@ export default function Page() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              <Link href="/join">
-                <motion.button
-                  whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgba(78,52,46,0.2)" }}
-                  whileTap={{ scale: 0.98 }}
-                  className="btn-mahber text-base"
-                >
-                  Join the Buna Club
-                </motion.button>
-              </Link>
+              
+            <Link href={session ? "/dashboard" : "/join"}>
+              <motion.button
+                whileHover={{ y: -4 }}
+                whileTap={{ scale: 0.98 }}
+                className="btn-mahber text-base"
+              >
+                {session ? "Dashboard" : "Join the Club"}
+              </motion.button>
+            </Link>
               <Link href="/election">
                 <motion.button
                   whileHover={{ y: -4 }}

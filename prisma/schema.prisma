@@ -7,16 +7,72 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Member {
-  id               String   @id @default(auto()) @map("_id") @db.ObjectId
-  name             String
-  city             String
-  frequency        String
-  favoriteType     String
-  badgeEmoji       String
-  badgeTitle       String
-  badgeDescription String
-  createdAt        DateTime @default(now())
+model User {
+  id            String    @id @map("_id")
+  name          String
+  email         String    @unique
+  emailVerified Boolean
+  image         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  // Custom Buna Association Fields
+  city             String?
+  frequency        String?
+  favoriteType     String?
+  badgeEmoji       String?   @default("🌱")
+  badgeTitle       String?   @default("Buna Beginner")
+  badgeDescription String?   @default("Welcome to the Buna Association! Your coffee journey starts here.")
+
+  sessions Session[]
+  accounts Account[]
+  votes    Vote[]
+
+  @@map("user")
+}
+
+model Session {
+  id        String   @id @map("_id")
+  expiresAt DateTime
+  token     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  ipAddress String?
+  userAgent String?
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("session")
+}
+
+model Account {
+  id                    String    @id @map("_id")
+  accountId             String
+  providerId            String
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  password              String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  @@map("account")
+}
+
+model Verification {
+  id         String   @id @map("_id")
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime?
+  updatedAt  DateTime?
+
+  @@map("verification")
 }
 
 model Candidate {
@@ -27,12 +83,17 @@ model Candidate {
   bio       String
   voteCount Int    @default(0)
   votes     Vote[]
+
+  @@map("candidate")
 }
 
 model Vote {
   id          String    @id @default(auto()) @map("_id") @db.ObjectId
   candidate   Candidate @relation(fields: [candidateId], references: [id])
   candidateId String    @db.ObjectId
-  userId      String    @unique // We can use a session ID or similar to prevent double voting
+  user        User      @relation(fields: [userId], references: [id])
+  userId      String    @unique
   createdAt   DateTime  @default(now())
+
+  @@map("vote")
 }

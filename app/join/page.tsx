@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ArrowLeft, User, MapPin, Coffee, Sparkles } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { joinAssociation } from "@/app/actions/membership";
+import { authClient } from "@/lib/auth-client";
 
 const ethiopianCities = [
   "Addis Ababa",
@@ -51,6 +52,8 @@ export default function JoinMembership() {
   const router = useRouter();
   const [step, setStep] = useState(1);
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [city, setCity] = useState("");
   const [customCity, setCustomCity] = useState("");
   const [frequency, setFrequency] = useState("");
@@ -59,26 +62,41 @@ export default function JoinMembership() {
 
   const badge = getBadge();
 
-  const canProceedStep1 = name.trim() && (city !== "Other" ? city : customCity.trim());
+  const canProceedStep1 = name.trim() && email.trim() && password.length >= 6 && (city !== "Other" ? city : customCity.trim());
   const canProceedStep2 = frequency && favoriteType;
 
   const handleJoin = async () => {
     setIsSubmitting(true);
-    const result = await joinAssociation({
-      name,
-      city: city === "Other" ? customCity : city,
-      frequency,
-      favoriteType,
-      badgeEmoji: badge.emoji,
-      badgeTitle: badge.title,
-      badgeDescription: badge.description,
-    });
+    try {
+      const { error } = await authClient.signUp.email({
+        email,
+        password,
+        name,
+        image: `https://api.dicebear.com/7.x/avataaars/svg?seed=${name}`,
+        // Additional fields must be supported by the adapter/server config
+        // @ts-ignore - custom fields are handled dynamically by Better Auth
+        city: city === "Other" ? customCity : city,
+        // @ts-ignore
+        frequency,
+        // @ts-ignore
+        favoriteType,
+        // @ts-ignore
+        badgeEmoji: badge.emoji,
+        // @ts-ignore
+        badgeTitle: badge.title,
+        // @ts-ignore
+        badgeDescription: badge.description,
+      });
 
-    if (result.success && result.member) {
-      localStorage.setItem("buna_membership_id", result.member.id);
-      router.push("/dashboard");
-    } else {
-      alert("Failed to join. Please try again.");
+      if (error) {
+        alert(error.message || "Failed to join. Please try again.");
+      } else {
+        router.push("/dashboard");
+      }
+    } catch (err) {
+      console.error("Sign up error:", err);
+      alert("An unexpected error occurred.");
+    } finally {
       setIsSubmitting(false);
     }
   };
@@ -128,6 +146,32 @@ export default function JoinMembership() {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="Enter your name"
+                      className="w-full h-11 rounded-xl border border-input bg-background px-4 py-2 text-sm font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="font-display text-sm font-bold text-foreground mb-2 block">
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Enter your email"
+                      className="w-full h-11 rounded-xl border border-input bg-background px-4 py-2 text-sm font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="font-display text-sm font-bold text-foreground mb-2 block">
+                      Password (min 6 chars) *
+                    </label>
+                    <input
+                      type="password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      placeholder="Create a password"
                       className="w-full h-11 rounded-xl border border-input bg-background px-4 py-2 text-sm font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
                     />
                   </div>

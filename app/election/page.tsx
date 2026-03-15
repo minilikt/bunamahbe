@@ -5,11 +5,13 @@ import { Timer, Award, Watch } from "lucide-react";
 import CandidateCard from "@/components/CandidateCard";
 import { castVote, getCandidates } from "@/app/actions/election";
 
+import { authClient } from "@/lib/auth-client";
+
 export default function Election() {
   const [candidates, setCandidates] = useState<any[]>([]);
   const [votedFor, setVotedFor] = useState<string | null>(null);
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-  const [userId, setUserId] = useState<string>("");
+  const { data: session } = authClient.useSession();
 
   useEffect(() => {
     // Fetch real candidates
@@ -18,15 +20,6 @@ export default function Election() {
       setCandidates(data);
     };
     loadCandidates();
-
-    // Get membership ID for voting
-    let id = localStorage.getItem("buna_membership_id");
-    if (!id) {
-      // Allow viewing but handle voting restriction in handleVote
-      setUserId("");
-    } else {
-      setUserId(id);
-    }
   }, []);
 
   // Countdown timer
@@ -56,13 +49,13 @@ export default function Election() {
   }, []);
 
   const handleVote = async (id: string) => {
-    if (!userId) {
+    if (!session) {
       alert("Only registered members can vote! Please go to the 'Join Association' page first.");
       return;
     }
     if (votedFor) return;
     
-    const result = await castVote(id, userId);
+    const result = await castVote(id);
     
     if (result.success) {
       setVotedFor(id);

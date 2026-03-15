@@ -5,6 +5,7 @@ import { Coffee, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { authClient } from "@/lib/auth-client";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -17,6 +18,7 @@ const navLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const { data: session } = authClient.useSession();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -52,13 +54,13 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:block">
-            <Link href="/dashboard">
+            <Link href={session ? "/dashboard" : "/join"}>
               <motion.button
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 className="btn-mahber text-sm py-2.5 px-6"
               >
-                Join the Club
+                {session ? "Dashboard" : "Join the Club"}
               </motion.button>
             </Link>
           </div>
@@ -94,8 +96,10 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
-              <Link href="/dashboard" onClick={() => setIsOpen(false)}>
-                <button className="btn-mahber w-full text-sm py-3 mt-2">Join the Club</button>
+              <Link href={session ? "/dashboard" : "/join"} onClick={() => setIsOpen(false)}>
+                <button className="btn-mahber w-full text-sm py-3 mt-2">
+                  {session ? "Dashboard" : "Join the Club"}
+                </button>
               </Link>
             </div>
           </motion.div>

@@ -4,32 +4,19 @@ import { motion } from "framer-motion";
 import { Award, Vote, Coffee, MessageSquare, ArrowRight, MapPin, HelpCircle } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { getMember } from "@/app/actions/membership";
+import { authClient } from "@/lib/auth-client";
 
 export default function Page() {
   const router = useRouter();
-  const [member, setMember] = useState<any>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const { data: session, isPending: isLoading } = authClient.useSession();
 
   useEffect(() => {
-    const loadMember = async () => {
-      const id = localStorage.getItem("buna_membership_id");
-      if (!id) {
-        router.push("/join");
-        return;
-      }
-      const data = await getMember(id);
-      if (!data) {
-        router.push("/join");
-        return;
-      }
-      setMember(data);
-      setIsLoading(false);
-    };
-    loadMember();
-  }, [router]);
+    if (!isLoading && !session) {
+      router.push("/join");
+    }
+  }, [session, isLoading, router]);
 
-  if (isLoading) {
+  if (isLoading || !session) {
     return (
       <div className="min-h-screen flex items-center justify-center ethiopian-pattern">
         <motion.div
@@ -42,6 +29,8 @@ export default function Page() {
       </div>
     );
   }
+
+  const member = session.user as any;
 
   return (
     <div className="min-h-screen pt-20 ethiopian-pattern">

@@ -1,18 +1,22 @@
 "use server"
 
-import prisma from "@/lib/prisma";
+import { auth } from "@/lib/auth";
+import { headers } from "next/headers";
 import { revalidatePath } from "next/cache";
+import prisma from "@/lib/prisma";
 
-export async function castVote(candidateId: string, membershipId: string) {
+export async function castVote(candidateId: string) {
   try {
-    // 1. Verify membership
-    const member = await prisma.member.findUnique({
-      where: { id: membershipId },
+    // 1. Verify session
+    const session = await auth.api.getSession({
+      headers: await headers(),
     });
 
-    if (!member) {
+    if (!session) {
       return { success: false, error: "Only registered members can vote. Please join the association first!" };
     }
+
+    const membershipId = session.user.id;
 
     // 2. Check if user already voted
     const existingVote = await prisma.vote.findUnique({
