@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Coffee, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
@@ -21,12 +21,20 @@ const Navbar = () => {
   const { data: session } = authClient.useSession();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-xl border-b border-border/10">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <Link href="/" className="flex items-center gap-2 group">
-          <Image src="/ethiopian-coffee-cup.png" alt="Buna Logo" width={50} height={50} />
-            <span className="font-ethiopic font-bold text-lg text-foreground">ቡጠማ</span>
+          <Link
+            href="/"
+            className="flex items-center gap-2 group"
+            onClick={(e) => {
+              if (pathname === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+          >
+            <Image src="/logo-full.png" alt="Buna Logo" width={80} height={80} />
           </Link>
 
           {/* Desktop nav */}

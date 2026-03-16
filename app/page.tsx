@@ -18,13 +18,13 @@ export default function Page() {
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden ethiopian-pattern">
         <div className="container mx-auto px-4 md:px-8 pt-20">
-          <div className="max-w-4xl  mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center">
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.23, 1, 0.32, 1] }}
-              className="font-ethiopic text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-12 tracking-tightest"
+              className="font-ethiopic text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 tracking-tightest"
             >
               ቡና ጠጪዎች ማህበር
             </motion.h1>
@@ -33,28 +33,27 @@ export default function Page() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-display text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed"
+              className="font-display text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
               style={{ lineHeight: 1.4 }}
             >
-              ET Coffee Lovers' Association
+              Coffee Drinkers Society
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="flex flex-col sm:flex-row items-center mb-10 justify-center gap-4"
+              className="flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              
-            <Link href={session ? "/dashboard" : "/join"}>
-              <motion.button
-                whileHover={{ y: -4 }}
-                whileTap={{ scale: 0.98 }}
-                className="btn-mahber text-base"
-              >
-                {session ? "Dashboard" : "Join the Club"}
-              </motion.button>
-            </Link>
+              <Link href="/join">
+                <motion.button
+                  whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgba(78,52,46,0.2)" }}
+                  whileTap={{ scale: 0.98 }}
+                  className="btn-mahber text-base"
+                >
+                  Join the Buna Club
+                </motion.button>
+              </Link>
               <Link href="/election">
                 <motion.button
                   whileHover={{ y: -4 }}
@@ -66,28 +65,30 @@ export default function Page() {
               </Link>
             </motion.div>
 
-            {/* Floating coffee elements */}
-            {/* <div className="relative mt-16 flex justify-center">
+            {/* Floating Ethiopian flower */}
+            <div className="relative mt-16 flex justify-center items-center gap-8">
               <motion.img
-                src={BunaLogo}
-                alt="Ethiopian coffee cup"
-                animate={{ y: [0, -12, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="w-28 h-28 md:w-40 md:h-40 object-contain drop-shadow-lg"
+                src="/ethiopian-flower.png"
+                alt="Ethiopian flower motif"
+                animate={{ 
+                  y: [0, -12, 0],
+                  rotate: [0, 5, 0]
+                }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                className="w-24 h-24 md:w-36 md:h-36 object-contain drop-shadow-2xl opacity-80"
               />
-            </div> */}
+              <motion.img
+                src="/ethiopian-flower.png"
+                alt="Ethiopian flower motif mirror"
+                animate={{ 
+                  y: [0, -12, 0],
+                  rotate: [0, -5, 0]
+                }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                className="w-24 h-24 md:w-36 md:h-36 object-contain drop-shadow-2xl opacity-80 scale-x-[-1] mt-8"
+              />
+            </div>
           </div>
-        </div>
-        
-        {/* Full-width bottom bleed pattern */}
-        <div className="absolute bottom-12 left-0 w-full h-12 md:h-16">
-          <Image 
-            src="/pat.png" 
-            alt="Ethiopian pattern" 
-            fill 
-            className="object-cover" 
-            priority 
-          />
         </div>
       </section>
 
@@ -132,13 +133,46 @@ export default function Page() {
                 What is the Buna Association?
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-                It started as a simple idea on the internet. Then it became a movement. ET Coffee Lovers' Association is a digital community celebrating Ethiopia's thousands of years of coffee heritage.
+                It started as a simple idea on the internet. Then it became a movement. ET Coffee Lovers&apos; Association is a digital community celebrating Ethiopia&apos;s thousands of years of coffee heritage.
               </p>
               <p className="font-body text-lg text-muted-foreground mb-6">
                 one cup, one ceremony, one coffee at a time.
               </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                From the three rounds of the traditional coffee ceremony —  <span className="font-ethiopic text-foreground font-medium">አቦል፣ ቶና፣ በረካ</span> — to your daily macchiato run, we believe coffee isn't just a drink. It's culture. It's community. It's home.
+                From the three rounds of the traditional coffee ceremony —  <span className="font-ethiopic text-foreground font-medium">አቦል፣ ቶና፣ በረካ</span> — to your daily macchiato run, we believe coffee isn&apos;t just a drink. It&apos;s culture. It&apos;s community. It&apos;s home.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Section */}
+      <section className="py-24 border-t border-border/10">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="relative w-64 h-64 md:w-80 md:h-80 rounded-[3rem] overflow-hidden red-ring"
+            >
+              <Image 
+                src="/founder.jpg" 
+                alt="Founder" 
+                fill 
+                className="object-cover"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="flex-1 text-center md:text-left"
+            >
+              <h3 className="font-display text-accent text-sm uppercase tracking-widest mb-2 font-bold">Founder</h3>
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">Amos Abraham</h2>
+              <p className="font-body text-xl text-muted-foreground leading-relaxed">
+                Coffee enthusiast psychologist, known for simplifying psychological ideas through everyday discussions and cultural storytelling.
               </p>
             </motion.div>
           </div>
@@ -154,7 +188,13 @@ export default function Page() {
             viewport={{ once: true }}
             className="ceramic-surface p-8 md:p-16 text-center max-w-3xl mx-auto"
           >
-            <Sparkles className="w-8 h-8 text-accent mx-auto mb-4" />
+            <motion.img
+              src="/ethiopian-flower.png"
+              alt="Ethiopian flower"
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+              className="w-12 h-12 object-contain mx-auto mb-4"
+            />
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4" style={{ lineHeight: 1.1 }}>
               Discover Your Buna Personality
             </h2>
@@ -163,7 +203,7 @@ export default function Page() {
             </p>
             <Link href="/quiz">
               <motion.button
-                whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgba(78,52,46,0.2)" }}
+                whileHover={{ y: -4 }}
                 whileTap={{ scale: 0.98 }}
                 className="btn-clay text-base inline-flex items-center gap-2"
               >
@@ -198,7 +238,61 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      {/* Sponsors & Contributors */}
+      <section className="py-24 border-t border-border/10">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            {/* Design Partner */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="ceramic-surface p-8 md:p-10"
+            >
+              <h3 className="font-display text-accent text-xs uppercase tracking-widest mb-4 font-bold">Design Partner</h3>
+              <p className="font-display text-2xl font-bold text-foreground mb-2">Gabina Creatives</p>
+              <p className="font-body text-sm text-muted-foreground leading-relaxed">
+                Creative studio supporting visual identity, branding direction, and design refinement for cultural digital experiences.
+              </p>
+            </motion.div>
+
+            {/* Developer Credit */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="ceramic-surface p-8 md:p-10 scale-95 opacity-80"
+            >
+              <h3 className="font-display text-accent text-xs uppercase tracking-widest mb-4 font-bold">Developer Credit</h3>
+              <p className="font-display text-xl font-bold text-foreground mb-2">PulseLabs</p>
+              <p className="font-body text-xs text-muted-foreground leading-relaxed">
+                A startup focused on digital marketing, product development, and modern web design solutions for emerging brands.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ad Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="max-w-3xl mx-auto border border-dashed border-border rounded-2xl p-10 text-center bg-secondary/10 backdrop-blur-sm">
+            <p className="font-display text-xl font-bold text-foreground mb-6">📢 Advertise Your Brand Here</p>
+            <p className="font-body text-sm text-muted-foreground mb-8">Reach the vibrant Ethiopian coffee community and grow your brand.</p>
+            <Link href="https://t.me/ze_abrham" target="_blank">
+              <motion.button
+                whileHover={{ y: -4 }}
+                whileTap={{ scale: 0.98 }}
+                className="btn-clay text-sm"
+              >
+                Advertise with Us
+              </motion.button>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
-};
-
+}

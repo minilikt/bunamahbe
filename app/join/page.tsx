@@ -130,16 +130,22 @@ export default function JoinMembership() {
           {/* Progress */}
           <div className="flex items-center justify-center gap-2 mb-10">
             {[1, 2, 3, 4].map((s) => (
-              <div
+              <motion.div
                 key={s}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  s === step ? "w-10 bg-accent" : s < step ? "w-10 bg-clay" : "w-10 bg-secondary"
-                }`}
+                animate={{ 
+                  width: s === step ? 40 : 16,
+                  backgroundColor: s === step ? "var(--accent)" : s < step ? "var(--secondary)" : "rgba(255,255,255,0.1)"
+                }}
+                className="h-2 rounded-full transition-all duration-300"
               />
             ))}
           </div>
 
-          <AnimatePresence mode="wait">
+          <motion.div
+            animate={!canProceedStep1 && step === 1 ? { x: [0, -4, 4, -4, 4, 0] } : {}}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+          >
+            <AnimatePresence mode="wait">
             {/* Step 1: Name & City */}
             {step === 1 && (
               <motion.div
@@ -168,7 +174,7 @@ export default function JoinMembership() {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="Enter your name"
-                      className="w-full h-11 rounded-xl border border-input bg-background px-4 py-2 text-sm font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
+                      className="w-full h-11 rounded-xl border border-input bg-background/50 px-4 py-2 text-sm font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all"
                     />
                   </div>
 
@@ -229,7 +235,7 @@ export default function JoinMembership() {
                 </div>
 
                 <motion.button
-                  whileHover={{ y: -2 }}
+                  whileHover={{ y: -4 }}
                   whileTap={{ scale: 0.98 }}
                   disabled={!canProceedStep1}
                   onClick={() => setStep(2)}
@@ -369,13 +375,24 @@ export default function JoinMembership() {
                 </div>
 
                 <motion.button
-                  whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgba(78,52,46,0.2)" }}
+                  whileHover={{ y: -4 }}
                   whileTap={{ scale: 0.98 }}
                   disabled={isSubmitting}
                   onClick={handleSendOtp}
                   className="btn-mahber text-base w-full inline-flex items-center justify-center gap-2"
                 >
-                  {isSubmitting ? "Sending Code..." : "Send Verification Code"} <ArrowRight className="w-4 h-4" />
+                  {isSubmitting ? (
+                    <>
+                      <motion.div
+                        animate={{ rotate: 360 }}
+                        transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                        className="w-4 h-4 border-2 border-primary-foreground border-t-transparent rounded-full"
+                      />
+                      Sending Code...
+                    </>
+                  ) : (
+                    <>Send Verification Code <ArrowRight className="w-4 h-4" /></>
+                  )}
                 </motion.button>
               </motion.div>
             )}
@@ -416,13 +433,24 @@ export default function JoinMembership() {
 
                 <div className="flex flex-col gap-4">
                   <motion.button
-                    whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgba(78,52,46,0.2)" }}
+                    whileHover={{ y: -4 }}
                     whileTap={{ scale: 0.98 }}
                     disabled={isSubmitting || !canProceedStep4}
                     onClick={handleVerifyAndJoin}
                     className="btn-mahber text-base w-full inline-flex items-center justify-center gap-2"
                   >
-                    {isSubmitting ? "Verifying..." : "Verify & Complete Profile"} <ArrowRight className="w-4 h-4" />
+                    {isSubmitting ? (
+                      <>
+                        <motion.div
+                          animate={{ rotate: 360 }}
+                          transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                          className="w-4 h-4 border-2 border-primary-foreground border-t-transparent rounded-full"
+                        />
+                        Verifying...
+                      </>
+                    ) : (
+                      <>Verify & Complete Profile <ArrowRight className="w-4 h-4" /></>
+                    )}
                   </motion.button>
                   
                   <p className='text-muted-foreground text-sm'>
@@ -439,6 +467,7 @@ export default function JoinMembership() {
               </motion.div>
             )}
           </AnimatePresence>
+          </motion.div>
         </div>
       </div>
     </div>

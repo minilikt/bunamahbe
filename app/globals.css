@@ -57,50 +57,50 @@
 }
 
 :root {
-  --background: hsl(35 45% 94%);
-  --foreground: hsl(12 25% 15%);
+  --background: #00473C; /* Primary Brand Green */
+  --foreground: #E0DDB8; /* Cream / Coffee Foam */
 
-  --card: hsl(35 40% 97%);
-  --card-foreground: hsl(12 25% 15%);
+  --card: #282C28; /* Dark Neutral */
+  --card-foreground: #E0DDB8;
 
-  --popover: hsl(35 40% 97%);
-  --popover-foreground: hsl(12 25% 15%);
+  --popover: #282C28;
+  --popover-foreground: #E0DDB8;
 
-  --primary: hsl(12 25% 25%);
-  --primary-foreground: hsl(35 45% 94%);
+  --primary: #00473C;
+  --primary-foreground: #E0DDB8;
 
-  --secondary: hsl(35 30% 88%);
-  --secondary-foreground: hsl(12 25% 20%);
+  --secondary: #567E6A; /* Muted Supporting Green */
+  --secondary-foreground: #E0DDB8;
 
-  --muted: hsl(35 20% 90%);
-  --muted-foreground: hsl(12 15% 45%);
+  --muted: #567E6A;
+  --muted-foreground: #E0DDB8/70;
 
-  --accent: hsl(43 52% 55%);
-  --accent-foreground: hsl(12 25% 10%);
+  --accent: #D10B09; /* Brand Red */
+  --accent-foreground: #FFFFFF;
 
-  --clay: hsl(7 45% 45%);
-  --clay-foreground: hsl(35 45% 94%);
+  --clay: #D10B09;
+  --clay-foreground: #FFFFFF;
 
   --destructive: hsl(0 84.2% 60.2%);
   --destructive-foreground: hsl(210 40% 98%);
 
-  --border: hsl(12 25% 25% / 0.1);
-  --input: hsl(12 25% 25% / 0.15);
-  --ring: hsl(43 52% 55%);
+  --border: #E0DDB8/15;
+  --input: #E0DDB8/20;
+  --ring: #D10B09;
 
   --radius: 1rem;
 
-  --sidebar-background: 35 35% 92%;
-  --sidebar-foreground: 12 25% 20%;
-  --sidebar-primary: 12 25% 25%;
-  --sidebar-primary-foreground: 35 45% 94%;
-  --sidebar-accent: 35 30% 88%;
-  --sidebar-accent-foreground: 12 25% 20%;
-  --sidebar-border: 12 25% 25% / 0.1;
-  --sidebar-ring: 43 52% 55%;
+  --sidebar-background: #00473C;
+  --sidebar-foreground: #E0DDB8;
+  --sidebar-primary: #D10B09;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #567E6A;
+  --sidebar-accent-foreground: #E0DDB8;
+  --sidebar-border: #E0DDB8/15;
+  --sidebar-ring: #D10B09;
 
-  --shadow-ceramic: 0 20px 50px rgba(78, 52, 46, 0.08);
-  --shadow-ceramic-hover: 0 20px 50px rgba(78, 52, 46, 0.15);
+  --shadow-ceramic: 0 20px 50px rgba(0, 0, 0, 0.3);
+  --shadow-ceramic-hover: 0 20px 50px rgba(0, 0, 0, 0.4);
 
   --font-display: 'Bricolage Grotesque', sans-serif;
   --font-body: 'Instrument Sans', sans-serif;
@@ -108,25 +108,25 @@
 }
 
 .dark {
-  --background: hsl(12 25% 8%);
-  --foreground: hsl(35 45% 94%);
-  --card: hsl(12 20% 12%);
-  --card-foreground: hsl(35 45% 94%);
-  --popover: hsl(12 20% 12%);
-  --popover-foreground: hsl(35 45% 94%);
-  --primary: hsl(35 45% 94%);
-  --primary-foreground: hsl(12 25% 10%);
-  --secondary: hsl(12 15% 18%);
-  --secondary-foreground: hsl(35 45% 94%);
-  --muted: hsl(12 15% 18%);
-  --muted-foreground: hsl(35 20% 60%);
-  --accent: hsl(43 52% 55%);
-  --accent-foreground: hsl(12 25% 10%);
-  --clay: hsl(7 45% 50%);
-  --clay-foreground: hsl(35 45% 94%);
-  --border: hsl(35 45% 94% / 0.1);
-  --input: hsl(35 45% 94% / 0.15);
-  --ring: hsl(43 52% 55%);
+  --background: #00473C;
+  --foreground: #E0DDB8;
+  --card: #282C28;
+  --card-foreground: #E0DDB8;
+  --popover: #282C28;
+  --popover-foreground: #E0DDB8;
+  --primary: #E0DDB8;
+  --primary-foreground: #00473C;
+  --secondary: #567E6A;
+  --secondary-foreground: #E0DDB8;
+  --muted: #567E6A;
+  --muted-foreground: #E0DDB8/60;
+  --accent: #D10B09;
+  --accent-foreground: #FFFFFF;
+  --clay: #D10B09;
+  --clay-foreground: #FFFFFF;
+  --border: #E0DDB8/15;
+  --input: #E0DDB8/20;
+  --ring: #D10B09;
 }
 
 @layer base {
@@ -165,7 +165,7 @@
   }
 
   .ceramic-surface {
-    @apply bg-card rounded-[2rem] border border-border;
+    @apply bg-card/60 backdrop-blur-xl rounded-[2rem] border border-border;
     box-shadow: var(--shadow-ceramic);
   }
 
@@ -175,35 +175,48 @@
 
   .ceramic-surface-hover:hover {
     box-shadow: var(--shadow-ceramic-hover);
-    transform: translateY(-2px);
+    transform: translateY(-4px);
   }
 
-  .gold-ring {
-    box-shadow: 0 0 0 3px hsl(43 52% 55%), 0 0 0 6px hsl(43 52% 55% / 0.2);
+  .red-ring {
+    box-shadow: 0 0 0 3px #D10B09, 0 0 0 6px rgba(209, 11, 9, 0.2);
   }
 
-  .text-gradient-gold {
+  .text-gradient-red {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(43 52% 55%), hsl(43 60% 65%));
+    background-image: linear-gradient(135deg, #D10B09, #FF5C5A);
   }
 
   .ethiopian-pattern {
     background-image:
-      radial-gradient(circle at 20% 80%, hsl(43 52% 55% / 0.05) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, hsl(7 45% 45% / 0.05) 0%, transparent 50%),
-      radial-gradient(circle at 50% 50%, hsl(12 25% 25% / 0.02) 0%, transparent 70%);
+      radial-gradient(circle at 20% 80%, rgba(209, 11, 9, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(86, 126, 106, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, rgba(224, 221, 184, 0.02) 0%, transparent 70%);
+    background-attachment: fixed;
   }
 
   .btn-mahber {
-    @apply px-8 py-4 bg-primary text-primary-foreground rounded-full font-display font-bold tracking-tight transition-all;
+    @apply px-8 py-4 bg-[#00473C] text-[#E0DDB8] rounded-full font-display font-bold tracking-tight transition-all border border-[#E0DDB8]/20;
+  }
+
+  .btn-mahber:hover {
+    @apply transform -translate-y-1 shadow-2xl bg-[#005a4d];
   }
 
   .btn-clay {
-    @apply px-8 py-4 bg-clay text-clay-foreground rounded-full font-display font-bold tracking-tight transition-all;
+    @apply px-8 py-4 bg-[#D10B09] text-white rounded-full font-display font-bold tracking-tight transition-all;
+  }
+
+  .btn-clay:hover {
+    @apply transform -translate-y-1 shadow-2xl bg-[#ef0d0a];
   }
 
   .btn-gold {
-    @apply px-8 py-4 bg-accent text-accent-foreground rounded-full font-display font-bold tracking-tight transition-all;
+    @apply px-8 py-4 bg-[#567E6A] text-[#E0DDB8] rounded-full font-display font-bold tracking-tight transition-all;
+  }
+
+  .btn-gold:hover {
+    @apply transform -translate-y-1 shadow-2xl bg-[#66947d];
   }
 }
 

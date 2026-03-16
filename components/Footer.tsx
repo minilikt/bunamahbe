@@ -1,24 +1,34 @@
+"use client"
+import { motion } from "framer-motion";
 import { Coffee, Heart } from "lucide-react";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 md:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Coffee className="w-5 h-5 text-accent" />
-              <span className="font-ethiopic font-bold text-lg">ቡና ጠጪዎች ማህበር</span>
+    <footer className="bg-background border-t border-border/10 text-foreground">
+      <div className="container mx-auto px-4 md:px-8 py-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center gap-2 mb-6">
+              <img src="/logo-full.png" alt="ቡጠማ Logo" className="h-10 w-auto object-contain" />
             </div>
-            <p className="font-body text-sm text-primary-foreground/70 leading-relaxed">
-              A fun digital association celebrating Ethiopia's rich coffee heritage. From the highlands of Sidama to your morning cup — we're all connected by buna.
+            <p className="font-body text-sm text-muted-foreground leading-relaxed max-w-sm">
+              A fun digital association celebrating Ethiopia&apos;s rich coffee heritage. From the highlands of Sidama to your morning cup — we&apos;re all connected by buna.
             </p>
-          </div>
+          </motion.div>
 
-          <div>
-            <h4 className="font-display font-bold text-sm uppercase tracking-widest mb-4 text-accent">Navigate</h4>
-            <div className="flex flex-col gap-2">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+          >
+            <h4 className="font-display font-bold text-xs uppercase tracking-widest mb-6 text-accent">Navigate</h4>
+            <div className="flex flex-col gap-4">
               {[
                 { to: "/", label: "Home" },
                 { to: "/election", label: "Presidential Election" },
@@ -29,31 +39,40 @@ const Footer = () => {
                 <Link
                   key={link.to}
                   href={link.to}
-                  className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors font-body"
+                  className="text-sm text-muted-foreground hover:text-accent transition-colors font-body inline-block"
                 >
                   {link.label}
                 </Link>
               ))}
             </div>
-          </div>
+          </motion.div>
 
-          <div>
-            <h4 className="font-display font-bold text-sm uppercase tracking-widest mb-4 text-accent">The Movement</h4>
-            <p className="font-body text-sm text-primary-foreground/70 leading-relaxed">
-              What started as a fun internet joke became a celebration of Ethiopian coffee culture. Every sip tells a story. Every cup connects a community.
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
+            <h4 className="font-display font-bold text-xs uppercase tracking-widest mb-6 text-accent">The Birthplace of Coffee</h4>
+            <p className="font-body text-sm text-muted-foreground leading-relaxed items-center">
+              Our journey in pursuit of great coffee starts here, in Ethiopia. The birthplace and home of all coffee varieties in the world.
             </p>
-          </div>
+            <div className="mt-8 pt-8 border-t border-border/10">
+              <p className="text-[10px] tracking-widest uppercase text-muted-foreground/40 font-bold mb-4">Developed by</p>
+              <Link href="https://abrahammule.vercel.app" target="_blank" className="font-display text-sm font-bold text-muted-foreground hover:text-foreground transition-colors group">
+                PulseLabs <span className="opacity-0 group-hover:opacity-100 transition-opacity ml-1">→</span>
+              </Link>
+            </div>
+          </motion.div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs tracking-widest uppercase text-primary-foreground/50 font-body">
-            Designed & Built by Amos —
-          <Link href="https://abrahammule.vercel.app"> Product Builder</Link>
+        <div className="mt-20 pt-10 border-t border-border/10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-[10px] tracking-tighter uppercase text-muted-foreground/30 font-medium">
+            © {new Date().getFullYear()} ET Coffee Lovers' Association. All rights reserved.
           </p>
-            <p className="text-xs text-primary-foreground/40 font-body flex items-center gap-1">
-              Made with <Heart className="w-3 h-3 text-clay" /> and lots of coffee
-            </p>
-          
+          <p className="text-xs text-muted-foreground/40 font-body flex items-center gap-2">
+            Made with <Heart className="w-3 h-3 text-accent fill-accent" /> and lots of buna
+          </p>
         </div>
       </div>
     </footer>

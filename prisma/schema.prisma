@@ -27,6 +27,10 @@ model User {
   sessions Session[]
   accounts Account[]
   votes    Vote[]
+  posts    Post[]
+  comments Comment[]
+  likes    Like[]
+  reports  Report[]
 
   @@map("user")
 }
@@ -97,4 +101,56 @@ model Vote {
   createdAt   DateTime  @default(now())
 
   @@map("vote")
+}
+
+model Post {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  content   String
+  tags      String[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  likes     Like[]
+  comments  Comment[]
+  reports   Report[]
+
+  @@map("post")
+}
+
+model Comment {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  postId    String   @db.ObjectId
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("comment")
+}
+
+model Like {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  postId    String   @db.ObjectId
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([postId, userId])
+  @@map("like")
+}
+
+model Report {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  reason    String?
+  createdAt DateTime @default(now())
+  postId    String   @db.ObjectId
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("report")
 }
