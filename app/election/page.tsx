@@ -111,7 +111,10 @@ export default function Election() {
             {visibleCandidates.map((candidate, i) => (
               <CandidateCard
                 key={candidate.id}
-                {...candidate}
+                name={candidate.name}
+                handle={candidate.username || "anonymous"}
+                statement={candidate.bio}
+                voteCount={candidate.voteCount}
                 delay={i * 0.05}
                 hasVoted={votedFor !== null}
                 onVote={() => handleVote(candidate.id)}

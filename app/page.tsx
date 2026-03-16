@@ -278,7 +278,7 @@ export default function Page() {
               <h3 className="font-display text-accent text-[10px] uppercase tracking-widest mb-2 font-bold">Founding Partner</h3>
               <p className="font-display text-xl font-bold text-foreground mb-2">PulseLabs</p>
               <p className="font-body text-xs text-muted-foreground leading-relaxed">
-                Digital marketing and modern web design solutions.
+                A technical growth, marketing, and development partner for Digital and Tech founders.
               </p>
             </motion.div>
           </div>
