@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ArrowLeft, MapPin, Coffee, Sparkles, User } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
+import { toast } from "sonner";
+import { completeOnboarding } from "@/app/actions/user";
 
 const ethiopianCities = [
   "Addis Ababa", "Dire Dawa", "Bahir Dar", "Hawassa", "Mekelle", 
@@ -53,29 +55,23 @@ export default function Onboarding() {
   const handleCompleteProfile = async () => {
     setIsSubmitting(true);
     try {
-      const { error } = await authClient.updateUser({
-        // @ts-ignore
+      const result = await completeOnboarding({
         city: city === "Other" ? customCity : city,
-        // @ts-ignore
         frequency,
-        // @ts-ignore
         favoriteType,
-        // @ts-ignore
         badgeEmoji: badge.emoji,
-        // @ts-ignore
         badgeTitle: badge.title,
-        // @ts-ignore
         badgeDescription: badge.description,
       });
 
-      if (error) {
-        alert(error.message || "Failed to update profile. Please try again.");
+      if (!result.success) {
+        toast(result.error || "Failed to update profile. Please try again.");
       } else {
         router.push("/dashboard");
       }
     } catch (err) {
       console.error("Update profile error:", err);
-      alert("An unexpected error occurred.");
+      toast("An unexpected error occurred.");
     } finally {
       setIsSubmitting(false);
     }

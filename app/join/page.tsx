@@ -7,6 +7,7 @@ import { authClient } from "@/lib/auth-client";
 import { InputOTP, InputOTPGroup, InputOTPSlot } from '@/components/ui/input-otp';
 import { GoogleButton } from "@/components/auth/google-button";
 import Link from "next/link";
+import { toast } from "sonner";
 
 const ethiopianCities = [
   "Addis Ababa",
@@ -77,13 +78,13 @@ export default function JoinMembership() {
         type: "sign-in", // "sign-in" type creates accounts if disableSignUp isn't true
       });
       if (error) {
-        alert(error.message || "Failed to send code. Please try again.");
+        toast(error.message || "Failed to send code. Please try again.");
       } else {
         setStep(4);
       }
     } catch (err) {
       console.error("Send OTP error:", err);
-      alert("An unexpected error occurred.");
+      toast("An unexpected error occurred.");
     } finally {
       setIsSubmitting(false);
     }
@@ -113,13 +114,13 @@ export default function JoinMembership() {
       });
 
       if (error) {
-        alert(error.message || "Invalid or expired code. Please try again.");
+        toast(error.message || "Invalid or expired code. Please try again.");
       } else {
         router.push("/dashboard");
       }
     } catch (err) {
       console.error("Sign up error:", err);
-      alert("An unexpected error occurred.");
+      toast("An unexpected error occurred.");
     } finally {
       setIsSubmitting(false);
     }
@@ -433,7 +434,7 @@ export default function JoinMembership() {
                   Check your console
                 </h2>
                 <p className="font-body text-muted-foreground mb-8">
-                  We sent a 6-digit verification code to <strong>{email}</strong> (check your server terminal).
+                  We sent a 6-digit verification code to <strong>{email}</strong>
                 </p>
 
                 <div className="flex justify-center mb-8">

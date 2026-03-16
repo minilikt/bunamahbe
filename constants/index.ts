@@ -133,3 +133,26 @@ export const candidates: Candidate[] = [
     voteCount: 734,
   },
 ];
+
+export const CITY_COORDINATES: Record<string, { cx: number; cy: number }> = {
+  "Addis Ababa": { cx: 396.5, cy: 398.5 },
+  "Afar": { cx: 525.3, cy: 197.4 },
+  "Amara": { cx: 349.4, cy: 229.6 },
+  "Bahir Dar": { cx: 349.4, cy: 229.6 },
+  "Gondar": { cx: 330.4, cy: 180.6 }, // Estimated near Amara
+  "Benishangul Gumz": { cx: 201.7, cy: 302.7 },
+  "Dire Dawa": { cx: 585.2, cy: 362 },
+  "Gambela": { cx: 128.4, cy: 468.8 },
+  "Harari": { cx: 602, cy: 379.9 },
+  "Harar": { cx: 602, cy: 379.9 },
+  "Oromia": { cx: 462.9, cy: 487 },
+  "Adama": { cx: 462.9, cy: 437 }, // Near Oromia center
+  "Jimma": { cx: 312.9, cy: 487 }, // Western Oromia
+  "Sidama": { cx: 370.8, cy: 536.5 },
+  "Hawassa": { cx: 370.8, cy: 536.5 },
+  "Somali": { cx: 722.1, cy: 522.7 },
+  "Tigray": { cx: 421.9, cy: 102.8 },
+  "Mekelle": { cx: 421.9, cy: 102.8 },
+  "SNNP": { cx: 268.4, cy: 568.9 },
+  "Arba Minch": { cx: 268.4, cy: 620 }, // Near SNNP
+};

@@ -6,6 +6,7 @@ import CandidateCard from "@/components/CandidateCard";
 import { castVote, getCandidates } from "@/app/actions/election";
 
 import { authClient } from "@/lib/auth-client";
+import { toast } from "sonner";
 
 export default function Election() {
   const [candidates, setCandidates] = useState<any[]>([]);
@@ -55,7 +56,7 @@ export default function Election() {
 
   const handleVote = async (id: string) => {
     if (!session) {
-      alert("Only registered members can vote! Please go to the 'Join Association' page first.");
+      toast("Only registered members can vote! Please go to the 'Join Association' page first.");
       return;
     }
     if (votedFor) return;
@@ -68,7 +69,7 @@ export default function Election() {
       const updated = await getCandidates();
       setCandidates(updated);
     } else {
-      alert(result.error);
+      toast(result.error);
     }
   };
 
@@ -112,6 +113,7 @@ export default function Election() {
               <CandidateCard
                 key={candidate.id}
                 name={candidate.name}
+                image={candidate.image}
                 handle={candidate.username || "anonymous"}
                 statement={candidate.bio}
                 voteCount={candidate.voteCount}

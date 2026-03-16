@@ -1,41 +1,43 @@
 import { motion } from "framer-motion";
-import { MapPin, Star } from "lucide-react";
+import { MapPin, Users } from "lucide-react";
 
-interface CoffeeRegionCardProps {
+interface CommunityCardProps {
   name: string;
-  description: string;
-  flavorNotes: string[];
-  rating: number;
+  count: number;
   delay?: number;
 }
 
-const CoffeeRegionCard = ({ name, description, flavorNotes, rating, delay = 0 }: CoffeeRegionCardProps) => {
+const CoffeeRegionCard = ({ name, count, delay = 0 }: CommunityCardProps) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, delay }}
-      whileHover={{ y: -4 }}
-      className="ceramic-surface ceramic-surface-hover p-6 cursor-pointer group"
+      transition={{ 
+        type: "spring",
+        stiffness: 300,
+        damping: 20,
+        delay 
+      }}
+      whileHover={{ y: -4, scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+      className="ceramic-surface ceramic-surface-hover p-5 cursor-pointer group flex items-center justify-between"
     >
-      <div className="flex items-start justify-between mb-4">
-        <div className="w-12 h-12 rounded-2xl bg-clay/10 flex items-center justify-center">
+      <div className="flex items-center gap-4">
+        <div className="w-10 h-10 rounded-xl bg-clay/10 flex items-center justify-center group-hover:bg-clay/20 transition-colors">
           <MapPin className="w-5 h-5 text-clay" />
         </div>
-        <div className="flex items-center gap-1">
-          <Star className="w-4 h-4 text-accent fill-accent" />
-          <span className="text-sm font-display font-bold">{rating}</span>
+        <div>
+          <h3 className="font-display font-bold text-lg text-foreground leading-none">{name}</h3>
+          <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-medium mt-1">Ethiopia</p>
         </div>
       </div>
-      <h3 className="font-display font-bold text-xl mb-2 text-foreground leading-tight">{name}</h3>
-      <p className="font-body text-sm text-muted-foreground mb-4 leading-relaxed">{description}</p>
-      <div className="flex flex-wrap gap-2">
-        {flavorNotes.map((note) => (
-          <span key={note} className="text-xs font-body px-3 py-1 rounded-full bg-accent/10 text-accent font-medium">
-            {note}
-          </span>
-        ))}
+      
+      <div className="flex flex-col items-end">
+        <div className="flex items-center gap-1.5 bg-accent/10 text-accent px-2.5 py-1 rounded-lg">
+          <Users className="w-3 h-3" />
+          <span className="text-xs font-display font-bold">{count}</span>
+        </div>
       </div>
     </motion.div>
   );

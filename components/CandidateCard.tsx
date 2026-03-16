@@ -6,6 +6,7 @@ import { useState } from "react";
 interface CandidateCardProps {
   name: string;
   handle: string;
+  image: string;
   statement: string;
   voteCount: number;
   delay?: number;
@@ -13,7 +14,7 @@ interface CandidateCardProps {
   hasVoted?: boolean;
 }
 
-const CandidateCard = ({ name, handle, statement, voteCount, delay = 0, onVote, hasVoted }: CandidateCardProps) => {
+const CandidateCard = ({ name, image, handle, statement, voteCount, delay = 0, onVote, hasVoted }: CandidateCardProps) => {
   const [showSteam, setShowSteam] = useState(false);
 
   const handleVote = () => {
@@ -52,12 +53,19 @@ const CandidateCard = ({ name, handle, statement, voteCount, delay = 0, onVote, 
 
       <div className="flex flex-col items-center text-center">
         {/* Avatar */}
-        <div className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mb-4 gold-ring">
-          <User className="w-8 h-8 text-muted-foreground" />
+        <div className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mb-4 gold-ring overflow-hidden">
+          <img 
+            src={image || `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=random`} 
+            alt={name} 
+            className="w-full h-full object-cover" 
+            onError={(e) => {
+              e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=random`;
+            }}
+          />
         </div>
 
         {/* Handle */}
-        <span className="text-sm font-body text-accent font-medium mb-1">@{handle}</span>
+        <span className="text-sm font-body text-accent font-medium mb-1">{handle}</span>
 
         {/* Name */}
         <h3 className="font-display font-bold text-lg mb-3 text-foreground">{name}</h3>

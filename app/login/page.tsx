@@ -7,6 +7,7 @@ import { authClient } from "@/lib/auth-client";
 import { InputOTP, InputOTPGroup, InputOTPSlot } from '@/components/ui/input-otp';
 import Link from "next/link";
 import { GoogleButton } from "@/components/auth/google-button";
+import { toast } from "sonner";
 
 export default function Login() {
   const router = useRouter();
@@ -26,13 +27,13 @@ export default function Login() {
         type: "sign-in",
       });
       if (error) {
-        alert(error.message || "Failed to send code. Please try again.");
+        toast(error.message || "Failed to send code. Please try again.");
       } else {
         setStep(2);
       }
     } catch (err) {
       console.error("Send OTP error:", err);
-      alert("An unexpected error occurred.");
+      toast("An unexpected error occurred.");
     } finally {
       setIsSubmitting(false);
     }
@@ -47,13 +48,13 @@ export default function Login() {
       });
 
       if (error) {
-        alert(error.message || "Invalid or expired code. Please try again.");
+        toast(error.message || "Invalid or expired code. Please try again.");
       } else {
         router.push("/dashboard");
       }
     } catch (err) {
       console.error("Sign in error:", err);
-      alert("An unexpected error occurred.");
+      toast("An unexpected error occurred.");
     } finally {
       setIsSubmitting(false);
     }

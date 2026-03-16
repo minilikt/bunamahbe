@@ -230,7 +230,7 @@ export default function Page() {
                 />
               </div>
               <h3 className="font-display text-accent text-[10px] uppercase tracking-widest mb-2 font-bold">Founder</h3>
-              <p className="font-display text-xl font-bold text-foreground mb-2">Amos Abraham</p>
+              <p className="font-display text-xl font-bold text-foreground mb-2">ቻLu</p>
               <p className="font-body text-xs text-muted-foreground leading-relaxed">
                 Psychologist & coffee lover, connecting people through cultural storytelling.
               </p>
