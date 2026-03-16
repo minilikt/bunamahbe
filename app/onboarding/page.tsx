@@ -67,6 +67,8 @@ export default function Onboarding() {
       if (!result.success) {
         toast(result.error || "Failed to update profile. Please try again.");
       } else {
+        // Refresh session to ensure client-side state is updated
+        await authClient.getSession();
         router.push("/dashboard");
       }
     } catch (err) {
