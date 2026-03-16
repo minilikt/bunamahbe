@@ -176,7 +176,7 @@ export default function Election() {
       </section>
 
       {/* Sponsor & Countdown */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      {/* <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex items-center justify-center gap-2 mb-2">
@@ -218,7 +218,7 @@ export default function Election() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

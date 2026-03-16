@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-20 pt-10 border-t border-border/10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-6">
+          {/* <div className="flex items-center gap-6">
             <Link 
               href="https://youtube.com/@chaluassefa?si=rlBrGxdB3ZDtaXuv" 
               target="_blank"
@@ -94,7 +94,7 @@ const Footer = () => {
               </svg>
               <span className="text-xs font-body uppercase tracking-widest font-bold">TikTok</span>
             </Link>
-          </div>
+          </div> */}
           <p className="text-[10px] tracking-tighter uppercase text-muted-foreground/30 font-medium md:ml-auto">
             © {new Date().getFullYear()} ET Coffee Lovers&apos; Association. All rights reserved.
           </p>

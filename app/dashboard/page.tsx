@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Award, Vote, Coffee, MessageSquare, ArrowRight, MapPin, HelpCircle } from "lucide-react";
+import { Award, Vote, Coffee, MessageSquare, ArrowRight, MapPin, HelpCircle, LogOut } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
@@ -173,11 +173,37 @@ export default function Page() {
             </div>
           </motion.div>
 
+          {/* Logout Action */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="flex justify-center mt-12 mb-8"
+          >
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={async () => {
+                await authClient.signOut({
+                  fetchOptions: {
+                    onSuccess: () => {
+                      router.push("/");
+                    },
+                  },
+                });
+              }}
+              className="flex items-center gap-2 px-6 py-3 rounded-xl border border-clay/20 bg-clay/5 text-clay hover:bg-clay hover:text-white transition-all font-display font-bold text-sm"
+            >
+              <LogOut className="w-4 h-4" />
+              Sign Out from Mahber
+            </motion.button>
+          </motion.div>
+
           {/* Association tagline */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.55 }}
             className="text-center font-ethiopic text-lg text-muted-foreground"
           >
             ቡና ጠጪዎች ማህበር
