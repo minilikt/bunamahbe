@@ -5,6 +5,8 @@ import { ArrowRight, ArrowLeft, User, MapPin, Coffee, Sparkles, KeyRound } from 
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 import { InputOTP, InputOTPGroup, InputOTPSlot } from '@/components/ui/input-otp';
+import { GoogleButton } from "@/components/auth/google-button";
+import Link from "next/link";
 
 const ethiopianCities = [
   "Addis Ababa",
@@ -243,6 +245,22 @@ export default function JoinMembership() {
                 >
                   Continue <ArrowRight className="w-4 h-4" />
                 </motion.button>
+
+                <div className="relative my-8">
+                  <div className="absolute inset-0 flex items-center">
+                    <span className="w-full border-t border-input" />
+                  </div>
+                  <div className="relative flex justify-center text-xs uppercase">
+                    <span className="bg-background px-2 text-muted-foreground">Or join with</span>
+                  </div>
+                </div>
+
+                <GoogleButton text="Join with Google" />
+
+                <p className="text-center font-body text-sm text-muted-foreground mt-6">
+                  Already have an account? <Link href="/login" className="text-accent hover:underline font-medium">Sign in</Link>
+                </p>
+
               </motion.div>
             )}
 

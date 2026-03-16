@@ -1,11 +1,8 @@
 "use client"
 import { motion } from "framer-motion";
-import { Coffee, Users, Vote, MapPin, ArrowRight, Sparkles } from "lucide-react";
+import { Coffee, Users, Vote, MapPin, ArrowRight } from "lucide-react";
 import AnimatedCounter from "@/components/AnimatedCounter";
-import CoffeeRegionCard from "@/components/CoffeeRegionCard";
 import Link from "next/link";
-import { BunaLogo } from "@/components/BunaLogo";
-import { coffeeRegions } from "@/constants";
 import Footer from "@/components/Footer";
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
@@ -65,8 +62,8 @@ export default function Page() {
               </Link>
             </motion.div>
 
-            {/* Floating Ethiopian flower */}
-            <div className="relative mt-16 flex justify-center items-center gap-8">
+            {/* Floating Ethiopian flowers */}
+            <div className="relative mt-16 flex justify-center items-center gap-6 md:gap-12">
               <motion.img
                 src="/ethiopian-flower.png"
                 alt="Ethiopian flower motif"
@@ -75,7 +72,17 @@ export default function Page() {
                   rotate: [0, 5, 0]
                 }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="w-24 h-24 md:w-36 md:h-36 object-contain drop-shadow-2xl opacity-80"
+                className="w-16 h-16 md:w-28 md:h-28 object-contain drop-shadow-2xl opacity-70"
+              />
+              <motion.img
+                src="/ethiopian-flower.png"
+                alt="Ethiopian flower motif center"
+                animate={{ 
+                  y: [0, -15, 0],
+                  scale: [1, 1.1, 1]
+                }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
+                className="w-20 h-20 md:w-32 md:h-32 object-contain drop-shadow-2xl opacity-90"
               />
               <motion.img
                 src="/ethiopian-flower.png"
@@ -85,7 +92,7 @@ export default function Page() {
                   rotate: [0, -5, 0]
                 }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                className="w-24 h-24 md:w-36 md:h-36 object-contain drop-shadow-2xl opacity-80 scale-x-[-1] mt-8"
+                className="w-16 h-16 md:w-28 md:h-28 object-contain drop-shadow-2xl opacity-70 scale-x-[-1]"
               />
             </div>
           </div>
@@ -146,38 +153,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Founder Section */}
-      <section className="py-24 border-t border-border/10">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="relative w-64 h-64 md:w-80 md:h-80 rounded-[3rem] overflow-hidden red-ring"
-            >
-              <Image 
-                src="/founder.jpg" 
-                alt="Founder" 
-                fill 
-                className="object-cover"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="flex-1 text-center md:text-left"
-            >
-              <h3 className="font-display text-accent text-sm uppercase tracking-widest mb-2 font-bold">Founder</h3>
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">Amos Abraham</h2>
-              <p className="font-body text-xl text-muted-foreground leading-relaxed">
-                Coffee enthusiast psychologist, known for simplifying psychological ideas through everyday discussions and cultural storytelling.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
 
       {/* Quiz Teaser */}
       <section className="py-20">
@@ -214,61 +189,56 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Coffee Regions */}
-      <section className="py-24 ethiopian-pattern">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="text-center mb-16">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4" style={{ lineHeight: 1.1 }}>
-                Featured Coffee Regions
-              </h2>
-              <p className="font-body text-lg text-muted-foreground max-w-lg mx-auto">
-                Explore the birthplace of coffee through its legendary growing regions.
-              </p>
-            </motion.div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {coffeeRegions.map((region, i) => (
-              <CoffeeRegionCard key={region.name} {...region} delay={i * 0.1} />
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Coffee Regions - Removed, now on /map page */}
+
 
       {/* Sponsors & Contributors */}
       <section className="py-24 border-t border-border/10">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {/* Design Partner */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            {/* Founder Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="ceramic-surface p-8 md:p-10"
+              className="ceramic-surface p-8 flex flex-col items-center text-center"
             >
-              <h3 className="font-display text-accent text-xs uppercase tracking-widest mb-4 font-bold">Design Partner</h3>
-              <p className="font-display text-2xl font-bold text-foreground mb-2">Gabina Creatives</p>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                Creative studio supporting visual identity, branding direction, and design refinement for cultural digital experiences.
+              <div className="relative w-20 h-20 rounded-2xl overflow-hidden mb-4 gold-ring">
+                <Image 
+                  src="/founderr.jpg" 
+                  alt="Amos Abraham" 
+                  fill 
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="font-display text-accent text-[10px] uppercase tracking-widest mb-2 font-bold">Founder</h3>
+              <p className="font-display text-xl font-bold text-foreground mb-2">Amos Abraham</p>
+              <p className="font-body text-xs text-muted-foreground leading-relaxed">
+                Psychologist & coffee lover, connecting people through cultural storytelling.
               </p>
             </motion.div>
 
-            {/* Developer Credit */}
+            {/* Developer Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="ceramic-surface p-8 md:p-10 scale-95 opacity-80"
+              className="ceramic-surface p-8 flex flex-col items-center text-center"
             >
-              <h3 className="font-display text-accent text-xs uppercase tracking-widest mb-4 font-bold">Developer Credit</h3>
+              <div className="relative w-20 h-20 rounded-2xl overflow-hidden mb-4 gold-ring">
+                <Image 
+                  src="/pulse.png" 
+                  alt="PulseLabs Developer" 
+                  fill 
+                  className="object-cover"
+                  onError={(e: any) => { e.currentTarget.style.display = 'none'; }}
+                />
+              </div>
+              <h3 className="font-display text-accent text-[10px] uppercase tracking-widest mb-2 font-bold">Developer</h3>
               <p className="font-display text-xl font-bold text-foreground mb-2">PulseLabs</p>
               <p className="font-body text-xs text-muted-foreground leading-relaxed">
-                A startup focused on digital marketing, product development, and modern web design solutions for emerging brands.
+                Digital marketing and modern web design solutions.
               </p>
             </motion.div>
           </div>

@@ -13,8 +13,11 @@ export default function Page() {
   useEffect(() => {
     if (!isLoading && !session) {
       router.push("/join");
+    } else if (!isLoading && session && (!(session.user as any).city || !(session.user as any).favoriteType)) {
+      router.push("/onboarding");
     }
   }, [session, isLoading, router]);
+
 
   if (isLoading || !session) {
     return (

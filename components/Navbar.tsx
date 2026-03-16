@@ -62,15 +62,41 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:block">
-            <Link href={session ? "/dashboard" : "/join"}>
-              <motion.button
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.98 }}
-                className="btn-mahber text-sm py-2.5 px-6"
-              >
-                {session ? "Dashboard" : "Join the Club"}
-              </motion.button>
-            </Link>
+            {session ? (
+              <Link href="/dashboard" className="flex items-center gap-3 group">
+                <div className="text-right hidden lg:block">
+                  <p className="text-xs font-display font-bold text-foreground leading-none mb-1">{session.user.name}</p>
+                  <p className="text-[10px] font-body text-muted-foreground leading-none">Member</p>
+                </div>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="relative w-10 h-10 rounded-full overflow-hidden clay-ring"
+                >
+                  {session.user.image ? (
+                    <img 
+                      src={session.user.image} 
+                      alt={session.user.name || "User"} 
+                      className="object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-secondary flex items-center justify-center">
+                      <span className="text-sm">👤</span>
+                    </div>
+                  )}
+                </motion.div>
+              </Link>
+            ) : (
+              <Link href="/join">
+                <motion.button
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="btn-mahber text-sm py-2.5 px-6"
+                >
+                  Join the Club
+                </motion.button>
+              </Link>
+            )}
           </div>
 
           {/* Mobile toggle */}
@@ -104,11 +130,35 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
-              <Link href={session ? "/dashboard" : "/join"} onClick={() => setIsOpen(false)}>
-                <button className="btn-mahber w-full text-sm py-3 mt-2">
-                  {session ? "Dashboard" : "Join the Club"}
-                </button>
-              </Link>
+              {session ? (
+                <Link href="/dashboard" onClick={() => setIsOpen(false)}>
+                  <div className="flex items-center gap-3 p-3 rounded-xl bg-secondary/50 border border-border/50">
+                    <div className="relative w-10 h-10 rounded-full overflow-hidden clay-ring">
+                      {session.user.image ? (
+                        <img 
+                          src={session.user.image} 
+                          alt={session.user.name || "User"}  
+                          className="object-cover"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-secondary flex items-center justify-center">
+                          <span className="text-sm">👤</span>
+                        </div>
+                      )}
+                    </div>
+                    <div>
+                      <p className="text-sm font-display font-bold text-foreground">{session.user.name}</p>
+                      <p className="text-xs font-body text-muted-foreground">Go to Dashboard</p>
+                    </div>
+                  </div>
+                </Link>
+              ) : (
+                <Link href="/join" onClick={() => setIsOpen(false)}>
+                  <button className="btn-mahber w-full text-sm py-3 mt-2">
+                    Join the Club
+                  </button>
+                </Link>
+              )}
             </div>
           </motion.div>
         )}

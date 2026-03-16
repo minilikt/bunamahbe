@@ -11,7 +11,12 @@ export default function Election() {
   const [candidates, setCandidates] = useState<any[]>([]);
   const [votedFor, setVotedFor] = useState<string | null>(null);
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [showAll, setShowAll] = useState(false);
   const { data: session } = authClient.useSession();
+
+  const INITIAL_COUNT = 8;
+  const visibleCandidates = showAll ? candidates : candidates.slice(0, INITIAL_COUNT);
+  const hiddenCount = candidates.length - INITIAL_COUNT;
 
   useEffect(() => {
     // Fetch real candidates
@@ -103,7 +108,7 @@ export default function Election() {
             Presidential Candidates
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {candidates.map((candidate, i) => (
+            {visibleCandidates.map((candidate, i) => (
               <CandidateCard
                 key={candidate.id}
                 {...candidate}
@@ -113,6 +118,18 @@ export default function Election() {
               />
             ))}
           </div>
+          {!showAll && hiddenCount > 0 && (
+            <div className="text-center mt-10">
+              <motion.button
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => setShowAll(true)}
+                className="btn-gold text-sm inline-flex items-center gap-2"
+              >
+                Show {hiddenCount} More Candidates
+              </motion.button>
+            </div>
+          )}
         </div>
       </section>
 

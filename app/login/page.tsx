@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 import { InputOTP, InputOTPGroup, InputOTPSlot } from '@/components/ui/input-otp';
 import Link from "next/link";
+import { GoogleButton } from "@/components/auth/google-button";
 
 export default function Login() {
   const router = useRouter();
@@ -113,9 +114,21 @@ export default function Login() {
                   {isSubmitting ? "Sending..." : "Continue"} <ArrowRight className="w-4 h-4" />
                 </motion.button>
                 
+                <div className="relative my-8">
+                  <div className="absolute inset-0 flex items-center">
+                    <span className="w-full border-t border-input" />
+                  </div>
+                  <div className="relative flex justify-center text-xs uppercase">
+                    <span className="bg-background px-2 text-muted-foreground">Or continue with</span>
+                  </div>
+                </div>
+
+                <GoogleButton />
+                
                 <p className="text-center font-body text-sm text-muted-foreground mt-6">
                   Don&apos;t have an account? <Link href="/join" className="text-accent hover:underline font-medium">Join us</Link>
                 </p>
+
               </motion.div>
             )}
 

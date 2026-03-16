@@ -1,7 +1,10 @@
 "use client"
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MapPin, Star, Coffee } from "lucide-react";
+import { MapPin, Star, Coffee, ArrowRight } from "lucide-react";
+import CoffeeRegionCard from "@/components/CoffeeRegionCard";
+import { coffeeRegions } from "@/constants";
+import Link from "next/link";
 
 interface Region {
   id: string;
@@ -42,11 +45,10 @@ export default function Page() {
           </motion.div>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        {/* Interactive Map */}
+        <div className="max-w-4xl mx-auto mb-20">
           <div className="ceramic-surface p-8 md:p-12">
-            {/* Simplified map representation */}
             <div className="relative aspect-[4/3] bg-secondary/50 rounded-2xl overflow-hidden">
-              {/* Ethiopia outline shape (simplified) */}
               <svg viewBox="0 0 100 100" className="w-full h-full">
                 <path
                   d="M30,20 L45,15 L60,18 L75,25 L80,35 L82,50 L75,60 L70,75 L60,82 L45,80 L35,75 L25,65 L22,50 L25,35 Z"
@@ -54,7 +56,6 @@ export default function Page() {
                   stroke="hsl(12 25% 25% / 0.2)"
                   strokeWidth="0.5"
                 />
-                {/* Region markers */}
                 {regions.map((region) => (
                   <g key={region.id}>
                     <circle
@@ -93,7 +94,6 @@ export default function Page() {
                 ))}
               </svg>
 
-              {/* Info overlay */}
               <AnimatePresence>
                 {activeRegion && (
                   <motion.div
@@ -120,7 +120,6 @@ export default function Page() {
               </AnimatePresence>
             </div>
 
-            {/* Region buttons for mobile */}
             <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3">
               {regions.map((region) => (
                 <motion.button
@@ -140,8 +139,29 @@ export default function Page() {
             </div>
           </div>
         </div>
+
+        {/* Featured Coffee Regions Cards */}
+        <div className="mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4" style={{ lineHeight: 1.1 }}>
+              Featured Coffee Regions
+            </h2>
+            <p className="font-body text-lg text-muted-foreground max-w-lg mx-auto">
+              Explore the birthplace of coffee through its legendary growing regions.
+            </p>
+          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {coffeeRegions.map((region, i) => (
+              <CoffeeRegionCard key={region.name} {...region} delay={i * 0.1} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
-};
-
+}
