@@ -53,7 +53,12 @@ const CandidateCard = ({ name, image, handle, statement, voteCount, delay = 0, o
 
       <div className="flex flex-col items-center text-center">
         {/* Avatar */}
-        <div className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mb-4 gold-ring overflow-hidden">
+        <a 
+          href={`https://www.tiktok.com/${handle.startsWith("@") ? handle : `@${handle}`}`} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mb-4 gold-ring overflow-hidden hover:scale-105 transition-transform cursor-pointer"
+        >
           <img 
             src={image || `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=random`} 
             alt={name} 
@@ -62,10 +67,17 @@ const CandidateCard = ({ name, image, handle, statement, voteCount, delay = 0, o
               e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=random`;
             }}
           />
-        </div>
+        </a>
 
         {/* Handle */}
-        <span className="text-sm font-body text-accent font-medium mb-1">{handle}</span>
+        <a 
+          href={`https://www.tiktok.com/${handle.startsWith("@") ? handle : `@${handle}`}`} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-sm font-body text-accent font-medium mb-1 hover:underline cursor-pointer"
+        >
+          {handle}
+        </a>
 
         {/* Name */}
         <h3 className="font-display font-bold text-lg mb-3 text-foreground">{name}</h3>
