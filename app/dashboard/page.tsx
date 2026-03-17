@@ -54,9 +54,9 @@ export default function Page() {
               transition={{ type: "spring", delay: 0.2 }}
               className="w-24 h-24 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4 gold-ring relative overflow-hidden"
             >
-              {member.badgeEmoji ? (
-                <span className="text-5xl">{member.badgeEmoji}</span>
-              ) : (
+              {/* {member.badgeEmoji ? ( */}
+                {/* // <span className="text-5xl">{member.badgeEmoji}</span> */}
+              {/* // ) : ( */}
                 <Image 
                   src="/ethiopian-coffee-cup.png" 
                   width={100} 
@@ -64,7 +64,7 @@ export default function Page() {
                   alt="Badge" 
                   className="w-full h-full object-cover" 
                 />
-              )}
+              {/* )} */}
             </motion.div>
             <h2 className="font-display text-sm uppercase tracking-widest text-muted-foreground mb-1">Your Coffee Badge</h2>
             <h1 className="font-display flex items-center justify-center gap-2 text-2xl md:text-3xl font-bold text-foreground mb-1" style={{ lineHeight: 1.1 }}>
