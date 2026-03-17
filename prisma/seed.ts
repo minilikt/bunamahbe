@@ -331,6 +331,15 @@ const candidates = [
     voteCount: 0
   },
   {
+    name: "ሄርሞን አዳማ",
+    username: "@hermon545",
+    role: "Candidate",
+    image: "https://ik.imagekit.io/hbgj1ddz8/can36.png",
+    bio: "Active participant in the coffee movement, contributing through engaging content and cultural expression.",
+    tiktokVideoId: "7618066480860597524",
+    voteCount: 0
+  },
+  {
     name: "Abuni NM",
     username: "@abuni_nm",
     role: "Candidate",
@@ -388,7 +397,7 @@ const candidates = [
 
 async function main() {
   console.log(`Start seeding ...`);
-  
+
   // Clear existing data to avoid inconsistency
   await prisma.vote.deleteMany();
   await prisma.candidate.deleteMany();

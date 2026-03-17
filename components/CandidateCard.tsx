@@ -1,13 +1,13 @@
 "use client"
 import { motion } from "framer-motion";
-import { User, Vote, Watch } from "lucide-react";
+import { User, Vote /*, Watch */ } from "lucide-react";
 import { useState } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
+// import {
+//   Dialog,
+//   DialogContent,
+//   DialogHeader,
+//   DialogTitle,
+// } from "@/components/ui/dialog";
 
 interface CandidateCardProps {
   id: string;
@@ -24,7 +24,7 @@ interface CandidateCardProps {
 
 const CandidateCard = ({ id, name, image, handle, statement, voteCount, tiktokVideoId, delay = 0, onVote, isCurrentVote }: CandidateCardProps) => {
   const [showSteam, setShowSteam] = useState(false);
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  // const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleVote = () => {
     if (isCurrentVote) return;
@@ -70,7 +70,7 @@ const CandidateCard = ({ id, name, image, handle, statement, voteCount, tiktokVi
       <div className="flex flex-col items-center text-center">
         {/* Avatar */}
         <div 
-          onClick={() => tiktokVideoId && setIsPopupOpen(true)}
+          // onClick={() => tiktokVideoId && setIsPopupOpen(true)}
           className={`w-20 h-20 rounded-full flex items-center justify-center mb-4 overflow-hidden hover:scale-105 transition-transform cursor-pointer relative ${
             isCurrentVote ? "ring-2 ring-accent ring-offset-2 ring-offset-background" : "gold-ring"
           }`}
@@ -83,11 +83,11 @@ const CandidateCard = ({ id, name, image, handle, statement, voteCount, tiktokVi
               e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=random`;
             }}
           />
-          {tiktokVideoId && (
+          {/* {tiktokVideoId && (
             <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
               <Watch className="w-8 h-8 text-white" />
             </div>
-          )}
+          )} */}
         </div>
 
         {/* Handle */}
@@ -104,9 +104,9 @@ const CandidateCard = ({ id, name, image, handle, statement, voteCount, tiktokVi
         <h3 className="font-display font-bold text-lg mb-3 text-foreground">{name}</h3>
 
         {/* Statement */}
-        <p className="font-body text-sm text-muted-foreground italic leading-relaxed mb-4 min-h-[3.5rem]">
+        {/* <p className="font-body text-sm text-muted-foreground italic leading-relaxed mb-4 min-h-[3.5rem]">
           "{statement}"
-        </p>
+        </p> */}
 
         {/* Vote count */}
         <div className="text-xs font-body text-muted-foreground mb-4">
@@ -130,7 +130,7 @@ const CandidateCard = ({ id, name, image, handle, statement, voteCount, tiktokVi
         </motion.button>
       </div>
 
-      <Dialog open={isPopupOpen} onOpenChange={setIsPopupOpen}>
+      {/* <Dialog open={isPopupOpen} onOpenChange={setIsPopupOpen}>
       <DialogContent className="sm:max-w-[425px] p-0 bg-black border-none overflow-hidden h-[80vh] sm:h-auto">
           <DialogHeader className="hidden">
             <DialogTitle>{name}'s TikTok</DialogTitle>
@@ -146,7 +146,7 @@ const CandidateCard = ({ id, name, image, handle, statement, voteCount, tiktokVi
             </div>
           )}
         </DialogContent>
-      </Dialog>
+      </Dialog> */}
     </motion.div>
   );
 };
