@@ -9,6 +9,8 @@ import { Button } from "@/components/ui/button";
 import { authClient } from "@/lib/auth-client";
 import { toast } from "sonner";
 import { redirect } from "next/navigation";
+import SponsorCard from "@/components/SponsorCard";
+import SponsorCTA from "@/components/SponsorCTA";
 
 export default function Election() {
   const [candidates, setCandidates] = useState<any[]>([]);
@@ -192,6 +194,8 @@ export default function Election() {
                 onVote={() => handleVote(candidate.id)}
               />
             ))}
+            {/* Sponsor Spot */}
+            <SponsorCard delay={displayCandidates.length * 0.05} />
           </div>
           {!showAll && hiddenCount > 0 && (
             <div className="text-center mt-10">
@@ -249,6 +253,9 @@ export default function Election() {
           </div>
         </div>
       </section>
+
+      {/* Sponsorship CTA */}
+      <SponsorCTA />
 
       {/* Sponsor & Countdown */}
       {/* <section className="py-16 bg-primary text-primary-foreground">

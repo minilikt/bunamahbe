@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: "Content-Security-Policy",
-            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https://ui-avatars.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com; frame-src 'self' https://www.youtube.com https://vimeo.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;",
+            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https://ui-avatars.com https://ik.imagekit.io https://lh3.googleusercontent.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com; frame-src 'self' https://www.youtube.com https://vimeo.com https://www.tiktok.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;",
           },
           {
             key: "X-Content-Type-Options",
