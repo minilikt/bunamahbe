@@ -162,7 +162,30 @@ export default function Page() {
         </div>
       </div>
         {/* Featured Coffee Regions Cards */}
-        <div className="mb-12">
+         <section className="py-24 ethiopian-pattern">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="text-center mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4" style={{ lineHeight: 1.1 }}>
+                Featured Coffee Regions
+              </h2>
+              <p className="font-body text-lg text-muted-foreground max-w-lg mx-auto">
+                Explore the birthplace of coffee through its legendary growing regions.
+              </p>
+            </motion.div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {coffeeRegions.map((region, i) => (
+              <CoffeeRegionCard  key={region.name} {...region} delay={i * 0.1} />
+            ))}
+          </div>
+        </div>
+      </section>
+        {/* <div className="mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -186,7 +209,7 @@ export default function Page() {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

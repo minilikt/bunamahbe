@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Timer, Award, Watch } from "lucide-react";
 import CandidateCard from "@/components/CandidateCard";
-import { castVote, getCandidates } from "@/app/actions/election";
+import { castVote, getCandidates, getUserVote } from "@/app/actions/election";
 
 import { authClient } from "@/lib/auth-client";
 import { toast } from "sonner";
@@ -12,6 +12,7 @@ import { redirect } from "next/navigation";
 export default function Election() {
   const [candidates, setCandidates] = useState<any[]>([]);
   const [votedFor, setVotedFor] = useState<string | null>(null);
+  const [isCasting, setIsCasting] = useState(false);
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [showAll, setShowAll] = useState(false);
   const { data: session } = authClient.useSession();
@@ -21,13 +22,17 @@ export default function Election() {
   const hiddenCount = candidates.length - INITIAL_COUNT;
 
   useEffect(() => {
-    // Fetch real candidates
-    const loadCandidates = async () => {
-      const data = await getCandidates();
-      setCandidates(data);
+    // Fetch real candidates and user's vote
+    const loadData = async () => {
+      const [candidatesData, userVote] = await Promise.all([
+        getCandidates(),
+        getUserVote()
+      ]);
+      setCandidates(candidatesData);
+      setVotedFor(userVote);
     };
-    loadCandidates();
-  }, []);
+    loadData();
+  }, [session]);
 
   // Countdown timer
   useEffect(() => {
@@ -59,13 +64,21 @@ export default function Election() {
     if (!session) {
       toast("Only registered members can vote! redirecting you now...");
       redirect("/join");
+      return;
     }
-    if (votedFor) return;
     
+    if (id === votedFor) {
+      toast("You've already cast your vote for this candidate!");
+      return;
+    }
+
+    setIsCasting(true);
     const result = await castVote(id);
+    setIsCasting(false);
     
     if (result.success) {
       setVotedFor(id);
+      toast(votedFor ? "Your vote has been updated!" : "Your vote has been cast!");
       // Refresh candidates list to show updated score
       const updated = await getCandidates();
       setCandidates(updated);
@@ -113,6 +126,7 @@ export default function Election() {
             {visibleCandidates.map((candidate, i) => (
               <CandidateCard
                 key={candidate.id}
+                id={candidate.id}
                 name={candidate.name}
                 image={candidate.image}
                 handle={candidate.username || "anonymous"}
@@ -120,7 +134,7 @@ export default function Election() {
                 voteCount={candidate.voteCount}
                 tiktokVideoId={candidate.tiktokVideoId}
                 delay={i * 0.05}
-                hasVoted={votedFor !== null}
+                isCurrentVote={votedFor === candidate.id}
                 onVote={() => handleVote(candidate.id)}
               />
             ))}

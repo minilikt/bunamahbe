@@ -5,18 +5,20 @@ import { Award, Vote, Coffee, MessageSquare, ArrowRight, MapPin, HelpCircle, Log
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
+import Image from "next/image";
 
 export default function Page() {
   const router = useRouter();
   const { data: session, isPending: isLoading } = authClient.useSession();
 
-  useEffect(() => {
-    if (!isLoading && !session) {
-      router.push("/join");
-    } else if (!isLoading && session && (!(session.user as any).city || !(session.user as any).favoriteType)) {
-      router.push("/onboarding");
-    }
-  }, [session, isLoading, router]);
+  // Middleware now handles these redirections
+  // useEffect(() => {
+  //   if (!isLoading && !session) {
+  //     router.push("/join");
+  //   } else if (!isLoading && session && (!(session.user as any).city || !(session.user as any).favoriteType)) {
+  //     router.push("/onboarding");
+  //   }
+  // }, [session, isLoading, router]);
 
 
   if (isLoading || !session) {
@@ -50,13 +52,23 @@ export default function Page() {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ type: "spring", delay: 0.2 }}
-              className="w-24 h-24 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4 gold-ring"
+              className="w-24 h-24 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4 gold-ring relative overflow-hidden"
             >
-              <span className="text-4xl">{member.badgeEmoji}</span>
+              {member.badgeEmoji ? (
+                <span className="text-5xl">{member.badgeEmoji}</span>
+              ) : (
+                <Image 
+                  src="/ethiopian-coffee-cup.png" 
+                  width={100} 
+                  height={100} 
+                  alt="Badge" 
+                  className="w-full h-full object-cover" 
+                />
+              )}
             </motion.div>
             <h2 className="font-display text-sm uppercase tracking-widest text-muted-foreground mb-1">Your Coffee Badge</h2>
-            <h1 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-1" style={{ lineHeight: 1.1 }}>
-              {member.badgeEmoji} {member.badgeTitle}
+            <h1 className="font-display flex items-center justify-center gap-2 text-2xl md:text-3xl font-bold text-foreground mb-1" style={{ lineHeight: 1.1 }}>
+              {member.badgeTitle}
             </h1>
             <p className="font-body text-sm text-muted-foreground">{member.name}'s Progress</p>
           </motion.div>
@@ -187,7 +199,7 @@ export default function Page() {
                 await authClient.signOut({
                   fetchOptions: {
                     onSuccess: () => {
-                      router.push("/");
+                      window.location.href = "/join";
                     },
                   },
                 });

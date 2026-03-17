@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dialog";
 
 interface CandidateCardProps {
+  id: string;
   name: string;
   handle: string;
   image: string;
@@ -18,14 +19,15 @@ interface CandidateCardProps {
   tiktokVideoId?: string;
   delay?: number;
   onVote?: () => void;
-  hasVoted?: boolean;
+  isCurrentVote?: boolean;
 }
 
-const CandidateCard = ({ name, image, handle, statement, voteCount, tiktokVideoId, delay = 0, onVote, hasVoted }: CandidateCardProps) => {
+const CandidateCard = ({ id, name, image, handle, statement, voteCount, tiktokVideoId, delay = 0, onVote, isCurrentVote }: CandidateCardProps) => {
   const [showSteam, setShowSteam] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleVote = () => {
+    if (isCurrentVote) return;
     setShowSteam(true);
     onVote?.();
     setTimeout(() => setShowSteam(false), 2000);
@@ -37,10 +39,16 @@ const CandidateCard = ({ name, image, handle, statement, voteCount, tiktokVideoI
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
-      className="group relative p-6 bg-card/50 backdrop-blur-sm border border-border rounded-[2rem] hover:border-accent/50 transition-colors"
+      className={`group relative p-6 backdrop-blur-sm border rounded-[2rem] transition-all duration-300 ${
+        isCurrentVote 
+          ? "bg-accent/10 border-accent shadow-[0_0_20px_rgba(var(--accent-rgb),0.1)]" 
+          : "bg-card/50 border-border hover:border-accent/50"
+      }`}
     >
-      <div className="absolute -top-3 -right-3 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-display font-bold rotate-6">
-        Candidate
+      <div className={`absolute -top-3 -right-3 px-3 py-1 rounded-full text-xs font-display font-bold rotate-6 transition-colors ${
+        isCurrentVote ? "bg-accent text-accent-foreground" : "bg-primary text-primary-foreground"
+      }`}>
+        {isCurrentVote ? "Your Choice" : "Candidate"}
       </div>
 
       {/* Steam particles */}
@@ -63,7 +71,9 @@ const CandidateCard = ({ name, image, handle, statement, voteCount, tiktokVideoI
         {/* Avatar */}
         <div 
           onClick={() => tiktokVideoId && setIsPopupOpen(true)}
-          className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mb-4 gold-ring overflow-hidden hover:scale-105 transition-transform cursor-pointer relative"
+          className={`w-20 h-20 rounded-full flex items-center justify-center mb-4 overflow-hidden hover:scale-105 transition-transform cursor-pointer relative ${
+            isCurrentVote ? "ring-2 ring-accent ring-offset-2 ring-offset-background" : "gold-ring"
+          }`}
         >
           <img 
             src={image || `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=random`} 
@@ -105,23 +115,23 @@ const CandidateCard = ({ name, image, handle, statement, voteCount, tiktokVideoI
 
         {/* Vote button */}
         <motion.button
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.98 }}
+          whileHover={!isCurrentVote ? { y: -2 } : {}}
+          whileTap={!isCurrentVote ? { scale: 0.98 } : {}}
           onClick={handleVote}
-          disabled={hasVoted}
+          disabled={isCurrentVote}
           className={`w-full py-3 rounded-full font-display font-bold text-sm transition-all flex items-center justify-center gap-2 ${
-            hasVoted
-              ? "bg-secondary text-muted-foreground cursor-not-allowed"
+            isCurrentVote
+              ? "bg-accent text-accent-foreground cursor-default"
               : "btn-clay"
           }`}
         >
           <Vote className="w-4 h-4" />
-          {hasVoted ? "Vote Cast ☕" : "Brew Your Vote"}
+          {isCurrentVote ? "Voted ☕" : "Brew Your Vote"}
         </motion.button>
       </div>
 
       <Dialog open={isPopupOpen} onOpenChange={setIsPopupOpen}>
-        <DialogContent className="sm:max-w-[425px] p-0 bg-black border-none overflow-hidden h-[80vh] sm:h-auto">
+      <DialogContent className="sm:max-w-[425px] p-0 bg-black border-none overflow-hidden h-[80vh] sm:h-auto">
           <DialogHeader className="hidden">
             <DialogTitle>{name}'s TikTok</DialogTitle>
           </DialogHeader>

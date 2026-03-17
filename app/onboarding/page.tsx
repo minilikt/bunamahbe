@@ -39,14 +39,15 @@ export default function Onboarding() {
   const [favoriteType, setFavoriteType] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  useEffect(() => {
-    if (!isPending && !session) {
-      router.push("/login");
-    } else if (!isPending && (session?.user as any)?.city) {
-      // Already completed onboarding
-      router.push("/dashboard");
-    }
-  }, [session, isPending, router]);
+  // Middleware now handles these redirections
+  // useEffect(() => {
+  //   if (!isPending && !session) {
+  //     router.push("/login");
+  //   } else if (!isPending && (session?.user as any)?.city) {
+  //     // Already completed onboarding
+  //     router.push("/dashboard");
+  //   }
+  // }, [session, isPending, router]);
 
   const badge = getBadge();
   const canProceedStep1 = city !== "Other" ? city : customCity.trim();
@@ -67,9 +68,9 @@ export default function Onboarding() {
       if (!result.success) {
         toast(result.error || "Failed to update profile. Please try again.");
       } else {
-        // Refresh session to ensure client-side state is updated
-        await authClient.getSession();
-        router.push("/dashboard");
+        // Use a hard redirect to ensure middleware picks up the change
+        // better-auth session update can sometimes be cached on client
+        window.location.href = "/dashboard";
       }
     } catch (err) {
       console.error("Update profile error:", err);
