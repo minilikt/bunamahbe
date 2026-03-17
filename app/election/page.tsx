@@ -1,10 +1,11 @@
 "use client"
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Timer, Award, Watch } from "lucide-react";
+import { Timer, Award, Watch, Search, Filter } from "lucide-react";
 import CandidateCard from "@/components/CandidateCard";
 import { castVote, getCandidates, getUserVote } from "@/app/actions/election";
-
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
 import { authClient } from "@/lib/auth-client";
 import { toast } from "sonner";
 import { redirect } from "next/navigation";
@@ -15,11 +16,24 @@ export default function Election() {
   const [isCasting, setIsCasting] = useState(false);
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [showAll, setShowAll] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [sortBy, setSortBy] = useState<"alpha" | "votes">("alpha");
   const { data: session } = authClient.useSession();
 
   const INITIAL_COUNT = 8;
-  const visibleCandidates = showAll ? candidates : candidates.slice(0, INITIAL_COUNT);
-  const hiddenCount = candidates.length - INITIAL_COUNT;
+
+  const filteredCandidates = candidates.filter(c =>
+    c.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    (c.username && c.username.toLowerCase().includes(searchQuery.toLowerCase())) ||
+    (c.bio && c.bio.toLowerCase().includes(searchQuery.toLowerCase()))
+  );
+
+  const displayCandidates = sortBy === "alpha"
+    ? [...filteredCandidates].sort((a, b) => a.name.localeCompare(b.name))
+    : [...filteredCandidates].sort((a, b) => b.voteCount - a.voteCount);
+
+  const visibleCandidates = showAll ? displayCandidates : displayCandidates.slice(0, INITIAL_COUNT);
+  const hiddenCount = Math.max(0, displayCandidates.length - INITIAL_COUNT);
 
   useEffect(() => {
     // Fetch real candidates and user's vote
@@ -66,7 +80,7 @@ export default function Election() {
       redirect("/join");
       return;
     }
-    
+
     if (id === votedFor) {
       toast("You've already cast your vote for this candidate!");
       return;
@@ -75,7 +89,7 @@ export default function Election() {
     setIsCasting(true);
     const result = await castVote(id);
     setIsCasting(false);
-    
+
     if (result.success) {
       setVotedFor(id);
       toast(votedFor ? "Your vote has been updated!" : "Your vote has been cast!");
@@ -88,7 +102,9 @@ export default function Election() {
   };
 
   const totalVotes = candidates.reduce((sum, c) => sum + c.voteCount, 0);
-  const sortedForChart = [...candidates].sort((a, b) => b.voteCount - a.voteCount).slice(0, 8);
+  const sortedForChart = sortBy === "alpha"
+    ? [...candidates].sort((a, b) => a.name.localeCompare(b.name)).slice(0, 8)
+    : [...candidates].sort((a, b) => b.voteCount - a.voteCount).slice(0, 8);
   const maxVotes = sortedForChart[0]?.voteCount || 1;
 
   return (
@@ -122,6 +138,44 @@ export default function Election() {
           <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8 text-center" style={{ lineHeight: 1.1 }}>
             Presidential Candidates
           </h2>
+
+          {/* Search & Filter */}
+          <div className="max-w-xl mx-auto mb-10 flex flex-col sm:flex-row gap-4">
+            <div className="relative flex-1">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+              <input
+                type="text"
+                placeholder="Search candidates by name, handle, or bio..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-10 pr-4 py-3 rounded-xl border border-input bg-background/50 focus:bg-background focus:ring-2 focus:ring-primary/20 transition-all font-body text-sm outline-none"
+              />
+            </div>
+            <div className="relative min-w-[160px] ">
+
+              <DropdownMenu >
+                <DropdownMenuTrigger asChild>
+                  <Button variant="outline" className="w-full justify-between">
+                    {sortBy === "alpha" ? "Alphabetical" : "Most Votes"}
+                    <svg
+                      className="ml-2 h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-full">
+                  <DropdownMenuItem onClick={() => setSortBy("alpha")}>Alphabetical</DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => setSortBy("votes")}>Most Votes</DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {visibleCandidates.map((candidate, i) => (
               <CandidateCard
