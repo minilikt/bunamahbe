@@ -187,6 +187,15 @@ const candidates = [
     voteCount: 0
   },
   {
+    name: "ሰላም ከተማ",
+    username: "@selinacity",
+    role: "Candidate",
+    image: "https://ik.imagekit.io/hbgj1ddz8/can37.jpeg",
+    bio: "Emerging voice in the coffee movement, sharing cultural energy and community-driven expression through engaging content.",
+    tiktokVideoId: "7618066480860597524",
+    voteCount: 0
+  },
+  {
     name: "Maria",
     username: "@marina.maria1",
     role: "Candidate",

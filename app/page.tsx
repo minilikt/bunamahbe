@@ -280,7 +280,7 @@ export default function Page() {
             </motion.div>
 
             {/* Developer Card */}
-            <Link href="https://pulse-lab-eight.vercel.app/">
+            <Link href="https://pulslabs.tech">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
