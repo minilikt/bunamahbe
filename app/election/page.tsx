@@ -7,6 +7,7 @@ import { castVote, getCandidates } from "@/app/actions/election";
 
 import { authClient } from "@/lib/auth-client";
 import { toast } from "sonner";
+import { redirect } from "next/navigation";
 
 export default function Election() {
   const [candidates, setCandidates] = useState<any[]>([]);
@@ -56,8 +57,8 @@ export default function Election() {
 
   const handleVote = async (id: string) => {
     if (!session) {
-      toast("Only registered members can vote! Please go to the 'Join Association' page first.");
-      return;
+      toast("Only registered members can vote! redirecting you now...");
+      redirect("/join");
     }
     if (votedFor) return;
     
@@ -117,6 +118,7 @@ export default function Election() {
                 handle={candidate.username || "anonymous"}
                 statement={candidate.bio}
                 voteCount={candidate.voteCount}
+                tiktokVideoId={candidate.tiktokVideoId}
                 delay={i * 0.05}
                 hasVoted={votedFor !== null}
                 onVote={() => handleVote(candidate.id)}

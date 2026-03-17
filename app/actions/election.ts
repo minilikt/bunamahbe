@@ -56,7 +56,7 @@ export async function castVote(candidateId: string) {
 export async function getCandidates() {
   return await prisma.candidate.findMany({
     orderBy: {
-      voteCount: "desc",
+      name: "asc",
     },
   });
 }

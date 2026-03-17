@@ -210,6 +210,27 @@ export default function Page() {
       {/* Coffee Regions - Removed, now on /map page */}
 
 
+      {/* Ad Section - Image */}
+      <section className="py-12">
+        <div className="container mx-auto px-4 md:px-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto rounded-[2.5rem] overflow-hidden ceramic-surface p-2 gold-ring"
+          >
+            <div className="relative aspect-[23/9] w-full rounded-[2rem] overflow-hidden">
+              <Image 
+                src="/ads/chin.jpg" 
+                alt="Ad" 
+                fill 
+                className="object-cover"
+              />
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Sponsors & Contributors */}
       <section className="py-24 border-t border-border/10">
         <div className="container mx-auto px-4 md:px-8">
@@ -284,7 +305,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-
+      
       {/* Ad Section */}
       <section className="py-16">
         <div className="container mx-auto px-4 md:px-8">

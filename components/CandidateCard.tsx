@@ -1,7 +1,13 @@
 "use client"
 import { motion } from "framer-motion";
-import { User, Vote } from "lucide-react";
+import { User, Vote, Watch } from "lucide-react";
 import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 interface CandidateCardProps {
   name: string;
@@ -9,13 +15,15 @@ interface CandidateCardProps {
   image: string;
   statement: string;
   voteCount: number;
+  tiktokVideoId?: string;
   delay?: number;
   onVote?: () => void;
   hasVoted?: boolean;
 }
 
-const CandidateCard = ({ name, image, handle, statement, voteCount, delay = 0, onVote, hasVoted }: CandidateCardProps) => {
+const CandidateCard = ({ name, image, handle, statement, voteCount, tiktokVideoId, delay = 0, onVote, hasVoted }: CandidateCardProps) => {
   const [showSteam, setShowSteam] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleVote = () => {
     setShowSteam(true);
@@ -53,11 +61,9 @@ const CandidateCard = ({ name, image, handle, statement, voteCount, delay = 0, o
 
       <div className="flex flex-col items-center text-center">
         {/* Avatar */}
-        <a 
-          href={`https://www.tiktok.com/${handle.startsWith("@") ? handle : `@${handle}`}`} 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mb-4 gold-ring overflow-hidden hover:scale-105 transition-transform cursor-pointer"
+        <div 
+          onClick={() => tiktokVideoId && setIsPopupOpen(true)}
+          className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mb-4 gold-ring overflow-hidden hover:scale-105 transition-transform cursor-pointer relative"
         >
           <img 
             src={image || `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=random`} 
@@ -67,7 +73,12 @@ const CandidateCard = ({ name, image, handle, statement, voteCount, delay = 0, o
               e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=random`;
             }}
           />
-        </a>
+          {tiktokVideoId && (
+            <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <Watch className="w-8 h-8 text-white" />
+            </div>
+          )}
+        </div>
 
         {/* Handle */}
         <a 
@@ -108,6 +119,24 @@ const CandidateCard = ({ name, image, handle, statement, voteCount, delay = 0, o
           {hasVoted ? "Vote Cast ☕" : "Brew Your Vote"}
         </motion.button>
       </div>
+
+      <Dialog open={isPopupOpen} onOpenChange={setIsPopupOpen}>
+        <DialogContent className="sm:max-w-[425px] p-0 bg-black border-none overflow-hidden h-[80vh] sm:h-auto">
+          <DialogHeader className="hidden">
+            <DialogTitle>{name}'s TikTok</DialogTitle>
+          </DialogHeader>
+          {tiktokVideoId && (
+            <div className="w-full aspect-[9/16] max-h-[70vh] rounded-2xl overflow-hidden shadow-2xl relative bg-black">
+              <iframe
+                src={`https://www.tiktok.com/embed/${tiktokVideoId}`}
+                style={{ width: '100%', height: '100%', border: 'none' }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </motion.div>
   );
 };

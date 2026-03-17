@@ -85,9 +85,10 @@ model Candidate {
   username  String?
   role      String
   image     String
-  bio       String
-  voteCount Int    @default(0)
-  votes     Vote[]
+  bio           String
+  tiktokVideoId String?
+  voteCount     Int    @default(0)
+  votes         Vote[]
 
   @@map("candidate")
 }
