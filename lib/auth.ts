@@ -2,7 +2,7 @@ import { betterAuth } from "better-auth";
 import { prismaAdapter } from "better-auth/adapters/prisma";
 import prisma from "./prisma";
 import { emailOTP } from "better-auth/plugins";
-import { resend } from "./resend";
+import { sendEmail } from "./resend";
 
 const otpSubjects: Record<string, string> = {
   "sign-in": "Your Buna Sign-In Code",
@@ -44,8 +44,7 @@ export const auth = betterAuth({
     emailOTP({
       async sendVerificationOTP({ email, otp, type }) {
         const subject = otpSubjects[type] ?? "Your Buna Verification Code";
-        const { error } = await resend.emails.send({
-          from: "Buna <hello@bunamahber.com>",
+        const { error } = await sendEmail({
           to: email,
           subject,
           html: `

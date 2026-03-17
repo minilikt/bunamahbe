@@ -5,7 +5,9 @@ import { headers } from "next/headers";
 import { revalidatePath } from "next/cache";
 import prisma from "@/lib/prisma";
 
-export async function castVote(candidateId: string) {
+import { VoteSchema } from "@/lib/validations";
+
+export async function castVote(rawInput: unknown) {
   try {
     const session = await auth.api.getSession({
       headers: await headers(),
@@ -15,6 +17,12 @@ export async function castVote(candidateId: string) {
       return { success: false, error: "Only registered members can vote. Please join the association first!" };
     }
 
+    const validatedData = VoteSchema.safeParse(typeof rawInput === 'string' ? { candidateId: rawInput } : rawInput);
+    if (!validatedData.success) {
+      return { success: false, error: "Invalid candidate selection" };
+    }
+
+    const { candidateId } = validatedData.data;
     const userId = session.user.id;
 
     // Check if user already voted

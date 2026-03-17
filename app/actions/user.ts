@@ -5,6 +5,8 @@ import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import { revalidatePath } from "next/cache";
 
+import { OnboardingSchema } from "@/lib/validations";
+
 export async function getUserLocations() {
   try {
     const users = await prisma.user.groupBy({
@@ -29,14 +31,7 @@ export async function getUserLocations() {
   }
 }
 
-export async function completeOnboarding(data: {
-  city: string;
-  frequency: string;
-  favoriteType: string;
-  badgeEmoji: string;
-  badgeTitle: string;
-  badgeDescription: string;
-}) {
+export async function completeOnboarding(rawInput: unknown) {
   try {
     const session = await auth.api.getSession({
       headers: await headers(),
@@ -45,6 +40,17 @@ export async function completeOnboarding(data: {
     if (!session) {
       return { success: false, error: "Unauthorized" };
     }
+
+    const validatedData = OnboardingSchema.safeParse(rawInput);
+    if (!validatedData.success) {
+      return { 
+        success: false, 
+        error: "Invalid input", 
+        details: validatedData.error.flatten().fieldErrors 
+      };
+    }
+
+    const data = validatedData.data;
 
     await prisma.user.update({
       where: { id: session.user.id },
