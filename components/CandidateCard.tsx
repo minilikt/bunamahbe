@@ -103,11 +103,7 @@ const CandidateCard = ({ id, name, image, handle, statement, voteCount, tiktokVi
         {/* Name */}
         <h3 className="font-display font-bold text-lg mb-3 text-foreground">{name}</h3>
 
-        {/* Statement */}
-        <p className="font-body text-sm text-muted-foreground italic leading-relaxed mb-4 min-h-[3.5rem]">
-          "{statement}"
-        </p>
-
+    
         {/* Vote count */}
         <div className="text-xs font-body text-muted-foreground mb-4">
           <span className="font-display font-bold text-foreground text-lg tabular-nums">{voteCount}</span> votes
