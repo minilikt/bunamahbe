@@ -13,9 +13,9 @@ export default async function middleware(request: NextRequest) {
   
   // If no session cookie, user is not logged in
   if (!sessionCookie) {
-    // If trying to access protected routes, redirect to join
     if (request.nextUrl.pathname.startsWith("/dashboard") || 
-        request.nextUrl.pathname.startsWith("/onboarding")) {
+        request.nextUrl.pathname.startsWith("/onboarding") ||
+        request.nextUrl.pathname.startsWith("/admin")) {
       return NextResponse.redirect(new URL("/join", request.url));
     }
     return NextResponse.next();
@@ -39,7 +39,8 @@ export default async function middleware(request: NextRequest) {
   // If session is invalid despite cookie
   if (!session || !session.user) {
     if (request.nextUrl.pathname.startsWith("/dashboard") || 
-        request.nextUrl.pathname.startsWith("/onboarding")) {
+        request.nextUrl.pathname.startsWith("/onboarding") ||
+        request.nextUrl.pathname.startsWith("/admin")) {
       return NextResponse.redirect(new URL("/join", request.url));
     }
     return NextResponse.next();
@@ -62,6 +63,11 @@ export default async function middleware(request: NextRequest) {
   if (request.nextUrl.pathname.startsWith("/onboarding") && isOnboarded) {
     return NextResponse.redirect(new URL("/dashboard", request.url));
   }
+  
+  // 4. Admin route protection
+  if (request.nextUrl.pathname.startsWith("/admin") && user.role !== "ADMIN") {
+    return NextResponse.redirect(new URL("/dashboard", request.url));
+  }
 
   return NextResponse.next();
 }
@@ -70,6 +76,7 @@ export const config = {
   matcher: [
     "/dashboard/:path*",
     "/onboarding/:path*",
+    "/admin/:path*",
     "/login",
     "/join",
   ],

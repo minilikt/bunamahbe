@@ -72,6 +72,7 @@ export const auth = betterAuth({
       badgeEmoji: { type: "string" },
       badgeTitle: { type: "string" },
       badgeDescription: { type: "string" },
+      role: { type: "string" },
     },
   },
 });

@@ -24,6 +24,7 @@ model User {
   badgeTitle       String?   @default("Buna Beginner")
   badgeDescription String?   @default("Welcome to the Buna Association! Your coffee journey starts here.")
 
+  role             String    @default("USER")
   sessions Session[]
   accounts Account[]
   votes    Vote[]

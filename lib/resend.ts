@@ -2,12 +2,29 @@ import { Resend } from "resend";
 
 export const resend = new Resend(process.env.RESEND_API_KEY);
 
-const resendFallback = process.env.RESEND_API_KEY_FALLBACK 
-  ? new Resend(process.env.RESEND_API_KEY_FALLBACK) 
-  : null;
+interface ResendClient {
+  client: Resend;
+  domain: string;
+}
 
 const PRIMARY_DOMAIN = "bunamahber.com";
-const FALLBACK_DOMAIN = process.env.RESEND_DOMAIN_FALLBACK || "bunamahber.me";
+
+// Initialize fallback clients
+const fallbackClients: ResendClient[] = [];
+
+if (process.env.RESEND_API_KEY_FALLBACK) {
+  fallbackClients.push({
+    client: new Resend(process.env.RESEND_API_KEY_FALLBACK),
+    domain: process.env.RESEND_DOMAIN_FALLBACK || "bunamahber.me"
+  });
+}
+
+if (process.env.RESEND_API_KEY_FALLBACK_2) {
+  fallbackClients.push({
+    client: new Resend(process.env.RESEND_API_KEY_FALLBACK_2),
+    domain: process.env.RESEND_DOMAIN_FALLBACK_2 || "pulslabs.tech"
+  });
+}
 
 export interface SendEmailOptions {
   from?: string;
@@ -18,7 +35,7 @@ export interface SendEmailOptions {
 
 /**
  * Sends an email using the primary Resend client.
- * If it fails (e.g. out of credits), it attempts to send using the fallback client and domain.
+ * If it fails, it attempts to send using available fallback clients in order.
  */
 export async function sendEmail(options: SendEmailOptions) {
   // 1. Try Primary
@@ -29,29 +46,36 @@ export async function sendEmail(options: SendEmailOptions) {
       from,
     });
 
-    if (!error) {
-      return { data, error: null };
-    }
+    if (!error) return { data, error: null };
 
-    // If there's an error, log it and check if we should fallback
-    console.error("[RESEND] Primary email send failed:", error);
-    
-    // We fallback if there's no data (meaning it didn't even start) or if we have a fallback client
-    if (!resendFallback) {
-      return { data: null, error };
-    }
+    console.error(`[RESEND] Primary (${PRIMARY_DOMAIN}) failed:`, error);
   } catch (err) {
-    console.error("[RESEND] Primary email send threw exception:", err);
-    if (!resendFallback) throw err;
+    console.error(`[RESEND] Primary (${PRIMARY_DOMAIN}) exception:`, err);
   }
 
-  // 2. Try Fallback
-  console.log("[RESEND] Attempting fallback email send...");
-  const fallbackFrom = options.from?.replace(PRIMARY_DOMAIN, FALLBACK_DOMAIN) 
-    || `Buna <hello@${FALLBACK_DOMAIN}>`;
+  // 2. Try Fallbacks
+  for (const fallback of fallbackClients) {
+    try {
+      console.log(`[RESEND] Attempting fallback with domain: ${fallback.domain}`);
+      
+      const fallbackFrom = options.from?.replace(PRIMARY_DOMAIN, fallback.domain) 
+        || `Buna <hello@${fallback.domain}>`;
 
-  return await resendFallback!.emails.send({
-    ...options,
-    from: fallbackFrom,
-  });
+      const { data, error } = await fallback.client.emails.send({
+        ...options,
+        from: fallbackFrom,
+      });
+
+      if (!error) return { data, error: null };
+
+      console.error(`[RESEND] Fallback (${fallback.domain}) failed:`, error);
+    } catch (err) {
+      console.error(`[RESEND] Fallback (${fallback.domain}) exception:`, err);
+    }
+  }
+
+  return { 
+    data: null, 
+    error: { message: "All email providers failed", name: "all_providers_failed" } 
+  };
 }
