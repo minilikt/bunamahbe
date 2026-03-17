@@ -23,9 +23,9 @@ export async function getGlobalStats() {
   } catch (error) {
     console.error("Error fetching global stats:", error);
     return {
-      members: 12847, // Fallback to static numbers if there's an error
-      votes: 8932,
-      cities: 47
+      members: 2847,
+      votes: 100,
+      cities: 10
     };
   }
 }
