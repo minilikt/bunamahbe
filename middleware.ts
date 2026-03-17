@@ -2,6 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 import { getSessionCookie } from "better-auth/cookies";
 
 export default async function middleware(request: NextRequest) {
+  // Skip middleware logic for Next.js Server Actions (POST requests with Next-Action header).
+  // After OTP verification creates a session, calling a server action on /join would otherwise
+  // trigger a redirect (since the user is now "logged in"), causing "unexpected response" errors.
+  if (request.headers.get("Next-Action")) {
+    return NextResponse.next();
+  }
+
   const sessionCookie = getSessionCookie(request);
   
   // If no session cookie, user is not logged in
@@ -65,6 +72,5 @@ export const config = {
     "/onboarding/:path*",
     "/login",
     "/join",
-    "/",
   ],
 };
