@@ -165,7 +165,7 @@ const candidates = [
     role: "Candidate",
     image: "https://ik.imagekit.io/hbgj1ddz8/can1.png",
     bio: "I’ve lived coffee culture for years and represent true Ethiopian coffee lovers.",
-    tiktokVideoId: "7616448838877842709",
+    tiktokVideoId: "7616818238906780949",
     voteCount: 0
   },
   {
@@ -174,7 +174,7 @@ const candidates = [
     role: "Candidate",
     image: "https://ik.imagekit.io/hbgj1ddz8/can2.png",
     bio: "I will take Ethiopian coffee culture global and connect communities beyond borders.",
-    tiktokVideoId: "7617852115154636054",
+    tiktokVideoId: "7616418498134166814",
     voteCount: 0
   },
   {
@@ -183,7 +183,7 @@ const candidates = [
     role: "Candidate",
     image: "https://ik.imagekit.io/hbgj1ddz8/can3.png",
     bio: "I’ll prove who truly represents Ethiopian coffee culture through creativity and humor.",
-    tiktokVideoId: "7617906188755258645",
+    tiktokVideoId: "7615253489618521364",
     voteCount: 0
   },
   {
@@ -192,7 +192,7 @@ const candidates = [
     role: "Candidate",
     image: "https://ik.imagekit.io/hbgj1ddz8/can4.png",
     bio: "Women built coffee culture; I will celebrate and elevate their role everywhere.",
-    tiktokVideoId: "7617809341919366420",
+    tiktokVideoId: "7617502122015214868",
     voteCount: 0
   },
   {
@@ -201,7 +201,7 @@ const candidates = [
     role: "Candidate",
     image: "https://ik.imagekit.io/hbgj1ddz8/can5.png",
     bio: "I promise affordable coffee, celebration beans, and coffee wisdom even in marriage counseling.",
-    tiktokVideoId: "7616738240372198676",
+    tiktokVideoId: "7617760683026877714",
     voteCount: 0
   },
   {
@@ -210,7 +210,7 @@ const candidates = [
     role: "Candidate",
     image: "https://ik.imagekit.io/hbgj1ddz8/can6.png",
     bio: "Having tasted 190 Ethiopian coffees, I bring unmatched experience to leadership.",
-    tiktokVideoId: "7617064637938339079",
+    tiktokVideoId: "7617057382761565461",
     voteCount: 0
   },
   {
@@ -219,7 +219,7 @@ const candidates = [
     role: "Candidate",
     image: "https://ik.imagekit.io/hbgj1ddz8/can7.png",
     bio: "I represent the beauty and tradition of authentic Ethiopian coffee ceremony culture.",
-    tiktokVideoId: "7617779415790931220",
+    tiktokVideoId: "7617037998399474964",
     voteCount: 0
   },
   {
@@ -228,7 +228,7 @@ const candidates = [
     role: "Candidate",
     image: "https://ik.imagekit.io/hbgj1ddz8/can8.png",
     bio: "The community already chose me through shared daily passion for coffee.",
-    tiktokVideoId: "7617956014805241109",
+    tiktokVideoId: "7617897961195932949",
     voteCount: 0
   },
   {
@@ -246,7 +246,7 @@ const candidates = [
     role: "Candidate",
     image: "https://ik.imagekit.io/hbgj1ddz8/can10.png",
     bio: "As a certified cupper, I bring professional tasting knowledge to the community.",
-    tiktokVideoId: "7617809341919366420",
+    tiktokVideoId: "7617889216894078216",
     voteCount: 0
   },
   {
