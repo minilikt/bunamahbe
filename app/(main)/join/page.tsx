@@ -63,27 +63,23 @@ export default function JoinMembership() {
   const [customCity, setCustomCity] = useState("");
   const [frequency, setFrequency] = useState("");
   const [favoriteType, setFavoriteType] = useState("");
-  const [otp, setOtp] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const badge = getBadge();
 
   const canProceedStep1 = name.trim() && email.trim() && password.length >= 6 && (city !== "Other" ? city : customCity.trim());
   const canProceedStep2 = frequency && favoriteType;
-  const canProceedStep4 = otp.length === 6;
 
-  const handleSendOtp = async () => {
+  const handleJoin = async () => {
     setIsSubmitting(true);
     try {
-      // Step 1: Create the account with password first
-      // Better Auth will allow this if the user doesn't exist.
-      // If the user already exists (e.g. they are retrying OTP), we handle that separately.
+      // Step 1: Create the account with password AND sign in immediately
       const { error: signUpError } = await authClient.signUp.email({
         email,
         password,
         name,
         image: `https://api.dicebear.com/7.x/avataaars/svg?seed=${name}`,
-        // @ts-ignore - custom fields
+        // @ts-ignore
         city: city === "Other" ? customCity : city,
         // @ts-ignore
         frequency,
@@ -97,58 +93,37 @@ export default function JoinMembership() {
         badgeDescription: badge.description,
       });
 
-      if (signUpError && signUpError.status !== 422) {
-        toast(signUpError.message || "Failed to initiate sign-up. Please try again.");
-        setIsSubmitting(false);
+      if (signUpError) {
+        toast(signUpError.message || "Failed to create account. Please try again.");
         return;
       }
 
-      // Step 2: Send the OTP verification code
-      const { error: otpError } = await authClient.emailOtp.sendVerificationOtp({
+      // Step 2: Sign in immediately
+      const { error: signInError } = await authClient.signIn.email({
         email,
-        type: "sign-in", // type: "sign-in" works even if they just signed up
+        password,
+      });
+
+      if (signInError) {
+        toast("Account created, but failed to sign in automatically. Please sign in manually.");
+        router.push("/login");
+        return;
+      }
+
+      // Step 2: Ensure all data provided during join is saved and onboarding is marked complete
+      await completeOnboarding({
+        city: city === "Other" ? customCity : city,
+        frequency,
+        favoriteType,
+        badgeEmoji: badge.emoji,
+        badgeTitle: badge.title,
+        badgeDescription: badge.description,
       });
       
-      if (otpError) {
-        toast(otpError.message || "Failed to send code. Please try again.");
-      } else {
-        setStep(4);
-      }
+      toast("Welcome to Buna Mahber!");
+      window.location.href = "/dashboard";
     } catch (err) {
-      console.error("Send OTP error:", err);
-      toast("An unexpected error occurred.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const handleVerifyAndJoin = async () => {
-    setIsSubmitting(true);
-    try {
-      // Step 3: Verify the OTP and sign in
-      const { error: otpError } = await authClient.signIn.emailOtp({
-        email,
-        otp,
-      });
-
-      if (otpError) {
-        toast(otpError.message || "Invalid or expired code. Please try again.");
-      } else {
-        // Step 4: Ensure all data provided during join is saved and onboarding is marked complete
-        // This prevents the middleware from redirecting back to /onboarding
-        await completeOnboarding({
-          city: city === "Other" ? customCity : city,
-          frequency,
-          favoriteType,
-          badgeEmoji: badge.emoji,
-          badgeTitle: badge.title,
-          badgeDescription: badge.description,
-        });
-        
-        window.location.href = "/dashboard";
-      }
-    } catch (err) {
-      console.error("Sign up error:", err);
+      console.error("Join error:", err);
       toast("An unexpected error occurred.");
     } finally {
       setIsSubmitting(false);
@@ -161,7 +136,7 @@ export default function JoinMembership() {
         <div className="max-w-lg mx-auto">
           {/* Progress */}
           <div className="flex items-center justify-center gap-2 mb-10">
-            {[1, 2, 3, 4].map((s) => (
+            {[1, 2, 3].map((s) => (
               <motion.div
                 key={s}
                 animate={{
@@ -423,7 +398,7 @@ export default function JoinMembership() {
                     whileHover={{ y: -4 }}
                     whileTap={{ scale: 0.98 }}
                     disabled={isSubmitting}
-                    onClick={handleSendOtp}
+                    onClick={handleJoin}
                     className="btn-mahber text-base w-full inline-flex items-center justify-center gap-2"
                   >
                     {isSubmitting ? (
@@ -433,84 +408,15 @@ export default function JoinMembership() {
                           transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
                           className="w-4 h-4 border-2 border-primary-foreground border-t-transparent rounded-full"
                         />
-                        Sending Code...
+                        Joining...
                       </>
                     ) : (
-                      <>Send Verification Code <ArrowRight className="w-4 h-4" /></>
+                      <>Join the Association <ArrowRight className="w-4 h-4" /></>
                     )}
                   </motion.button>
                 </motion.div>
               )}
 
-              {/* Step 4: OTP Verification */}
-              {step === 4 && (
-                <motion.div
-                  key="step4"
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="ceramic-surface p-8 md:p-12 text-center"
-                >
-                  <div className="flex items-center gap-3 mb-6 justify-center">
-                    <div className="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center">
-                      <KeyRound className="w-6 h-6 text-accent" />
-                    </div>
-                  </div>
-
-                  <h2 className="font-display text-2xl font-bold text-foreground mb-4" style={{ lineHeight: 1.1 }}>
-                    Check your console
-                  </h2>
-                  <p className="font-body text-muted-foreground mb-8">
-                    We sent a 6-digit verification code to <strong>{email}</strong>
-                  </p>
-
-                  <div className="flex justify-center mb-8">
-                    <InputOTP maxLength={6} value={otp} onChange={setOtp} disabled={isSubmitting}>
-                      <InputOTPGroup>
-                        <InputOTPSlot index={0} />
-                        <InputOTPSlot index={1} />
-                        <InputOTPSlot index={2} />
-                        <InputOTPSlot index={3} />
-                        <InputOTPSlot index={4} />
-                        <InputOTPSlot index={5} />
-                      </InputOTPGroup>
-                    </InputOTP>
-                  </div>
-
-                  <div className="flex flex-col gap-4">
-                    <motion.button
-                      whileHover={{ y: -4 }}
-                      whileTap={{ scale: 0.98 }}
-                      disabled={isSubmitting || !canProceedStep4}
-                      onClick={handleVerifyAndJoin}
-                      className="btn-mahber text-base w-full inline-flex items-center justify-center gap-2"
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <motion.div
-                            animate={{ rotate: 360 }}
-                            transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                            className="w-4 h-4 border-2 border-primary-foreground border-t-transparent rounded-full"
-                          />
-                          Verifying...
-                        </>
-                      ) : (
-                        <>Verify & Complete Profile <ArrowRight className="w-4 h-4" /></>
-                      )}
-                    </motion.button>
-
-                    <p className='text-muted-foreground text-sm'>
-                      Didn&apos;t get the code?{' '}
-                      <button
-                        onClick={handleSendOtp}
-                        disabled={isSubmitting}
-                        className='text-accent hover:underline font-medium'
-                      >
-                        Resend code
-                      </button>
-                    </p>
-                  </div>
-                </motion.div>
-              )}
             </AnimatePresence>
           </motion.div>
         </div>
