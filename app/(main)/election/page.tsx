@@ -104,10 +104,8 @@ export default function Election() {
   };
 
   const totalVotes = candidates.reduce((sum, c) => sum + c.voteCount, 0);
-  const sortedForChart = sortBy === "alpha"
-    ? [...candidates].sort((a, b) => a.name.localeCompare(b.name)).slice(0, 8)
-    : [...candidates].sort((a, b) => b.voteCount - a.voteCount).slice(0, 8);
-  const maxVotes = sortedForChart[0]?.voteCount || 1;
+  const sortedForChart = [...candidates].sort((a, b) => b.voteCount - a.voteCount).slice(0, 8);
+  const maxVotes = Math.max(...candidates.map(c => c.voteCount), 1);
 
   return (
     <div className="min-h-screen pt-20">
@@ -222,33 +220,52 @@ export default function Election() {
             <p className="text-center font-body text-sm text-muted-foreground mb-8">
               {totalVotes.toLocaleString()} total votes cast
             </p>
-            <div className="space-y-4">
-              {sortedForChart.map((candidate, i) => (
-                <motion.div
-                  key={candidate.id}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.05 }}
-                  className="flex items-center gap-4"
-                >
-                  <span className="font-body text-sm text-muted-foreground w-28 md:w-36 truncate text-right">
-                    {candidate.name}
-                  </span>
-                  <div className="flex-1 h-8 bg-secondary rounded-full overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${(candidate.voteCount / maxVotes) * 100}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.8, delay: i * 0.05, type: "spring", bounce: 0.4 }}
-                      className={`h-full rounded-full ${i === 0 ? "bg-clay" : i === 1 ? "bg-accent" : "bg-primary/60"}`}
-                    />
-                  </div>
-                  <span className="font-display font-bold text-sm tabular-nums w-14 text-right">
-                    {candidate.voteCount}
-                  </span>
-                </motion.div>
-              ))}
+            <div className="space-y-6">
+              {sortedForChart.map((candidate, i) => {
+                const percentage = totalVotes > 0 ? (candidate.voteCount / totalVotes) * 100 : 0;
+                const isLeader = i === 0 && candidate.voteCount > 0;
+                const isRunnerUp = i === 1 && candidate.voteCount > 0;
+
+                return (
+                  <motion.div
+                    key={candidate.id}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.05 }}
+                    className="group"
+                  >
+                    <div className="flex items-center justify-between mb-2">
+                       <span className="font-display font-medium text-sm text-foreground flex items-center gap-2">
+                        <span className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] ${
+                          isLeader ? "bg-clay text-white" : isRunnerUp ? "bg-accent text-white" : "bg-muted text-muted-foreground"
+                        }`}>
+                          {i + 1}
+                        </span>
+                        {candidate.name}
+                      </span>
+                      <span className="font-display text-xs text-muted-foreground tabular-nums">
+                         {candidate.voteCount.toLocaleString()} votes ({percentage.toFixed(1)}%)
+                      </span>
+                    </div>
+                    <div className="relative h-3 bg-secondary/50 rounded-full overflow-hidden">
+                      <motion.div
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${(candidate.voteCount / maxVotes) * 100}%` }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1, delay: i * 0.1, type: "spring", stiffness: 50 }}
+                        className={`absolute inset-y-0 left-0 rounded-full transition-colors ${
+                          isLeader
+                            ? "bg-gradient-to-r from-clay to-clay/80 shadow-[0_0_12px_rgba(202,138,4,0.3)]"
+                            : isRunnerUp
+                              ? "bg-gradient-to-r from-accent to-accent/80"
+                              : "bg-primary/40"
+                        }`}
+                      />
+                    </div>
+                  </motion.div>
+                );
+              })}
             </div>
           </div>
         </div>

@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { UserEditDialog } from "@/components/admin/UserEditDialog";
 
 export default async function StaffManagement({
   searchParams,
@@ -118,6 +119,7 @@ export default async function StaffManagement({
                     </td>
                     <td className="p-4 text-right">
                       <div className="flex items-center justify-end gap-2">
+                        <UserEditDialog user={user} />
                         {user.role === "USER" && (
                           <form action={async () => { "use server"; await updateUserRole(user.id, "STAFF"); }}>
                             <Button size="sm" variant="outline" className="h-8 text-xs font-display border-border/40 hover:bg-muted/30">
@@ -138,9 +140,6 @@ export default async function StaffManagement({
                               </Button>
                             </form>
                           </div>
-                        )}
-                        {user.role === "ADMIN" && (
-                          <span className="text-xs text-muted-foreground font-medium px-2 py-1 bg-muted/20 rounded-md">Administrator</span>
                         )}
                       </div>
                     </td>

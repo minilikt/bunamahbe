@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { CandidateEditDialog } from "@/components/admin/CandidateEditDialog";
 
 export default async function CandidateManagement() {
   const candidates = await prisma.candidate.findMany({
@@ -113,9 +114,7 @@ export default async function CandidateManagement() {
                     </td>
                     <td className="p-4 text-right">
                       <div className="flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity">
-                        <Button variant="ghost" size="icon" className="h-8 w-8 hover:bg-muted/30">
-                          <Pencil className="h-4 w-4" />
-                        </Button>
+                        <CandidateEditDialog candidate={candidate} />
                         <form action={async () => { "use server"; await deleteCandidate(candidate.id); }}>
                           <Button 
                             type="submit"

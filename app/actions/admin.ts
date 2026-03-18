@@ -90,6 +90,27 @@ export async function updateUserRole(userId: string, role: string) {
   revalidatePath("/admin/staff");
 }
 
+export async function updateUser(userId: string, formData: FormData) {
+  await getAdminSession();
+
+  const name = formData.get("name") as string;
+  const email = formData.get("email") as string;
+  const image = formData.get("image") as string;
+  const role = formData.get("role") as string;
+
+  await prisma.user.update({
+    where: { id: userId },
+    data: {
+      name,
+      email,
+      image,
+      role,
+    },
+  });
+
+  revalidatePath("/admin/staff");
+}
+
 export async function getAnalytics() {
   await getAdminSession();
 
