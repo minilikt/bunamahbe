@@ -1,6 +1,7 @@
 "use client"
 import { motion } from "framer-motion";
 import { Plus, Megaphone } from "lucide-react";
+import Link from "next/link";
 
 interface SponsorCardProps {
   delay?: number;
@@ -27,15 +28,17 @@ const SponsorCard = ({ delay = 0 }: SponsorCardProps) => {
       <p className="font-body text-sm text-muted-foreground mb-6 px-4">
         Support the Buna Election and showcase your brand to the community.
       </p>
+      <Link href="https://t.me/Pulsejar">
+        <motion.button
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.98 }}
 
-      <motion.button
-        whileHover={{ y: -2 }}
-        whileTap={{ scale: 0.98 }}
-        className="w-full py-3 rounded-full font-display font-bold text-sm bg-accent text-accent-foreground flex items-center justify-center gap-2 shadow-lg"
-      >
-        <Megaphone className="w-4 h-4" />
-        Promote Now
-      </motion.button>
+          className="w-full py-3 rounded-full font-display font-bold text-sm bg-accent text-accent-foreground flex items-center justify-center gap-2 shadow-lg"
+        >
+          <Megaphone className="w-4 h-4" />
+          Promote Now
+        </motion.button>
+      </Link>
     </motion.div>
   );
 };

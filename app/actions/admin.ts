@@ -99,6 +99,7 @@ export async function getAnalytics() {
     select: {
       id: true,
       name: true,
+      image: true,
       voteCount: true,
     },
     orderBy: {
@@ -115,11 +116,13 @@ export async function getAnalytics() {
       user: {
         select: {
           name: true,
+          image: true,
         },
       },
       candidate: {
         select: {
           name: true,
+          image: true,
         },
       },
     },
