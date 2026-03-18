@@ -26,6 +26,13 @@ if (process.env.RESEND_API_KEY_FALLBACK_2) {
   });
 }
 
+if (process.env.RESEND_API_KEY_FALLBACK_3) {
+  fallbackClients.push({
+    client: new Resend(process.env.RESEND_API_KEY_FALLBACK_3),
+    domain: process.env.RESEND_DOMAIN_FALLBACK_3 || "habeshaprogeny.tech"
+  });
+}
+
 export interface SendEmailOptions {
   from?: string;
   to: string | string[];
