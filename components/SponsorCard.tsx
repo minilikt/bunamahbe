@@ -33,9 +33,9 @@ const SponsorCard = ({ delay = 0 }: SponsorCardProps) => {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.98 }}
 
-          className="w-full py-3 rounded-full font-display font-bold text-sm bg-accent text-accent-foreground flex items-center justify-center gap-2 shadow-lg"
+          className="w-full p-3 rounded-full font-display font-bold text-sm bg-accent text-accent-foreground flex items-center justify-center gap-2 shadow-lg"
         >
-          <Megaphone className="w-4 h-4" />
+          <Megaphone className="size-4 " />
           Promote Now
         </motion.button>
       </Link>

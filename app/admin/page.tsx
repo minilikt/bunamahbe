@@ -1,4 +1,5 @@
 import React from "react";
+export const dynamic = "force-dynamic";
 import { getAnalytics } from "../actions/admin";
 import { 
   Users, 
