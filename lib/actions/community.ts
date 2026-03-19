@@ -73,6 +73,11 @@ export async function createPost(content: string, tags: string[]) {
     throw new Error("Unauthorized");
   }
 
+  // Enforce onboarding
+  if (!(session.user as any).city) {
+    throw new Error("Please complete your onboarding to post!");
+  }
+
   const validatedData = PostSchema.safeParse({ content, tags });
   if (!validatedData.success) {
     await auditLog("FAILED_VALIDATION", session.user.id, { action: "createPost", errors: validatedData.error.flatten() });
@@ -105,6 +110,11 @@ export async function toggleLike(postId: string) {
   if (!session) {
     await auditLog("UNAUTHORIZED_ACCESS", "unknown", { endpoint: "community_action" });
     throw new Error("Unauthorized");
+  }
+
+  // Enforce onboarding
+  if (!(session.user as any).city) {
+    throw new Error("Please complete your onboarding to like posts!");
   }
 
   const userId = session.user.id;
@@ -151,6 +161,11 @@ export async function addComment(postId: string, content: string) {
   if (!session) {
     await auditLog("UNAUTHORIZED_ACCESS", "unknown", { endpoint: "community_action" });
     throw new Error("Unauthorized");
+  }
+
+  // Enforce onboarding
+  if (!(session.user as any).city) {
+    throw new Error("Please complete your onboarding to comment!");
   }
 
   const validatedData = CommentSchema.safeParse({ postId, content });

@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Mail, Lock, ArrowRight, Eye, EyeOff } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -14,6 +14,13 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { data: session, isPending } = authClient.useSession();
+
+  useEffect(() => {
+    if (!isPending && session) {
+      router.push("/dashboard");
+    }
+  }, [session, isPending, router]);
 
   const canSubmit = email.trim().length > 5 && email.includes("@") && password.length >= 6;
 

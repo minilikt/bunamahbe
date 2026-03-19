@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ArrowLeft, User, MapPin, Coffee, Sparkles, KeyRound } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -64,6 +64,13 @@ export default function JoinMembership() {
   const [frequency, setFrequency] = useState("");
   const [favoriteType, setFavoriteType] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { data: session, isPending } = authClient.useSession();
+
+  useEffect(() => {
+    if (!isPending && session) {
+      router.push("/dashboard");
+    }
+  }, [session, isPending, router]);
 
   const badge = getBadge();
 
