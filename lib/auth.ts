@@ -39,9 +39,7 @@ export const auth = betterAuth({
         before: async (user) => {
           return {
             data: {
-              name: user.name,
-              email: user.email,
-              emailVerified: user.emailVerified,
+              ...user,
               image: user.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(user.name)}&background=random`,
               role: "USER", // Default role for new signups
             },
