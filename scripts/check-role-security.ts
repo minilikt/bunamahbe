@@ -60,7 +60,7 @@ async function main() {
   const problems: string[] = [];
 
   const authSource = await fs.readFile(authPath, "utf8");
-  const hasRoleFieldLocked = /role\s*:\s*\{[^}]*type\s*:\s*"string"[^}]*input\s*:\s*false[^}]*\}/s.test(authSource);
+  const hasRoleFieldLocked = /role\s*:\s*\{[^}]*type\s*:\s*"string"[^}]*input\s*:\s*false[^}]*\}/.test(authSource);
   if (!hasRoleFieldLocked) {
     problems.push(
       `${rel(authPath)} must define role as non-client-writable (expected: role: { type: "string", input: false }).`,
