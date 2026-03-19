@@ -8,7 +8,8 @@
     "start": "next start",
     "postinstall": "prisma generate",
     "lint": "eslint",
-    "security:admin": "tsx scripts/check-admin-security.ts"
+    "security:admin": "tsx scripts/check-admin-security.ts",
+    "security:role": "tsx scripts/check-role-security.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
