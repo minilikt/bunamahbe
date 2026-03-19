@@ -14,6 +14,7 @@ async function getAdminSession() {
   });
 
   if (!session || session.user.role !== "ADMIN") {
+    await auditLog("UNAUTHORIZED_ADMIN_ACCESS", session?.user?.id || "unknown", { role: session?.user?.role });
     throw new Error("Unauthorized");
   }
 
@@ -33,6 +34,7 @@ export async function addCandidate(formData: FormData) {
   });
 
   if (!validatedData.success) {
+    await auditLog("FAILED_VALIDATION", session.user.id, { action: "addCandidate", errors: validatedData.error.flatten() });
     throw new Error("Invalid input data");
   }
 
@@ -59,6 +61,7 @@ export async function updateCandidate(id: string, formData: FormData) {
   });
 
   if (!validatedData.success) {
+    await auditLog("FAILED_VALIDATION", session.user.id, { action: "updateCandidate", errors: validatedData.error.flatten() });
     throw new Error("Invalid input data");
   }
 
@@ -110,6 +113,7 @@ export async function updateUser(userId: string, formData: FormData) {
   });
 
   if (!validatedData.success) {
+    await auditLog("FAILED_VALIDATION", session.user.id, { action: "updateUser", errors: validatedData.error.flatten() });
     throw new Error("Invalid input data");
   }
 

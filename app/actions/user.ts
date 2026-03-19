@@ -39,11 +39,13 @@ export async function completeOnboarding(rawInput: unknown) {
     });
 
     if (!session) {
+      await auditLog("UNAUTHORIZED_ACCESS", "unknown", { action: "completeOnboarding" });
       return { success: false, error: "Unauthorized" };
     }
 
     const validatedData = OnboardingSchema.safeParse(rawInput);
     if (!validatedData.success) {
+      await auditLog("FAILED_VALIDATION", session.user.id, { action: "completeOnboarding", errors: validatedData.error.flatten() });
       return { 
         success: false, 
         error: "Invalid input", 

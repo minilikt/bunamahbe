@@ -2,7 +2,7 @@
 
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
-import { revalidatePath } from "next/cache";
+import { revalidatePath, unstable_cache } from "next/cache";
 import prisma from "@/lib/prisma";
 
 import { VoteSchema } from "@/lib/validations";
@@ -15,11 +15,13 @@ export async function castVote(rawInput: unknown) {
     });
 
     if (!session) {
+      await auditLog("UNAUTHORIZED_ACCESS", "unknown", { action: "castVote" });
       return { success: false, error: "Only registered members can vote. Please join the association first!" };
     }
 
     const validatedData = VoteSchema.safeParse(typeof rawInput === 'string' ? { candidateId: rawInput } : rawInput);
     if (!validatedData.success) {
+      await auditLog("FAILED_VALIDATION", session.user.id, { action: "castVote", errors: validatedData.error.flatten() });
       return { success: false, error: "Invalid candidate selection" };
     }
 
@@ -98,10 +100,14 @@ export async function getUserVote() {
   }
 }
 
-export async function getCandidates() {
-  return await prisma.candidate.findMany({
-    orderBy: {
-      voteCount: "desc", // Changed to show most popular first
-    },
-  });
-}
+export const getCandidates = unstable_cache(
+  async () => {
+    return await prisma.candidate.findMany({
+      orderBy: {
+        voteCount: "desc",
+      },
+    });
+  },
+  ["candidates-list"],
+  { tags: ["candidates"], revalidate: 60 }
+);

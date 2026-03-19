@@ -3,10 +3,11 @@
 import prisma from "@/lib/prisma";
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
-import { revalidatePath } from "next/cache";
+import { revalidatePath, unstable_cache } from "next/cache";
 import { auditLog } from "@/lib/audit";
 
-export async function getPosts(tag?: string) {
+export const getPosts = unstable_cache(
+  async (tag?: string) => {
   try {
     const posts = await prisma.post.findMany({
       where: tag ? { tags: { has: tag } } : {},
@@ -56,7 +57,10 @@ export async function getPosts(tag?: string) {
     console.error("[GET_POSTS]", error);
     return [];
   }
-}
+},
+["community-posts"],
+{ tags: ["posts"], revalidate: 60 }
+);
 
 export async function createPost(content: string, tags: string[]) {
   const session = await auth.api.getSession({
@@ -64,6 +68,7 @@ export async function createPost(content: string, tags: string[]) {
   });
 
   if (!session) {
+    await auditLog("UNAUTHORIZED_ACCESS", "unknown", { endpoint: "community_action" });
     throw new Error("Unauthorized");
   }
 
@@ -91,6 +96,7 @@ export async function toggleLike(postId: string) {
   });
 
   if (!session) {
+    await auditLog("UNAUTHORIZED_ACCESS", "unknown", { endpoint: "community_action" });
     throw new Error("Unauthorized");
   }
 
@@ -136,6 +142,7 @@ export async function addComment(postId: string, content: string) {
   });
 
   if (!session) {
+    await auditLog("UNAUTHORIZED_ACCESS", "unknown", { endpoint: "community_action" });
     throw new Error("Unauthorized");
   }
 

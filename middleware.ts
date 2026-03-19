@@ -1,6 +1,26 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSessionCookie } from "better-auth/cookies";
 
+const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
+const MAX_MAP_SIZE = 10000;
+
+function checkIpRateLimit(ip: string, maxRequests: number, windowMs: number): boolean {
+  if (rateLimitMap.size > MAX_MAP_SIZE) {
+    rateLimitMap.clear();
+  }
+  const now = Date.now();
+  const record = rateLimitMap.get(ip);
+  if (!record || now > record.resetAt) {
+    rateLimitMap.set(ip, { count: 1, resetAt: now + windowMs });
+    return true; // Allowed
+  }
+  if (record.count >= maxRequests) {
+    return false; // Rate limited
+  }
+  record.count++;
+  return true; // Allowed
+}
+
 export default async function middleware(request: NextRequest) {
   // Skip middleware logic for Next.js Server Actions (POST requests with Next-Action header).
   // After OTP verification creates a session, calling a server action on /join would otherwise
@@ -11,6 +31,19 @@ export default async function middleware(request: NextRequest) {
 
   const sessionCookie = getSessionCookie(request);
 
+  // --- IP-based Rate Limiting (Phase 6) ---
+  const ip = request.headers.get("x-forwarded-for") || request.headers.get("x-real-ip") || "127.0.0.1";
+  
+  // Apply strict rate limiting (10 requests per minute) for POST/WRITE actions and API routes.
+  // Note: We apply this BEFORE session checks to prevent DB-hammering via credential stuffing.
+  if (request.method === "POST" || request.method === "PUT" || request.method === "DELETE" || request.nextUrl.pathname.startsWith("/api")) {
+    const isAllowed = checkIpRateLimit(ip, 10, 60 * 1000);
+    if (!isAllowed) {
+      console.warn(`[MIDDLEWARE] Rate limit exceeded by IP: ${ip}`);
+      return new NextResponse("Too Many Requests. Slow down.", { status: 429 });
+    }
+  }
+
   // --- Authentication Checks ---
   // If no session cookie, user is not logged in
   if (!sessionCookie) {
@@ -19,23 +52,7 @@ export default async function middleware(request: NextRequest) {
         request.nextUrl.pathname.startsWith("/admin")) {
       return NextResponse.redirect(new URL("/join", request.url));
     }
-
-    // --- Basic Rate Limiting for Public Access ---
-    const rateLimitCookie = request.cookies.get("rate_limit_count")?.value;
-    const count = rateLimitCookie ? parseInt(rateLimitCookie) : 0;
-    
-    if (count > 60) {
-      return new NextResponse("Too Many Requests", { status: 429 });
-    }
-
-    const res = NextResponse.next();
-    res.cookies.set("rate_limit_count", (count + 1).toString(), { 
-      maxAge: 60,
-      path: "/",
-      httpOnly: true,
-      sameSite: "strict"
-    });
-    return res;
+    return NextResponse.next();
   }
 
   let session = null;
@@ -96,5 +113,6 @@ export const config = {
     "/admin/:path*",
     "/login",
     "/join",
+    "/api/:path*", // Track API routes for rate-limiting
   ],
 };
