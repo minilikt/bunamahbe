@@ -22,9 +22,18 @@ function checkIpRateLimit(ip: string, maxRequests: number, windowMs: number): bo
 }
 
 export default async function middleware(request: NextRequest) {
-  // Skip middleware logic for Next.js Server Actions (POST requests with Next-Action header).
-  // After OTP verification creates a session, calling a server action on /join would otherwise
-  // trigger a redirect (since the user is now "logged in"), causing "unexpected response" errors.
+  const url = request.nextUrl;
+  
+  // 1. Skip middleware for internal Next.js assets and auth endpoints to avoid loops
+  if (
+    url.pathname.startsWith("/_next") || 
+    url.pathname.startsWith("/api/auth") ||
+    url.pathname.includes(".") // static files
+  ) {
+    return NextResponse.next();
+  }
+
+  // 2. Skip for Server Actions
   if (request.headers.get("Next-Action")) {
     return NextResponse.next();
   }
@@ -108,11 +117,13 @@ export default async function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/dashboard/:path*",
-    "/onboarding/:path*",
-    "/admin/:path*",
-    "/login",
-    "/join",
-    "/api/:path*", // Track API routes for rate-limiting
+    /*
+     * Match all request paths except for the ones starting with:
+     * - api/auth (handled by better-auth)
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     */
+    "/((?!api/auth|_next/static|_next/image|favicon.ico).*)",
   ],
 };

@@ -5,7 +5,7 @@ import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import { revalidatePath } from "next/cache";
 
-import { CandidateSchema, UserUpdateSchema } from "@/lib/validations";
+import { CandidateSchema, UserUpdateSchema, RoleUpdateSchema } from "@/lib/validations";
 import { auditLog } from "@/lib/audit";
 
 async function getAdminSession() {
@@ -79,6 +79,10 @@ export async function updateCandidate(id: string, formData: FormData) {
 export async function deleteCandidate(id: string) {
   const session = await getAdminSession();
 
+  if (!/^[0-9a-fA-F]{24}$/.test(id)) {
+    throw new Error("Invalid Candidate ID");
+  }
+
   await prisma.candidate.delete({
     where: { id },
   });
@@ -92,9 +96,15 @@ export async function deleteCandidate(id: string) {
 export async function updateUserRole(userId: string, role: string) {
   const session = await getAdminSession();
 
+  const validatedData = RoleUpdateSchema.safeParse({ userId, role });
+  if (!validatedData.success) {
+    await auditLog("FAILED_VALIDATION", session.user.id, { action: "updateUserRole", errors: validatedData.error.flatten() });
+    throw new Error("Invalid role update request");
+  }
+
   await prisma.user.update({
-    where: { id: userId },
-    data: { role },
+    where: { id: validatedData.data.userId },
+    data: { role: validatedData.data.role },
   });
 
   await auditLog("UPDATE_USER_ROLE", session.user.id, { affectedUserId: userId, newRole: role });

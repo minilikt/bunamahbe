@@ -5,6 +5,7 @@ import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import { revalidatePath, unstable_cache } from "next/cache";
 import { auditLog } from "@/lib/audit";
+import { PostSchema, CommentSchema, ReportSchema } from "@/lib/validations";
 
 export const getPosts = unstable_cache(
   async (tag?: string) => {
@@ -72,11 +73,17 @@ export async function createPost(content: string, tags: string[]) {
     throw new Error("Unauthorized");
   }
 
+  const validatedData = PostSchema.safeParse({ content, tags });
+  if (!validatedData.success) {
+    await auditLog("FAILED_VALIDATION", session.user.id, { action: "createPost", errors: validatedData.error.flatten() });
+    throw new Error("Invalid input");
+  }
+
   try {
     const post = await prisma.post.create({
       data: {
-        content,
-        tags,
+        content: validatedData.data.content,
+        tags: validatedData.data.tags,
         userId: session.user.id,
       },
     });
@@ -146,11 +153,17 @@ export async function addComment(postId: string, content: string) {
     throw new Error("Unauthorized");
   }
 
+  const validatedData = CommentSchema.safeParse({ postId, content });
+  if (!validatedData.success) {
+    await auditLog("FAILED_VALIDATION", session.user.id, { action: "addComment", errors: validatedData.error.flatten() });
+    throw new Error("Invalid input");
+  }
+
   try {
     const comment = await prisma.comment.create({
       data: {
-        content,
-        postId,
+        content: validatedData.data.content,
+        postId: validatedData.data.postId,
         userId: session.user.id,
       },
     });
@@ -174,12 +187,18 @@ export async function reportPost(postId: string, reason?: string) {
     throw new Error("Unauthorized");
   }
 
+  const validatedData = ReportSchema.safeParse({ postId, reason });
+  if (!validatedData.success) {
+    await auditLog("FAILED_VALIDATION", session.user.id, { action: "reportPost", errors: validatedData.error.flatten() });
+    throw new Error("Invalid input");
+  }
+
   try {
     const report = await prisma.report.create({
       data: {
-        postId,
+        postId: validatedData.data.postId,
         userId: session.user.id,
-        reason: reason || "No reason provided",
+        reason: validatedData.data.reason || "No reason provided",
       },
     });
 
