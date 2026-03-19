@@ -19,6 +19,11 @@ export async function castVote(rawInput: unknown) {
       return { success: false, error: "Only registered members can vote. Please join the association first!" };
     }
 
+    // Enforce onboarding
+    if (!(session.user as any).city) {
+      return { success: false, error: "Please complete your onboarding to participate in the election!" };
+    }
+
     const validatedData = VoteSchema.safeParse(typeof rawInput === 'string' ? { candidateId: rawInput } : rawInput);
     if (!validatedData.success) {
       await auditLog("FAILED_VALIDATION", session.user.id, { action: "castVote", errors: validatedData.error.flatten() });

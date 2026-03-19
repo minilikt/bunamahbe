@@ -63,7 +63,7 @@ const Navbar = () => {
 
           <div className="hidden md:block">
             {session ? (
-              <Link href="/dashboard" className="flex items-center gap-3 group">
+              <Link prefetch={false} href="/dashboard" className="flex items-center gap-3 group">
                 <div className="text-right hidden lg:block">
                   <p className="text-xs font-display font-bold text-foreground leading-none mb-1">{session.user.name}</p>
                   <p className="text-[10px] font-body text-muted-foreground leading-none">Member</p>
@@ -131,7 +131,7 @@ const Navbar = () => {
                 </Link>
               ))}
               {session ? (
-                <Link href="/dashboard" onClick={() => setIsOpen(false)}>
+                <Link prefetch={false} href="/dashboard" onClick={() => setIsOpen(false)}>
                   <div className="flex items-center gap-3 p-3 rounded-xl bg-secondary/50 border border-border/50">
                     <div className="relative w-10 h-10 rounded-full overflow-hidden clay-ring">
                       {session.user.image ? (

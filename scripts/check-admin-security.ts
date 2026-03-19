@@ -3,7 +3,6 @@ import path from "node:path";
 
 const projectRoot = path.resolve(__dirname, "..");
 const adminDir = path.join(projectRoot, "app", "admin");
-const middlewarePath = path.join(projectRoot, "middleware.ts");
 const adminActionsPath = path.join(projectRoot, "app", "actions", "admin.ts");
 
 async function walk(dir: string): Promise<string[]> {
@@ -43,16 +42,6 @@ async function main() {
         `${rel(filePath)} is missing explicit server-side admin guard (import + await requireAdmin()).`,
       );
     }
-  }
-
-  const middlewareSource = await fs.readFile(middlewarePath, "utf8");
-  const hasStrictNextActionGate = middlewareSource.includes(
-    'request.method === "POST" && request.headers.get("Next-Action")',
-  );
-  if (!hasStrictNextActionGate) {
-    problems.push(
-      `${rel(middlewarePath)} does not strictly limit Next-Action bypass to POST requests.`,
-    );
   }
 
   const adminActionsSource = await fs.readFile(adminActionsPath, "utf8");

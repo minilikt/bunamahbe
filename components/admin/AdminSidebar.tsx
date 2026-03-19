@@ -56,7 +56,7 @@ export function AdminSidebar({ ...props }: React.ComponentProps<typeof Sidebar>)
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
-              <Link href="/admin">
+              <Link prefetch={false} href="/admin">
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                   <Coffee className="size-4" />
                 </div>
@@ -78,7 +78,7 @@ export function AdminSidebar({ ...props }: React.ComponentProps<typeof Sidebar>)
                 isActive={pathname === item.url}
                 tooltip={item.title}
               >
-                <Link href={item.url}>
+                <Link prefetch={false} href={item.url}>
                   <item.icon />
                   <span>{item.title}</span>
                 </Link>
@@ -91,7 +91,7 @@ export function AdminSidebar({ ...props }: React.ComponentProps<typeof Sidebar>)
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="Exit Admin">
-              <Link href="/dashboard">
+              <Link prefetch={false} href="/dashboard">
                 <LogOut className="rotate-180" />
                 <span>Exit Admin</span>
               </Link>

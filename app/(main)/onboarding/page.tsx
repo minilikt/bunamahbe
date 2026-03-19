@@ -40,14 +40,14 @@ export default function Onboarding() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Middleware now handles these redirections
-  // useEffect(() => {
-  //   if (!isPending && !session) {
-  //     router.push("/login");
-  //   } else if (!isPending && (session?.user as any)?.city) {
-  //     // Already completed onboarding
-  //     router.push("/dashboard");
-  //   }
-  // }, [session, isPending, router]);
+  useEffect(() => {
+    if (!isPending && !session) {
+      router.push("/login");
+    } else if (!isPending && session && (session.user as any).city) {
+      // Already completed onboarding
+      router.push("/dashboard");
+    }
+  }, [session, isPending, router]);
 
   const badge = getBadge();
   const canProceedStep1 = city !== "Other" ? city : customCity.trim();
