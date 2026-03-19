@@ -1,8 +1,17 @@
 import { betterAuth } from "better-auth";
-import { prismaAdapter } from "better-auth/adapters/prisma";
-import prisma from "./prisma";
+import { mongodbAdapter } from "better-auth/adapters/mongodb";
+import { MongoClient } from "mongodb";
 import { emailOTP } from "better-auth/plugins";
 import { sendEmail } from "./resend";
+
+const globalForMongo = globalThis as unknown as {
+  _mongoClient?: MongoClient;
+};
+
+const client = globalForMongo._mongoClient || new MongoClient(process.env.DATABASE_URL!);
+if (process.env.NODE_ENV !== "production") globalForMongo._mongoClient = client;
+
+const db = client.db();
 
 const otpSubjects: Record<string, string> = {
   "sign-in": "Your Buna Sign-In Code",
@@ -13,9 +22,7 @@ const otpSubjects: Record<string, string> = {
 
 export const auth = betterAuth({
   baseURL: process.env.BETTER_AUTH_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined),
-  database: prismaAdapter(prisma, {
-    provider: "mongodb",
-  }),
+  database: mongodbAdapter(db),
   emailAndPassword: {
     enabled: true,
     requireEmailVerification: true,
