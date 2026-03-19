@@ -33,8 +33,11 @@ export default async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // 2. Skip for Server Actions
-  if (request.headers.get("Next-Action")) {
+  // 2. Skip for Server Actions or Prefetches
+  // Prefetching (x-middleware-prefetch: 1) is used by Next.js to pre-cache pages.
+  // Skipping session checks here saves a huge number of Edge invocations,
+  // as the actual navigation will still run full middleware.
+  if (request.headers.get("Next-Action") || request.headers.get("x-middleware-prefetch")) {
     return NextResponse.next();
   }
 
