@@ -7,12 +7,15 @@ import {
 } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { requireAdmin } from "@/lib/require-admin";
 
-export default function AdminLayout({
+export default async function AdminLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  await requireAdmin();
+
   return (
     <TooltipProvider>
       <div className="dark">

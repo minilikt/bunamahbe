@@ -1,6 +1,7 @@
 import React from "react";
 export const dynamic = "force-dynamic";
 import prisma from "@/lib/prisma";
+import { requireAdmin } from "@/lib/require-admin";
 import { 
   Shield, 
   User as UserIcon,
@@ -20,6 +21,8 @@ export default async function StaffManagement({
 }: {
   searchParams: Promise<{ q?: string }>;
 }) {
+  await requireAdmin();
+
   const { q: query } = await searchParams;
 
   const users = await prisma.user.findMany({

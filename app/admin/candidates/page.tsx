@@ -1,6 +1,7 @@
 import React from "react";
 export const dynamic = "force-dynamic";
 import prisma from "@/lib/prisma";
+import { requireAdmin } from "@/lib/require-admin";
 import { 
   Plus, 
   Pencil, 
@@ -16,6 +17,8 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { CandidateEditDialog } from "@/components/admin/CandidateEditDialog";
 
 export default async function CandidateManagement() {
+  await requireAdmin();
+
   const candidates = await prisma.candidate.findMany({
     orderBy: { name: "asc" },
   });

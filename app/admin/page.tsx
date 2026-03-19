@@ -1,6 +1,7 @@
 import React from "react";
 export const dynamic = "force-dynamic";
 import { getAnalytics } from "../actions/admin";
+import { requireAdmin } from "@/lib/require-admin";
 import { 
   Users, 
   Vote, 
@@ -14,6 +15,8 @@ import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
 
 export default async function AdminDashboard() {
+  await requireAdmin();
+
   const analytics = await getAnalytics();
 
   const stats = [

@@ -1,6 +1,7 @@
 import React from "react";
 export const dynamic = "force-dynamic";
 import prisma from "@/lib/prisma";
+import { requireAdmin } from "@/lib/require-admin";
 import { 
   BarChart3, 
   MapPin, 
@@ -11,6 +12,8 @@ import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default async function DetailedAnalytics() {
+  await requireAdmin();
+
   const totalVotes = await prisma.vote.count();
   const totalUsers = await prisma.user.count();
   
