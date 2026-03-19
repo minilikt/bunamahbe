@@ -61,3 +61,50 @@ Based on current Vercel and Next.js best practices, here are the top additional 
 
 4. **Avoid Cloudflare Caching Conflicts**
    - **Warning**: While it might be tempting to put Cloudflare's free DDoS protection in front of your Next.js app, Vercel explicitly recommends **against** using Cloudflare's Proxy ("Orange Cloud") with Vercel deployments. Double-proxies cause routing failures, severe latency delays, and broken server actions. Rely entirely on Vercel's native security tooling instead.
+
+## 6. Admin Route Access Verification (March 2026)
+
+To reduce authorization regressions, this repository now includes a static verifier:
+
+- Command: `tsx scripts/check-admin-security.ts`
+- Package script: `security:admin`
+
+What it checks:
+
+1. Every `app/admin/**/page.tsx` and `app/admin/**/layout.tsx` contains both:
+   - `import { requireAdmin } from "@/lib/require-admin"`
+   - `await requireAdmin()`
+2. `middleware.ts` only bypasses Server Actions when request method is `POST`.
+3. `app/actions/admin.ts` still enforces role checks in `getAdminSession()`.
+
+Recommended CI gate:
+
+- Add a pipeline step that runs: `pnpm security:admin` (or `npm run security:admin`)
+
+## 7. Common Next.js Security Mistakes (Web Research)
+
+Sources:
+
+- Next.js security guidance: `https://nextjs.org/blog/security-nextjs-server-components-actions`
+- Vercel CSRF guide: `https://vercel.com/guides/understanding-csrf-attacks`
+- Vercel XSS guide: `https://vercel.com/guides/understanding-xss-attacks`
+- OWASP Authorization Cheat Sheet: `https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html`
+
+Frequent developer mistakes:
+
+1. **Relying only on middleware for authz**
+   - Fix: enforce authorization in server actions/data access helpers and in sensitive route entry points.
+2. **Missing per-action authorization in `"use server"` functions**
+   - Fix: validate current user role at the start of every mutating action.
+3. **Trusting URL params/search params for privilege decisions**
+   - Fix: re-verify access against session/user identity on each request.
+4. **Using GET for state-changing operations**
+   - Fix: keep GET read-only; use POST/Server Actions for mutations.
+5. **Assuming CSRF is fully solved by defaults**
+   - Fix: keep SameSite cookies strict where possible, verify origin/referer for custom route handlers, and use CSRF tokens for highly sensitive operations.
+6. **XSS via unsafe HTML rendering (`dangerouslySetInnerHTML`)**
+   - Fix: avoid it when possible; sanitize untrusted HTML and add CSP.
+7. **Over-exposing data to client components**
+   - Fix: return DTOs with minimum fields and use server-only boundaries.
+8. **Skipping automated authorization tests**
+   - Fix: keep a dedicated authorization test gate in CI and fail builds on guard regressions.

@@ -56,37 +56,55 @@ export default async function middleware(request: NextRequest) {
     }
   }
 
-  // --- Authentication Checks ---
-  // If no session cookie, user is not logged in
+  // --- Authentication & Session Checks ---
+  // Only fetch the session if the user has a cookie AND is trying to access a protected route
+  // or a route that depends on auth state (like root/join).
+  const isProtectedRoute = url.pathname.startsWith("/dashboard") || 
+                           url.pathname.startsWith("/onboarding") ||
+                           url.pathname.startsWith("/admin");
+  const isAuthRoute = url.pathname === "/login" || url.pathname === "/join" || url.pathname === "/";
+
   if (!sessionCookie) {
-    if (request.nextUrl.pathname.startsWith("/dashboard") || 
-        request.nextUrl.pathname.startsWith("/onboarding") ||
-        request.nextUrl.pathname.startsWith("/admin")) {
+    if (isProtectedRoute) {
       return NextResponse.redirect(new URL("/join", request.url));
     }
     return NextResponse.next();
   }
 
+  // If we have a cookie but it's not a protected or auth route, just continue (saves a fetch)
+  if (!isProtectedRoute && !isAuthRoute) {
+    return NextResponse.next();
+  }
+
   let session = null;
   try {
+    // Add a strict timeout (1500ms) to prevent MIDDLEWARE_INVOCATION_TIMEOUT
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 1500);
+
     const sessionResponse = await fetch(`${request.nextUrl.origin}/api/auth/get-session`, {
       headers: {
         cookie: request.headers.get("cookie") || "",
       },
+      signal: controller.signal,
     });
+
+    clearTimeout(timeoutId);
 
     if (sessionResponse.ok) {
       session = await sessionResponse.json();
     }
   } catch (error) {
-    console.error("[MIDDLEWARE] Session fetch failed:", error);
+    console.error("[MIDDLEWARE] Session fetch failed or timed out:", error);
+    // If it's a protected route and fetch failed, redirect to join as a safety measure
+    if (isProtectedRoute) {
+      return NextResponse.redirect(new URL("/join", request.url));
+    }
   }
 
   // If session is invalid despite cookie
   if (!session || !session.user) {
-    if (request.nextUrl.pathname.startsWith("/dashboard") || 
-        request.nextUrl.pathname.startsWith("/onboarding") ||
-        request.nextUrl.pathname.startsWith("/admin")) {
+    if (isProtectedRoute) {
       return NextResponse.redirect(new URL("/join", request.url));
     }
     return NextResponse.next();
@@ -96,7 +114,7 @@ export default async function middleware(request: NextRequest) {
   const isOnboarded = !!user.city && !!user.favoriteType;
 
   // 1. Logged in user trying to access login/join pages -> redirect to dashboard/onboarding
-  if (request.nextUrl.pathname === "/login" || request.nextUrl.pathname === "/join" || request.nextUrl.pathname === "/") {
+  if (isAuthRoute) {
     return NextResponse.redirect(new URL(isOnboarded ? "/dashboard" : "/onboarding", request.url));
   }
 
