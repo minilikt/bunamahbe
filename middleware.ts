@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getSessionCookie } from "better-auth/cookies";
 
 export default async function middleware(request: NextRequest) {
+  console.log(`[Middleware] Running for: ${request.nextUrl.pathname}`);
   const sessionCookie = getSessionCookie(request);
   const { pathname } = request.nextUrl;
 
