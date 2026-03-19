@@ -21,11 +21,12 @@ export async function getGlobalStats() {
       cities: cities.length
     };
   } catch (error) {
-    console.error("Error fetching global stats:", error);
+    console.error(`[STATS_ACTION_ERROR] Failed to fetch global stats:`, error);
+    // Returning identifiable fallback values to distinguish between initial state and error state
     return {
       members: 2847,
-      votes: 100,
-      cities: 10
+      votes: 110,
+      cities: 12
     };
   }
 }
