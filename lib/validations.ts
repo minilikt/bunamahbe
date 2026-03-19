@@ -15,3 +15,19 @@ export const VoteSchema = z.object({
 
 export type OnboardingInput = z.infer<typeof OnboardingSchema>;
 export type VoteInput = z.infer<typeof VoteSchema>;
+
+export const CandidateSchema = z.object({
+  name: z.string().min(1, "Name is required").max(100),
+  username: z.string().max(50).optional().transform(v => v === "" ? null : v),
+  role: z.string().min(1, "Role is required").max(100),
+  bio: z.string().min(1, "Biography is required").max(2000),
+  image: z.string().url("Invalid image URL"),
+  tiktokVideoId: z.string().max(50).optional().transform(v => v === "" ? null : v),
+});
+
+export const UserUpdateSchema = z.object({
+  name: z.string().min(1).max(100),
+  email: z.string().email(),
+  image: z.string().url().optional().nullable(),
+  role: z.enum(["USER", "STAFF", "ADMIN"]),
+});

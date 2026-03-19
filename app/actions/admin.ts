@@ -5,6 +5,9 @@ import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import { revalidatePath } from "next/cache";
 
+import { CandidateSchema, UserUpdateSchema } from "@/lib/validations";
+import { auditLog } from "@/lib/audit";
+
 async function getAdminSession() {
   const session = await auth.api.getSession({
     headers: await headers(),
@@ -18,95 +21,104 @@ async function getAdminSession() {
 }
 
 export async function addCandidate(formData: FormData) {
-  await getAdminSession();
+  const session = await getAdminSession();
 
-  const name = formData.get("name") as string;
-  const username = formData.get("username") as string;
-  const role = formData.get("role") as string;
-  const bio = formData.get("bio") as string;
-  const image = formData.get("image") as string;
-  const tiktokVideoId = formData.get("tiktokVideoId") as string;
-
-  await prisma.candidate.create({
-    data: {
-      name,
-      username,
-      role,
-      bio,
-      image,
-      tiktokVideoId,
-    },
+  const validatedData = CandidateSchema.safeParse({
+    name: formData.get("name"),
+    username: formData.get("username"),
+    role: formData.get("role"),
+    bio: formData.get("bio"),
+    image: formData.get("image"),
+    tiktokVideoId: formData.get("tiktokVideoId"),
   });
+
+  if (!validatedData.success) {
+    throw new Error("Invalid input data");
+  }
+
+  const candidate = await prisma.candidate.create({
+    data: validatedData.data,
+  });
+
+  await auditLog("ADD_CANDIDATE", session.user.id, { candidateId: candidate.id, name: candidate.name });
 
   revalidatePath("/admin/candidates");
   revalidatePath("/election");
 }
 
 export async function updateCandidate(id: string, formData: FormData) {
-  await getAdminSession();
+  const session = await getAdminSession();
 
-  const name = formData.get("name") as string;
-  const username = formData.get("username") as string;
-  const role = formData.get("role") as string;
-  const bio = formData.get("bio") as string;
-  const image = formData.get("image") as string;
-  const tiktokVideoId = formData.get("tiktokVideoId") as string;
+  const validatedData = CandidateSchema.safeParse({
+    name: formData.get("name"),
+    username: formData.get("username"),
+    role: formData.get("role"),
+    bio: formData.get("bio"),
+    image: formData.get("image"),
+    tiktokVideoId: formData.get("tiktokVideoId"),
+  });
+
+  if (!validatedData.success) {
+    throw new Error("Invalid input data");
+  }
 
   await prisma.candidate.update({
     where: { id },
-    data: {
-      name,
-      username,
-      role,
-      bio,
-      image,
-      tiktokVideoId,
-    },
+    data: validatedData.data,
   });
+
+  await auditLog("UPDATE_CANDIDATE", session.user.id, { candidateId: id, updates: validatedData.data });
 
   revalidatePath("/admin/candidates");
   revalidatePath("/election");
 }
 
 export async function deleteCandidate(id: string) {
-  await getAdminSession();
+  const session = await getAdminSession();
 
   await prisma.candidate.delete({
     where: { id },
   });
+
+  await auditLog("DELETE_CANDIDATE", session.user.id, { candidateId: id });
 
   revalidatePath("/admin/candidates");
   revalidatePath("/election");
 }
 
 export async function updateUserRole(userId: string, role: string) {
-  await getAdminSession();
+  const session = await getAdminSession();
 
   await prisma.user.update({
     where: { id: userId },
     data: { role },
   });
 
+  await auditLog("UPDATE_USER_ROLE", session.user.id, { affectedUserId: userId, newRole: role });
+
   revalidatePath("/admin/staff");
 }
 
 export async function updateUser(userId: string, formData: FormData) {
-  await getAdminSession();
+  const session = await getAdminSession();
 
-  const name = formData.get("name") as string;
-  const email = formData.get("email") as string;
-  const image = formData.get("image") as string;
-  const role = formData.get("role") as string;
+  const validatedData = UserUpdateSchema.safeParse({
+    name: formData.get("name"),
+    email: formData.get("email"),
+    image: formData.get("image"),
+    role: formData.get("role"),
+  });
+
+  if (!validatedData.success) {
+    throw new Error("Invalid input data");
+  }
 
   await prisma.user.update({
     where: { id: userId },
-    data: {
-      name,
-      email,
-      image,
-      role,
-    },
+    data: validatedData.data,
   });
+
+  await auditLog("UPDATE_USER", session.user.id, { affectedUserId: userId, updates: validatedData.data });
 
   revalidatePath("/admin/staff");
 }

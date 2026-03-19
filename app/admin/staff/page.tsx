@@ -121,7 +121,7 @@ export default async function StaffManagement({
                       <div className="flex items-center justify-end gap-2">
                         <UserEditDialog user={user} />
                         {user.role === "USER" && (
-                          <form action={async () => { "use server"; await updateUserRole(user.id, "STAFF"); }}>
+                          <form action={updateUserRole.bind(null, user.id, "STAFF")}>
                             <Button size="sm" variant="outline" className="h-8 text-xs font-display border-border/40 hover:bg-muted/30">
                               Make Staff
                             </Button>
@@ -129,12 +129,12 @@ export default async function StaffManagement({
                         )}
                         {user.role === "STAFF" && (
                           <div className="flex gap-2">
-                            <form action={async () => { "use server"; await updateUserRole(user.id, "ADMIN"); }}>
+                            <form action={updateUserRole.bind(null, user.id, "ADMIN")}>
                               <Button size="sm" className="h-8 text-xs font-display bg-primary text-primary-foreground hover:bg-primary/90">
                                 Make Admin
                               </Button>
                             </form>
-                            <form action={async () => { "use server"; await updateUserRole(user.id, "USER"); }}>
+                            <form action={updateUserRole.bind(null, user.id, "USER")}>
                               <Button size="sm" variant="ghost" className="h-8 text-xs font-display text-destructive hover:bg-destructive/10 hover:text-destructive">
                                 Demote
                               </Button>

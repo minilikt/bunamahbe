@@ -10,7 +10,8 @@ export default async function middleware(request: NextRequest) {
   }
 
   const sessionCookie = getSessionCookie(request);
-  
+
+  // --- Authentication Checks ---
   // If no session cookie, user is not logged in
   if (!sessionCookie) {
     if (request.nextUrl.pathname.startsWith("/dashboard") || 
@@ -18,7 +19,23 @@ export default async function middleware(request: NextRequest) {
         request.nextUrl.pathname.startsWith("/admin")) {
       return NextResponse.redirect(new URL("/join", request.url));
     }
-    return NextResponse.next();
+
+    // --- Basic Rate Limiting for Public Access ---
+    const rateLimitCookie = request.cookies.get("rate_limit_count")?.value;
+    const count = rateLimitCookie ? parseInt(rateLimitCookie) : 0;
+    
+    if (count > 60) {
+      return new NextResponse("Too Many Requests", { status: 429 });
+    }
+
+    const res = NextResponse.next();
+    res.cookies.set("rate_limit_count", (count + 1).toString(), { 
+      maxAge: 60,
+      path: "/",
+      httpOnly: true,
+      sameSite: "strict"
+    });
+    return res;
   }
 
   let session = null;

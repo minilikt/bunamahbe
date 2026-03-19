@@ -18,7 +18,7 @@ export const auth = betterAuth({
   }),
   emailAndPassword: {
     enabled: true,
-    requireEmailVerification: false,
+    requireEmailVerification: true,
   },
   socialProviders: {
     google: {
@@ -32,8 +32,11 @@ export const auth = betterAuth({
         before: async (user) => {
           return {
             data: {
-              ...user,
+              name: user.name,
+              email: user.email,
+              emailVerified: user.emailVerified,
               image: user.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(user.name)}&background=random`,
+              role: "USER", // Default role for new signups
             },
           };
         },

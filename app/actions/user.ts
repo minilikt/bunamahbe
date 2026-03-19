@@ -6,6 +6,7 @@ import { headers } from "next/headers";
 import { revalidatePath } from "next/cache";
 
 import { OnboardingSchema } from "@/lib/validations";
+import { auditLog } from "@/lib/audit";
 
 export async function getUserLocations() {
   try {
@@ -63,6 +64,8 @@ export async function completeOnboarding(rawInput: unknown) {
         badgeDescription: data.badgeDescription,
       },
     });
+
+    await auditLog("COMPLETE_ONBOARDING", session.user.id, { city: data.city });
 
     revalidatePath("/dashboard");
     revalidatePath("/map");

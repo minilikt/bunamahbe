@@ -6,6 +6,7 @@ import { revalidatePath } from "next/cache";
 import prisma from "@/lib/prisma";
 
 import { VoteSchema } from "@/lib/validations";
+import { auditLog } from "@/lib/audit";
 
 export async function castVote(rawInput: unknown) {
   try {
@@ -66,6 +67,8 @@ export async function castVote(rawInput: unknown) {
         }),
       ]);
     }
+
+    await auditLog("CAST_VOTE", userId, { candidateId });
 
     revalidatePath("/election");
     return { success: true };

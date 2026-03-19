@@ -4,6 +4,7 @@ import prisma from "@/lib/prisma";
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import { revalidatePath } from "next/cache";
+import { auditLog } from "@/lib/audit";
 
 export async function getPosts(tag?: string) {
   try {
@@ -75,8 +76,9 @@ export async function createPost(content: string, tags: string[]) {
       },
     });
 
+    await auditLog("CREATE_POST", session.user.id, { postId: post.id });
+
     revalidatePath("/community");
-    return post;
   } catch (error) {
     console.error("[CREATE_POST]", error);
     throw new Error(`Failed to create post ${error}`);
@@ -119,6 +121,8 @@ export async function toggleLike(postId: string) {
       });
     }
 
+    await auditLog("TOGGLE_LIKE", session.user.id, { postId });
+
     revalidatePath("/community");
   } catch (error) {
     console.error("[TOGGLE_LIKE]", error);
@@ -143,6 +147,8 @@ export async function addComment(postId: string, content: string) {
         userId: session.user.id,
       },
     });
+    
+    await auditLog("ADD_COMMENT", session.user.id, { postId, commentId: comment.id });
 
     revalidatePath("/community");
     return comment;
@@ -169,6 +175,8 @@ export async function reportPost(postId: string, reason?: string) {
         reason: reason || "No reason provided",
       },
     });
+
+    await auditLog("REPORT_POST", session.user.id, { postId, reportId: report.id });
 
     return report;
   } catch (error) {
