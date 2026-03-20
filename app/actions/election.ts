@@ -15,6 +15,7 @@ export async function castVote(rawInput: unknown) {
     });
 
     if (!session) {
+      console.warn("[VOTE_ACTION_WARN] Unauthorized attempt or session not found. BETTER_AUTH_URL:", process.env.BETTER_AUTH_URL);
       await auditLog("UNAUTHORIZED_ACCESS", "unknown", { action: "castVote" });
       return { success: false, error: "Only registered members can vote. Please join the association first!" };
     }
@@ -79,9 +80,9 @@ export async function castVote(rawInput: unknown) {
 
     revalidatePath("/election");
     return { success: true };
-  } catch (error) {
-    console.error("Failed to cast vote:", error);
-    return { success: false, error: "Failed to cast vote" };
+  } catch (error: any) {
+    console.error("[VOTE_ACTION_ERROR] Failed to cast vote:", error.stack || error);
+    return { success: false, error: "Failed to cast vote. Please try again later." };
   }
 }
 

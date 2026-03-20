@@ -20,8 +20,14 @@ const otpSubjects: Record<string, string> = {
   "forget-password": "Reset Your Buna Password",
 };
 
+const baseURL = process.env.BETTER_AUTH_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined);
+
+if (process.env.NODE_ENV === "production" && baseURL?.includes("localhost")) {
+  console.error("[AUTH_CONFIG_ERROR] BETTER_AUTH_URL is pointing to localhost in production! This will break authentication. Please set it to your actual domain (e.g., https://bunamahber.com).");
+}
+
 export const auth = betterAuth({
-  baseURL: process.env.BETTER_AUTH_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined),
+  baseURL,
   database: mongodbAdapter(db),
   emailAndPassword: {
     enabled: true,
