@@ -76,6 +76,9 @@ export async function completeOnboarding(rawInput: unknown) {
     return { success: true };
   } catch (error) {
     console.error("Complete onboarding error:", error);
-    return { success: false, error: "Failed to complete onboarding" };
+    return { 
+      success: false, 
+      error: error instanceof Error ? error.message : "Failed to complete onboarding" 
+    };
   }
 }

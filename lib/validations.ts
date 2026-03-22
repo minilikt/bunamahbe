@@ -4,7 +4,7 @@ export const OnboardingSchema = z.object({
   city: z.string().min(1, "City is required").max(100),
   frequency: z.string().min(1, "Frequency is required").max(50),
   favoriteType: z.string().min(1, "Favorite coffee type is required").max(50),
-  badgeEmoji: z.string().emoji().optional(),
+  badgeEmoji: z.string().optional(),
   badgeTitle: z.string().min(1).max(100).optional(),
   badgeDescription: z.string().min(1).max(500).optional(),
 });
