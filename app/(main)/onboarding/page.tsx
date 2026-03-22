@@ -43,7 +43,7 @@ export default function Onboarding() {
   useEffect(() => {
     if (!isPending && !session) {
       router.push("/login");
-    } else if (!isPending && session && (session.user as any).city) {
+    } else if (!isPending && session && (session.user as any).city && (session.user as any).favoriteType) {
       // Already completed onboarding
       router.push("/dashboard");
     }

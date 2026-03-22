@@ -55,9 +55,9 @@ export async function completeOnboarding(rawInput: unknown) {
 
     const data = validatedData.data;
 
-    await prisma.user.update({
-      where: { email: session.user.email },
-      data: {
+    await auth.api.updateUser({
+      headers: await headers(),
+      body: {
         city: data.city,
         frequency: data.frequency,
         favoriteType: data.favoriteType,
@@ -67,7 +67,7 @@ export async function completeOnboarding(rawInput: unknown) {
       },
     });
 
-    await auditLog("COMPLETE_ONBOARDING", session.user.id, { city: data.city });
+    await auditLog("COMPLETE_ONBOARDING", session.user.id, { ...data });
 
     revalidatePath("/dashboard");
     revalidatePath("/map");
