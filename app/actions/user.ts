@@ -56,7 +56,7 @@ export async function completeOnboarding(rawInput: unknown) {
     const data = validatedData.data;
 
     await prisma.user.update({
-      where: { id: session.user.id },
+      where: { email: session.user.email },
       data: {
         city: data.city,
         frequency: data.frequency,
