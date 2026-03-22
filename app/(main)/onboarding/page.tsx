@@ -68,8 +68,9 @@ export default function Onboarding() {
       if (!result.success) {
         toast(result.error || "Failed to update profile. Please try again.");
       } else {
+        // Refresh session to ensure client-side data is up to date
+        await authClient.getSession();
         // Use a hard redirect to ensure middleware picks up the change
-        // better-auth session update can sometimes be cached on client
         window.location.href = "/dashboard";
       }
     } catch (err) {
