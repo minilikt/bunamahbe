@@ -7,36 +7,83 @@ import {
   User as UserIcon,
   Search,
   MoreVertical,
+  ChevronLeft,
+  ChevronRight,
+  CheckCircle2,
 } from "lucide-react";
-import { updateUserRole } from "@/app/actions/admin";
+import Link from "next/link";
+import { updateUserRole, getCandidatesList } from "@/app/actions/admin";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { 
+  Select, 
+  SelectContent, 
+  SelectItem, 
+  SelectTrigger, 
+  SelectValue 
+} from "@/components/ui/select";
 import { UserEditDialog } from "@/components/admin/UserEditDialog";
 
 export default async function StaffManagement({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string }>;
+  searchParams: Promise<{ q?: string; page?: string; candidateId?: string; verified?: string }>;
 }) {
   await requireAdmin();
 
-  const { q: query } = await searchParams;
+  const { q: query, page: pageStr, candidateId, verified } = await searchParams;
+  const page = pageStr ? parseInt(pageStr) : 1;
+  const limit = 50;
+  const skip = (page - 1) * limit;
 
-  const users = await prisma.user.findMany({
-    where: query
-      ? {
-          OR: [
-            { name: { contains: query, mode: "insensitive" } },
-            { email: { contains: query, mode: "insensitive" } },
-          ],
+  const where = {
+    ...(query ? {
+      OR: [
+        { name: { contains: query, mode: "insensitive" as any } },
+        { email: { contains: query, mode: "insensitive" as any } },
+      ],
+    } : {}),
+    ...(candidateId && candidateId !== "all" ? {
+      votes: {
+        some: { candidateId }
+      }
+    } : {}),
+    ...(verified === "true" ? { emailVerified: true } : verified === "false" ? { emailVerified: false } : {}),
+  };
+
+  const [users, totalUsers, candidates] = await Promise.all([
+    prisma.user.findMany({
+      where,
+      include: {
+        votes: {
+          include: {
+            candidate: {
+              select: { name: true }
+            }
+          }
         }
-      : {},
-    orderBy: { createdAt: "desc" },
-    take: 50,
-  });
+      },
+      orderBy: { createdAt: "desc" },
+      skip,
+      take: limit,
+    }) as Promise<any[]>,
+    prisma.user.count({ where }),
+    getCandidatesList(),
+  ]);
+
+  const totalPages = Math.ceil(totalUsers / limit);
+
+  function buildPageLink(p: number) {
+    const params = new URLSearchParams();
+    if (query) params.set("q", query);
+    if (candidateId && candidateId !== "all") params.set("candidateId", candidateId);
+    if (verified) params.set("verified", verified);
+    params.set("page", String(p));
+    return `/admin/staff?${params.toString()}`;
+  }
 
   return (
     <div className="space-y-6">
@@ -47,8 +94,8 @@ export default async function StaffManagement({
         </div>
       </div>
 
-      <form method="GET" action="/admin/staff" className="flex items-center gap-4">
-        <div className="relative flex-1 max-w-sm">
+      <form method="GET" action="/admin/staff" className="flex flex-wrap items-center gap-4">
+        <div className="relative flex-1 min-w-[240px] max-w-sm">
           <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
           <Input 
             name="q"
@@ -57,10 +104,41 @@ export default async function StaffManagement({
             defaultValue={query || ""}
           />
         </div>
+        
+        <div className="w-[200px]">
+          <Select name="candidateId" defaultValue={candidateId || "all"}>
+            <SelectTrigger className="bg-card/50 border-border/30">
+              <SelectValue placeholder="Filter by candidate" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">All Candidates</SelectItem>
+              {candidates.map((c) => (
+                <SelectItem key={c.id} value={c.id}>
+                  {c.name}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+
+        <div className="w-[180px]">
+          <Select name="verified" defaultValue={verified || "all"}>
+            <SelectTrigger className="bg-card/50 border-border/30">
+              <SelectValue placeholder="Verification Status" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">Any Status</SelectItem>
+              <SelectItem value="true">Verified Only</SelectItem>
+              <SelectItem value="false">Unverified Only</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+
         <Button type="submit" size="sm" className="bg-primary text-primary-foreground font-display">
-          Search
+          Apply Filters
         </Button>
-        {query && (
+        
+        {(query || (candidateId && candidateId !== "all") || (verified && verified !== "all")) && (
           <Button variant="ghost" size="sm" asChild>
             <a href="/admin/staff">Clear</a>
           </Button>
@@ -84,6 +162,7 @@ export default async function StaffManagement({
                   <th className="p-4 font-semibold text-sm font-display">User</th>
                   <th className="p-4 font-semibold text-sm hidden md:table-cell text-muted-foreground font-display">Location</th>
                   <th className="p-4 font-semibold text-sm text-muted-foreground font-display">Role</th>
+                  <th className="p-4 font-semibold text-sm text-muted-foreground font-display">Voted For</th>
                   <th className="p-4 font-semibold text-sm text-right text-muted-foreground font-display">Actions</th>
                 </tr>
               </thead>
@@ -100,7 +179,14 @@ export default async function StaffManagement({
                         </Avatar>
                         <div className="flex flex-col">
                           <span className="font-semibold text-sm line-clamp-1">{user.name}</span>
-                          <span className="text-xs text-muted-foreground line-clamp-1">{user.email}</span>
+                          <div className="flex items-center gap-1.5">
+                            <span className="text-xs text-muted-foreground line-clamp-1">{user.email}</span>
+                            {user.emailVerified && (
+                              <span title="Verified email">
+                                <CheckCircle2 className="h-3 w-3 text-primary fill-primary/10" />
+                              </span>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </td>
@@ -119,6 +205,15 @@ export default async function StaffManagement({
                         {user.role === "ADMIN" && <Shield className="h-3 w-3" />}
                         {user.role}
                       </Badge>
+                    </td>
+                    <td className="p-4 text-sm font-body">
+                      {user.votes && user.votes.length > 0 ? (
+                        <Badge variant="outline" className="bg-primary/5 text-primary border-primary/20">
+                          {user.votes[0].candidate.name}
+                        </Badge>
+                      ) : (
+                        <span className="text-muted-foreground italic">No vote</span>
+                      )}
                     </td>
                     <td className="p-4 text-right">
                       <div className="flex items-center justify-end gap-2">
@@ -159,6 +254,97 @@ export default async function StaffManagement({
             </table>
           </div>
         </CardContent>
+        {totalPages > 1 && (
+          <div className="p-4 border-t border-border/30 bg-muted/30 flex flex-col md:flex-row items-center justify-between gap-4">
+            <Button
+              variant="outline"
+              size="sm"
+              disabled={page <= 1}
+              asChild={page > 1}
+              className="w-full md:w-auto"
+            >
+              {page > 1 ? (
+                <Link href={buildPageLink(page - 1)}>
+                  <ChevronLeft className="h-4 w-4 mr-2" />
+                  Previous
+                </Link>
+              ) : (
+                <>
+                  <ChevronLeft className="h-4 w-4 mr-2" />
+                  Previous
+                </>
+              )}
+            </Button>
+
+            <div className="flex items-center gap-1">
+              {(() => {
+                const pages = [];
+                const maxVisible = 5;
+                let start = Math.max(1, page - 2);
+                let end = Math.min(totalPages, start + maxVisible - 1);
+                
+                if (end === totalPages) {
+                  start = Math.max(1, end - maxVisible + 1);
+                }
+
+                if (start > 1) {
+                  pages.push(1);
+                  if (start > 2) pages.push("...");
+                }
+
+                for (let i = start; i <= end; i++) {
+                  pages.push(i);
+                }
+
+                if (end < totalPages) {
+                  if (end < totalPages - 1) pages.push("...");
+                  pages.push(totalPages);
+                }
+
+                return pages.map((p, i) => (
+                  <React.Fragment key={i}>
+                    {typeof p === "number" ? (
+                      <Button
+                        variant={p === page ? "default" : "outline"}
+                        size="sm"
+                        className={`h-8 w-8 p-0 font-body ${p === page ? "bg-primary text-primary-foreground" : "bg-card/40 border-border/30"}`}
+                        asChild={p !== page}
+                      >
+                        {p === page ? (
+                          <span>{p}</span>
+                        ) : (
+                          <Link href={buildPageLink(p)}>{p}</Link>
+                        )}
+                      </Button>
+                    ) : (
+                      <span className="px-1 text-muted-foreground">...</span>
+                    )}
+                  </React.Fragment>
+                ));
+              })()}
+            </div>
+
+            <Button
+              variant="outline"
+              size="sm"
+              disabled={page >= totalPages}
+              asChild={page < totalPages}
+              className="w-full md:w-auto"
+            >
+              {page < totalPages ? (
+                <Link href={buildPageLink(page + 1)}>
+                  Next
+                  <ChevronRight className="h-4 w-4 ml-2" />
+                </Link>
+              ) : (
+                <>
+                  Next
+                  <ChevronRight className="h-4 w-4 ml-2" />
+                </>
+              )}
+            </Button>
+          </div>
+        )}
       </Card>
     </div>
   );

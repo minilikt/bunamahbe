@@ -11,6 +11,7 @@ import {
   Settings,
   LogOut,
   Coffee,
+  Vote,
 } from "lucide-react"
 
 import {
@@ -44,6 +45,11 @@ const items = [
     title: "Detailed Stats",
     url: "/admin/analytics",
     icon: BarChart3,
+  },
+  {
+    title: "All Votes",
+    url: "/admin/votes",
+    icon: Vote,
   },
 ]
 

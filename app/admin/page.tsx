@@ -146,7 +146,7 @@ export default async function AdminDashboard() {
           </CardContent>
           <div className="p-4 border-t border-border/30 bg-muted/30">
             <Button variant="ghost" className="w-full text-xs font-bold uppercase tracking-widest text-muted-foreground hover:bg-muted/40" asChild>
-              <a href="/admin/analytics">View All Analytics <ExternalLink className="h-3 w-3 ml-2" /></a>
+              <a href="/admin/votes">View All Votes <ExternalLink className="h-3 w-3 ml-2" /></a>
             </Button>
           </div>
         </Card>
