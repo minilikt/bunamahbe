@@ -7,6 +7,7 @@ import { revalidatePath } from "next/cache";
 
 import { OnboardingSchema } from "@/lib/validations";
 import { auditLog } from "@/lib/audit";
+import { checkRateLimit } from "@/lib/rate-limit";
 
 export async function getUserLocations() {
   try {
@@ -34,6 +35,12 @@ export async function getUserLocations() {
 
 export async function completeOnboarding(rawInput: unknown) {
   try {
+    // 1. Rate Limiting (3 attempts per minute per IP)
+    const { success: rateLimitOk } = await checkRateLimit("completeOnboarding", 3);
+    if (!rateLimitOk) {
+      return { success: false, error: "Too many attempts. Please slow down!" };
+    }
+
     const session = await auth.api.getSession({
       headers: await headers(),
     });
@@ -54,6 +61,14 @@ export async function completeOnboarding(rawInput: unknown) {
     }
 
     const data = validatedData.data;
+
+    // 2. Honeypot check
+    if (data.hp) {
+      console.warn(`[BOT_PROTECTION] Honeypot triggered by user ${session.user.id}`);
+      await auditLog("BOT_DETECTED_HONEYPOT", session.user.id, { hp: data.hp });
+      // Silent fail or generic error to not tip off bot authors
+      return { success: false, error: "Something went wrong. Please try again." };
+    }
 
     await auth.api.updateUser({
       headers: await headers(),

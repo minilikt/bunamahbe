@@ -37,6 +37,7 @@ export default function Onboarding() {
   const [customCity, setCustomCity] = useState("");
   const [frequency, setFrequency] = useState("");
   const [favoriteType, setFavoriteType] = useState("");
+  const [hp, setHp] = useState(""); // Honeypot
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Middleware now handles these redirections
@@ -63,6 +64,7 @@ export default function Onboarding() {
         badgeEmoji: badge.emoji,
         badgeTitle: badge.title,
         badgeDescription: badge.description,
+        hp, // Honeypot
       });
 
       if (!result.success) {
@@ -134,6 +136,19 @@ export default function Onboarding() {
                     ))}
                     <option value="Other">Other</option>
                   </select>
+
+                  {/* Honeypot field - hidden from humans */}
+                  <input
+                    type="text"
+                    name="hp"
+                    value={hp}
+                    onChange={(e) => setHp(e.target.value)}
+                    style={{ position: "absolute", left: "-9999px" }}
+                    tabIndex={-1}
+                    aria-hidden="true"
+                    autoComplete="off"
+                  />
+
                   {city === "Other" && (
                     <input
                       type="text"

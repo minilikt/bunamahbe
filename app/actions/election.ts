@@ -7,9 +7,16 @@ import prisma from "@/lib/prisma";
 
 import { VoteSchema } from "@/lib/validations";
 import { auditLog } from "@/lib/audit";
+import { checkRateLimit } from "@/lib/rate-limit";
 
 export async function castVote(rawInput: unknown) {
   try {
+    // 1. Rate Limiting (5 votes per minute per IP)
+    const { success: rateLimitOk } = await checkRateLimit("castVote", 5);
+    if (!rateLimitOk) {
+      return { success: false, error: "Too many voting attempts. Please slow down!" };
+    }
+
     const session = await auth.api.getSession({
       headers: await headers(),
     });

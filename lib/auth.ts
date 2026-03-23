@@ -39,6 +39,23 @@ export const auth = betterAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET || "",
     },
   },
+  rateLimit: {
+    enabled: true,
+    customRules: {
+      "/sign-in/email": {
+        max: 5,
+        window: 60,
+      },
+      "/sign-up/email": {
+        max: 3,
+        window: 60,
+      },
+      "/sign-in/social": {
+        max: 10,
+        window: 60,
+      },
+    },
+  },
   databaseHooks: {
     user: {
       create: {

@@ -7,6 +7,7 @@ export const OnboardingSchema = z.object({
   badgeEmoji: z.string().optional(),
   badgeTitle: z.string().min(1).max(100).optional(),
   badgeDescription: z.string().min(1).max(500).optional(),
+  hp: z.string().optional(), // Honeypot field for bot protection
 });
 
 export const VoteSchema = z.object({

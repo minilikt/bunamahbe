@@ -1,0 +1,1375 @@
+Fetching users...
+Analyzing 4021 users for potential duplicates...
+
+--- Potentially Duplicate Accounts ---
+
+Group: "mnase" (2 accounts)
+  - [1vl4KDOQ4MtKlVxJlYqJAbzqHRGXqk54] Mnase (merkebmnase@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T15:28:38.263Z
+  - [eCBDwiuQwQgpBKZ0PcS9w0jwRoSpOl9U] Mnase (mnasemnase2@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T20:17:25.369Z
+
+Group: "meron" (9 accounts)
+  - [meQXrRNOCENyU8S5sN7Gbe4e16Kr8xT2] Meron (ameron20202020@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-17T15:48:41.944Z
+  - [sQv0xUfWCGXwsWTEkD4lgxAhq26r4D6w] Meron (merrytesfaye215@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T14:13:25.347Z
+  - [rrhk74uHIz16PSCNbV6vC4BX09CWaHvK] Meron (meronalemu4670@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:46:22.241Z
+  - [UNGmNckt8ysbUjLBkVc68LVREYt1NlyT] Meron (merontsigabu6@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T17:53:26.595Z
+  - [69bf9a08e4d31bca95860376] Meron (merontsehay0@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T07:28:08.597Z
+  - [69bfed869ecd158b7ef8ae96] Meron (merifikadu87@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T13:24:22.593Z
+  - [69bfedd79ecd158b7ef8aea1] Meron (merryfikadu87@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T13:25:43.577Z
+  - [69c044a975e9be1153fa3a1f] Meron  (mery72065@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T19:36:09.966Z
+  - [69c04665c0fb86c734d4e778] Meron (mulugetameron661@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T19:43:33.069Z
+
+Group: "yeabsra abera" (2 accounts)
+  - [qSTFol76AKp4ccjU39953oa8uET7O8Dd] Yeabsra Abera (yeabsraabera3@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-17T16:52:05.380Z
+  - [73CmP7ZksSoocxVkfEoOvb3HcUSaK0i3] Yeabsra Abera (aberayeabsra1621@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-17T16:53:06.602Z
+
+Group: "fiker" (2 accounts)
+  - [pxV5dOEOLhWwfFpOCjbzZgknxwnhX5tB] Fiker (fikere03@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-17T16:58:46.313Z
+  - [MC3r8HURYv1FDDgqqQ5TD802YcgRgaXy] Fiker (henolaendegena@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T15:40:00.982Z
+
+Group: "khalid" (3 accounts)
+  - [cUnqnrBjksTY03XWQtBxu40V5lLc9VWt] Khalid (khalidbeshir430@gmail.com) | ✅ Verified | Voted for: Sofoniyas | Created: 2026-03-17T17:16:50.471Z
+  - [sTMNpT6O0oh7frMdDLErGVemkNuKBN8H] Khalid  (binabufaruk341@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T12:47:58.243Z
+  - [WEXD88O6R6b3OaCfCOnlUT5bnKl4Hl0l] Khalid  (kalyasbedr@gmail.com) | ❌ Unverified | Voted for: Desyemil Amharic | Created: 2026-03-18T17:24:43.634Z
+
+Group: "melody" (2 accounts)
+  - [AXoMbicl6kZsx0fH3madj8LMrRxm7OAT] Melody (titahaile2443@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T17:33:26.202Z
+  - [qM9G1qfbEGpKWQH80tCpkHy5zgDNiZlW] Melody  (melodysolomon1245@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-18T07:39:20.498Z
+
+Group: "kidus" (4 accounts)
+  - [iIRt2kWNkVx7leYXNqnh1fMTcMLgjjnc] Kidus (kdusabera14@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T17:41:09.142Z
+  - [it4DDhkYXqC3dcVA9g2pXhWMMY3bQwZp] Kidus (kiduseyob@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:32:12.751Z
+  - [YdO10PaP8AxrMzwE586CmAne0j7TUuif] Kidus  (kidushaileselassie1985@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T07:12:59.099Z
+  - [69c00ddd07b0fef8271bd9e6] Kidus (negedekidus9@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T15:42:21.067Z
+
+Group: "ruth" (8 accounts)
+  - [lL9BatLd7Rc7h1bsAWKvmlLHz0BSOkzH] Ruth (ruthfikadum@gmail.com) | ❌ Unverified | Voted for: 4Kilo Entertainment | Created: 2026-03-17T17:42:59.845Z
+  - [cQCRYEUfGKeOPOl9uxX0miZXmu0HVmas] Ruth (rutheth04@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T09:11:13.953Z
+  - [97Zz96CBcdldxpFSNsmotPocJlicQsU8] Ruth (yothieveproduction@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:13:16.087Z
+  - [z3FhEmUd4cGXNs9ssTfynjEZaMS4jzAQ] Ruth (mariayoseph37@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T07:06:20.174Z
+  - [cG9nKPU3Apyp8bQdDVWJchW3irCDM1cW] Ruth (fekiadugna282@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T18:22:06.297Z
+  - [eDDvdZuJlwVig6uBRrhAO3o9h8a9o3XN] Ruth  (ruthkassahu1012@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T17:55:00.455Z
+  - [69bc05341d7b6d8961edec65] Ruth (ruthdgetacheww@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-19T14:16:20.840Z
+  - [ieKgPJewbyEbhaJgcp0Jc8QU9bc2QATR] Ruth (rutataddesse@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T16:48:27.137Z
+
+Group: "dagim" (4 accounts)
+  - [m1FfDuma88Jsd49HWAs1luTFJU66Vv8W] Dagim (daguye26@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-17T17:46:41.679Z
+  - [qzp1blMgoCz7fTBFCOI8zSfPFr93M1jI] Dagim (dagimmeku7@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:40:26.796Z
+  - [E7qw0kK6oJDWT0v2eIPFHMkAzgevkrfb] Dagim  (dagmawipawuloskake@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:25:59.383Z
+  - [c5XpmNl3zHyvNAaCGtmEP8S5ZVL3pJCQ] Dagim  (dagatnafu@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T16:45:49.080Z
+
+Group: "ashenafi" (4 accounts)
+  - [3Zxg5o40bqJqv81aRFFkVPAjPnMp6z8J] Ashenafi (javanisab@gmail.com) | ✅ Verified | Voted for: Miss Coffee | Created: 2026-03-17T17:47:21.823Z
+  - [pY4Ga5vnGJkLa0CsSJWl8qll60b2DTh1] Ashenafi  (ashenafikum122156@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-17T20:53:35.016Z
+  - [69be270ed2304b2a7c9d28a4] Ashenafi  (mekonnenashenafi86@gmail.com) | ❌ Unverified | Voted for: Captain Jimmy | Created: 2026-03-21T05:05:18.691Z
+  - [69c05f87fd9fd34c9a636dc5] Ashenafi  (ashuragga@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T21:30:47.624Z
+
+Group: "haymanot" (2 accounts)
+  - [iU4ZArjJ5vvCMsTvlQcd3TIVmC3BQmTf] Haymanot (haymanotgetnet85@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-17T17:50:24.819Z
+  - [l4cfXtQyd0Xd24ImRoEXVHdND5rvr8ed] Haymanot (thaymi8@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T18:46:21.120Z
+
+Group: "yeabsira" (6 accounts)
+  - [D7dNpyiMTK2xZeAGuKXagbF8KkQGKzis] Yeabsira (yeabsirazelalem1216@icloud.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T18:05:45.948Z
+  - [vuqZ9a494sti69uQVRSVEiA0FenEgnUR] Yeabsira (yeabsirazebene0@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T19:15:36.346Z
+  - [heFd2zGN7B6BlfXT5lJD9bdT2HtdUqOj] Yeabsira  (derejeyabsira78@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T14:08:51.609Z
+  - [UwbqsM37ZKYkAZxpsfVSpoLddcsTdRfF] Yeabsira  (yeabsiraashenafiyeabsira@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T15:33:08.491Z
+  - [YyuMFAft704tQQ48XC31jlEOy1BlerCp] Yeabsira  (yeabsirakebede496@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T19:12:47.379Z
+  - [69bfb1c1895cb0d5c375c939] Yeabsira  (yeabsiranahusenay@gmail.com) | ❌ Unverified | Voted for: anania_sound | Created: 2026-03-22T09:09:21.503Z
+
+Group: "yordanos" (7 accounts)
+  - [ktE8AtNpWnLLNppUWUIylJV90269tEZ5] Yordanos  (yordi.birhanu43@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T18:42:08.019Z
+  - [nX1yBa56DuHOsISgtzrQg3UHI8NLBE2W] Yordanos  (aberrajordin@yahoo.co.uk) | ❌ Unverified | Voted for: Desyemil Amharic | Created: 2026-03-18T12:56:14.613Z
+  - [1iHZOe75Wf9dcLNsvcVVAq58oWZv6idA] Yordanos (teddyyordi1@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T20:32:13.942Z
+  - [INW029ELuPVjgIx1oupL3Y6j0VXLzQ9o] Yordanos (yendalkechew@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T18:38:05.317Z
+  - [dX4LpX9E9TyPJp1gF1pkm1C2mU4jInO5] Yordanos (cupscupperling@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-19T18:30:46.419Z
+  - [69c0048d74e3b0710080c875] Yordanos (yordanosfentahun22@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T15:02:37.693Z
+  - [69c04aedaea013cb554d19d1] Yordanos  (yordi.asrat00@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T20:02:53.151Z
+
+Group: "mercy" (5 accounts)
+  - [kWmBSXQ0bxUOORQdVSU9zr5wBEl3uo1C] Mercy (maklilu519@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-17T18:44:48.024Z
+  - [k1f6TONTVY4Cc3bCq8P7Fvxg3p4MtO36] Mercy (mercibeu24@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T13:22:46.090Z
+  - [gRksaVFf9572eojB6fYEaptI5Fhp7KDj] Mercy (merciadam4@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T11:30:04.584Z
+  - [69bd5918080744b7333c1505] Mercy (mayamercy@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T14:26:32.975Z
+  - [69bff3fb0c69331d86f1914d] Mercy  (elumercy29@icloud.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T13:51:55.387Z
+
+Group: "nati" (9 accounts)
+  - [KpYZ8OiS434HD1sYXC2TO7YfMU0UbWbz] Nati (natnaelermias06@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T18:49:22.635Z
+  - [nRzVPdOkdid93HqbjoIedlXpLnf4fL11] Nati (natyb3111@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T01:04:49.526Z
+  - [jXCJLhVCgBmXZ0s6Vko0lStSRfCy28Vn] Nati (natiadmasu40@gmail.com) | ✅ Verified | Voted for: Lila Coffee Man | Created: 2026-03-18T12:24:38.617Z
+  - [bPywQ5bpFBbSmntNqfWrkP3WJ6fgfLzj] Nati (natim5252@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-19T07:22:02.933Z
+  - [4GaBmEa5qKnK139zr7EbCGXaGtA4ndSm] Nati (nathnaelbekele4@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T17:48:36.876Z
+  - [7ID5vx2xVbPgSJlvRDCHCY1CB6ANBkfR] Nati (getachewejegu7@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T17:13:42.194Z
+  - [OKq4m19mObjd4RaoQ1OV04U7fbHmr9qn] Nati (abebenatnael34@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T17:15:45.831Z
+  - [FqAB7Aco8SBiaehHAEwuLnn6F06IkhYN] Nati (nati@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T18:02:11.389Z
+  - [69c0216038205cf39897f8cb] Nati (wogdaressintayehu@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T17:05:36.365Z
+
+Group: "estifanos" (2 accounts)
+  - [3sS3ZQbTWPcHPY5qoidceSdOHFdGQOIf] Estifanos (estephenbelge@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-17T18:51:35.255Z
+  - [EdtVuu0VKpoe6Gakc0q3mn91hID84D63] Estifanos  (estifanoshaile575@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-19T16:19:49.276Z
+
+Group: "gedion" (2 accounts)
+  - [kyvwyAK8rt4nV1BPgxpNRkDc5IjszLxQ] gedion  (gedionayelign88@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-17T18:51:57.622Z
+  - [VyXUbgPlZgjRhdRcDCRDrmeozItNjEj2] Gedion  (geda2519@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:45:29.355Z
+
+Group: "michael" (4 accounts)
+  - [OoraZGbLDqPEhFfIkVfP8dU7uH5hXVFa] MIchael (michaeltesfaye2121@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T19:02:28.556Z
+  - [HfQa96wfWKkMftasOO2GWtFEgoy5w2zW] Michael (michaelafework10@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T15:07:13.033Z
+  - [EAPubyH3rzppafXkyroOPLQCrGOKyKo1] Michael (michaeleshetu65@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T12:43:24.634Z
+  - [69c0438e121f1d174f475de5] Michael  (getachewmichael172@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T19:31:26.872Z
+
+Group: "fasika" (4 accounts)
+  - [D6eH5U5v8QKO3AApxy0pgN1dNdv0EBZJ] fasika (fasikaashenafi32@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T19:03:11.939Z
+  - [7BjRXjEHNIEg0mpjzYiBIP8ntJg0kHl9] Fasika  (fasikaalemseged401@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T10:47:49.832Z
+  - [pphCTt2NQgyFPzONee4t4KnwAudc0xKF] fasika  (fasikadestalem@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:24:19.302Z
+  - [1mzz0hwqrbuWIhDnGldAYJfm9NvaGmH7] Fasika  (fasikaalmayew@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T18:49:48.978Z
+
+Group: "tizita" (2 accounts)
+  - [TIFnUR6JKxRUhE0R1YsH90JxCVgcsRqu] Tizita (tizteb2011@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-17T19:04:01.673Z
+  - [oEQ2DAi3NhyqI8wLwlMN5cbaXSXeyRdt] Tizita  (atizita093@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T16:40:50.785Z
+
+Group: "muhammed" (2 accounts)
+  - [1eTj6foeXZet1AJLV77evMjntydQ9kyS] Muhammed (muhammedsadat66@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-17T19:10:16.500Z
+  - [TSUhv9zmboMz29h3OQgui3fqTtSmDmUG] Muhammed  (muhammedabdela88@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T12:12:13.341Z
+
+Group: "yohannes" (8 accounts)
+  - [s11yzuLK7wtUlMNjOGqG4zlqkw30QNtg] Yohannes  (ywubeshet@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T19:12:44.560Z
+  - [MqctabytUElTpRiPdt8I7Qx9Jf61Q9cB] Yohannes  (yohannesalemujohn@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:51:49.296Z
+  - [q5TX3H3ROVqFtt6wHNU1PHXdBZwLbSUt] Yohannes  (yohannesgirma02@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:52:38.997Z
+  - [aLnWDNZTDN4WtsElbHFNnWXKBoRPuhdN] Yohannes  (yohannesjo931@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T09:24:24.539Z
+  - [Pd5ptJlOhg6L0NylMuMLMnerdVhYrBzh] Yohannes  (alemuyohannes64@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T16:12:16.188Z
+  - [WkBmqmrkvtFokE19HDUAtJtjTkmzHhD9] Yohannes (yohanesssemanh@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T19:51:05.177Z
+  - [69bd81bb4f4513e1bc23e2bf] Yohannes (yohannesitana@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T17:19:55.899Z
+  - [69c041ad9b6f91f3a61af493] Yohannes (yohannesfikrejo20@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-22T19:23:25.802Z
+
+Group: "robel" (7 accounts)
+  - [MP2woAyN7rt2OpJU5aUSdylgor98DMSk] Robel (robelalem822@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T19:15:06.900Z
+  - [MTthD8T6azJb351NbR9ZNgfgTr9FTcRr] Robel (robel99robel99@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-18T07:19:07.824Z
+  - [1B0M92ACktetgnPEn8wrfOsDm75HHpfc] Robel (robiyegeta7@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T13:16:58.369Z
+  - [NUBIFhyeox1XGLUV6K40xp5lyUpqScXj] Robel (robelfekadu11@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T17:48:18.844Z
+  - [f8D84KLPPzsn35v3CqyGlbimBhBAKtlF] Robel (robelyohannesto19@icloud.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T17:32:27.776Z
+  - [oBXCZ7kjOaER0hBh2uIYQ4qEZnJkPaaG] Robel (gudetualemu1@icloud.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T16:57:56.033Z
+  - [xNVMmmC7jeEsCneXsf3CVPU4HmdShXZF] Robel (robelbiazen5@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T17:32:01.390Z
+
+Group: "bereket" (12 accounts)
+  - [Hb2RBS0wNexUUsZNlcvdKtIyhjXcOD5R] Bereket (argilewanowano@gmail.com) | ❌ Unverified | Voted for: Abushep | Created: 2026-03-17T19:15:47.134Z
+  - [CEawUyzCjfAdfpJawEjtJm7QTTHgdKfu] Bereket (paulos_bereket@yahoo.com) | ✅ Verified | Voted for: Abushep | Created: 2026-03-17T19:51:21.793Z
+  - [ygQmlBKe8xEl0U3MMP4dUamnzhRvavVR] Bereket  (bereketassefa683@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T08:13:57.544Z
+  - [4pG2z9e0vShryavvI87FDqAWvqNCGTpy] Bereket (bekiboss28@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T08:34:50.488Z
+  - [NYbfTQyWu4ikSFfweuaP28rGA2SXBvKC] Bereket (beckyece8@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T10:59:31.076Z
+  - [QmJdHRY604ACqXYiQnX7TGam8qpUI2xQ] Bereket (bereketd1221@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T11:10:19.493Z
+  - [7tFBWtNyOvBW4CT5BZwBLP8t5YVdp8wX] Bereket  (bekimeku21@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T19:04:34.347Z
+  - [JwLhqNS3OqrjnBJMHa6BWiYEYAwgCcQo] Bereket  (bereketdejenet@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T18:20:14.397Z
+  - [sq1Pfa551Nc2WC6JHK9eGt8xgocbq6Rb] bereket  (bekibeka1992@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T14:45:03.768Z
+  - [qd1OZsu540t3FYtmOrn3CelA9KtJ3mzv] Bereket  (berekethmikael76@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T17:03:25.582Z
+  - [69bfb051895cb0d5c375c936] Bereket (yenezemensew@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T09:03:13.358Z
+  - [69c06e5c28e1593448e53095] Bereket (b3392404@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-22T22:34:04.115Z
+
+Group: "natty" (2 accounts)
+  - [csYTZfZbFvf3tgvluVMfNVtHEwvnzNLj] Natty (natnael.damtew95@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-17T19:28:53.000Z
+  - [HzrGmCj6cv4PeDi2ZSC9neJLVFuXNRTO] Natty (ngetachew84@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T20:17:47.074Z
+
+Group: "bemnet" (3 accounts)
+  - [FUyJwNBwkxoDfXwSHYdLQH0LgCqRWUqc] Bemnet (bemnet2327@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T19:32:52.812Z
+  - [NH2ZvDCYpJH4rgNfu6GlCJjpUDKPYVql] Bemnet  (bemnetmessele12@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:42:02.790Z
+  - [69c03921b9fa84d8a78ae1ec] Bemnet (bemnetgetachew98@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T18:46:57.809Z
+
+Group: "ab" (3 accounts)
+  - [17mXJhwTVp5gZ7lEAcyJkPDdG8eBSBJS] Ab (ambi.ty04@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-17T19:35:16.024Z
+  - [0tja9zzdYa0LmSAjH2hQE84cggYvmBOA] Ab (sofiakadosh@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T09:16:24.178Z
+  - [cNXMycz8wirmXUqGPcOSjoo8JY3rfapk] Ab (daniahu20@gmail.com) | ✅ Verified | Voted for: zionmeks | Created: 2026-03-18T12:22:01.968Z
+
+Group: "firehiwot solomon" (2 accounts)
+  - [kfS2aBy78pKY8V33jlkADMRWOJVYgALK] firehiwot solomon (firiti.solomon@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T19:53:17.518Z
+  - [kSvys3ohJbqCBIjjxkKQu2ZNOEGfMty1] Firehiwot solomon (firehiwotsolomon10@gmail.com) | ✅ Verified | Voted for: Lila Coffee Man | Created: 2026-03-18T20:05:10.904Z
+
+Group: "muler" (2 accounts)
+  - [bwGJchf8T60bxuf3cynD3iglx7pgjLTa] Muler (rubytrading516@gmail.com) | ✅ Verified | Voted for: Kemengede | Created: 2026-03-17T19:59:46.046Z
+  - [69c0391bb9fa84d8a78ae1e8] Muler (mulefirst4@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T18:46:51.139Z
+
+Group: "helen" (6 accounts)
+  - [CIP3OeROyAYYDA4GVOsh4MogwXJnkyYO] Helen  (hel_aman@yahoo.com) | ✅ Verified | No vote cast | Created: 2026-03-17T20:08:39.864Z
+  - [bblEZKhD06taV7mogPty5gLetkGAaw4J] Helen (helengelana14@icloud.com) | ✅ Verified | No vote cast | Created: 2026-03-17T20:09:19.954Z
+  - [pwraTdQuZhPXo45bb5HqoIgSItIUj0tj] Helen  (ellentariku10@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T10:59:54.280Z
+  - [bXdn2CF7ZOS1wv7KvPTJeDIXkR0NkilL] Helen (helezeleke33@gnail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T12:38:57.320Z
+  - [IDx2l7s2faMmJWShxQr8C0qG8qCpfs6z] Helen (hellenewnetu@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T17:10:48.033Z
+  - [69bd9ea4e2072f1ab9f89ac9] Helen (hellyac47@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T19:23:16.207Z
+
+Group: "natnael" (6 accounts)
+  - [O5BiIx2TyuGGolSHdrvh2UZwAQrV0lzb] natnael  (kurulala05@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-17T20:09:10.940Z
+  - [H1gUvpNXhriAizuQvqw5e5FHqMepQBNz] Natnael (natnaelmastewal@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T11:55:47.898Z
+  - [tW0OzbjAXMaLdTeaJpae32do4jzRHCIH] Natnael (goshunati@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T18:48:04.716Z
+  - [ldX5iykKWXGkGBUsLQpxAauLbaROsqtg] Natnael (natinationg@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T16:41:51.679Z
+  - [5ZmEWiqlltEsR2oHIJBhEO8MrnkVE2b2] Natnael (tnatty447@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T17:31:20.430Z
+  - [69bfeda99ecd158b7ef8ae9e] Natnael (natimoges554@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-22T13:24:57.697Z
+
+Group: "niftalem" (2 accounts)
+  - [1YAv6vWO86PJcSoo8vnnVVK1qTKHLjgV] Niftalem  (niftalemawrahun16@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-17T20:12:44.423Z
+  - [ur33GfrNMOfWLDmiZ8GAOJ6qG0fALdbf] Niftalem (niftalemawrahun12@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T19:06:12.972Z
+
+Group: "rediet" (7 accounts)
+  - [MSIPOonORCUMJtqXCjq5KucVlQky1c80] REDIET  (redietmebratu037@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-17T20:26:41.302Z
+  - [PJRkSQOLS3wkJVZGDsTHEPrTNu0VYKtT] Rediet  (bbdd6363@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T16:45:33.051Z
+  - [PZQGh1heNptrmTQM6nvq84wg3ZQafW0R] Rediet  (redmerawi@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T16:17:56.717Z
+  - [rfshEhQQSoqNC2uKasY7c3qTnQlBgmHo] Rediet (solomonrediet0@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T13:09:56.516Z
+  - [d7WKm74Pdr1gbeTw9OaOAAcAYo9VIqrk] Rediet  (redietwendmu922@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T17:05:34.311Z
+  - [BS6kikVr3orTsY4fjU6mcjh01h0L5biP] Rediet  (redietzegeye85@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T17:33:40.094Z
+  - [D7w1ZaYZqZhGmBgF0PGuFetSMoUungVh] Rediet (redietsegaye1@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T19:05:17.215Z
+
+Group: "abichu" (2 accounts)
+  - [YgTqqXrAyZW2NDxBUbWHrt9ZoMHXzyoL] abichu930 (abdij212223@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T20:31:11.977Z
+  - [4Fa21FW2Cd5MwyjcY8mlJsU6YH4f2v6R] Abichu (habtiemihretu@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T07:18:38.139Z
+
+Group: "mikiyas" (11 accounts)
+  - [168J8Id0QxFGvKb2Z7UDnXFNrrcuFZ6V] Mikiyas (mikyas873@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-17T20:38:24.076Z
+  - [CsRWoVAlDTZpKteP0MU1oxmNQv4GsbFs] Mikiyas (mikianteneh2018@gmail.com) | ✅ Verified | Voted for: Dr. Mickey Anteneh | Created: 2026-03-18T07:25:26.003Z
+  - [SQ5iDynRRDsC7pSM3JdaYTEfYIT2Z9yT] Mikiyas  (abmacethio123@gmail.com) | ❌ Unverified | Voted for: Menfesu Minda | Created: 2026-03-18T10:07:22.743Z
+  - [EO7QCxZb3orAeuOvEuTQp5XEW4GODPvN] Mikiyas  (mikiyaskasahun821@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:44:11.367Z
+  - [7GGRH1mInXLteNDwprETriut5uMQJEYF] mikiyas (mikiyast530@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T16:36:37.512Z
+  - [aH7Ln2COk9CInItIdREuqT2n5CYxrXH0] Mikiyas (mikiyas.miki0920@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T17:19:57.441Z
+  - [tppigyqPFKUprQ29JnAst2yoOTiJdmvK] Mikiyas (mikiyasj.r11@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T15:54:45.769Z
+  - [ZjJHtJzQhUOLK353qLemrLXARMYAXueF] Mikiyas  (miki1sweet@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-19T15:51:11.743Z
+  - [Zc2s72C43bSFiVY91H8XAKGL8GnYPMca] Mikiyas  (mikiasma0@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T15:55:52.808Z
+  - [69bff9a70c69331d86f191ec] Mikiyas (m8kiyask78@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T14:16:07.185Z
+  - [69c05855fd9fd34c9a636d91] Mikiyas (miklidu0201@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T21:00:05.955Z
+
+Group: "tsion" (8 accounts)
+  - [sNTD4xdswE51o3hvNdeIetCsXl3MceVF] Tsion (tdegemu25@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-17T20:44:59.229Z
+  - [dKs6g9Y8b4ev8gk8iqQNEeoH2OYtPURl] Tsion (tsionalemayehu635@gmail.com) | ✅ Verified | Voted for: Abushep | Created: 2026-03-18T08:27:47.452Z
+  - [PzLZ8YLoimowTer9B9ByKUIcrQ1O6vj6] Tsion (tsiondawit2005@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T12:24:53.372Z
+  - [JBdIeBANcqfYg4A34EJxwEMwaMUrrjHZ] Tsion (tsionmekoennen55@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-19T09:40:52.937Z
+  - [2w2SSJNDT2uOQsfYkwLyRYPj5qpe0xWx] Tsion (tsitsi893@gmail.com) | ❌ Unverified | Voted for: Dr. Mickey Anteneh | Created: 2026-03-18T17:00:34.393Z
+  - [FLnc5aEP6eEOrIVysfrkw6PGhxlr9sum] Tsion (spumado08@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-18T18:44:31.497Z
+  - [69beb8045c549f2df48d26ca] Tsion  (samratewelde04@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-21T15:23:48.722Z
+  - [69bffacba6d6b42439807854] tsion (tsiongetu30@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T14:20:59.601Z
+
+Group: "selam" (9 accounts)
+  - [HMRG6BROkV049Gh7qtAFXm7ASRT4rMMv] Selam (selammulugeta.m@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-17T20:45:07.770Z
+  - [2VZLzn592YuePxKIGdihvM8U7JutWscb] Selam (selamabate775@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-18T09:08:27.638Z
+  - [maBwFeNR3DJ8XcVXzdqm3RD2f2D9UHQR] Selam (selinahabte24@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:57:47.251Z
+  - [pP1nZGinucVuPxwuepoPZUdopfsyDvFs] Selam  (negatuselam33@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:59:06.060Z
+  - [69c02b40246cb5715ea16489] selam (gualtekle11@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T17:47:44.673Z
+  - [69c0443bc0fb86c734d4e724] Selam (selamebiru16@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T19:34:19.692Z
+  - [69c0476d75e9be1153fa3a32] Selam  (selamdawit123ok@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T19:47:57.520Z
+  - [69c04cc6aea013cb554d1a1c] Selam (snegusie@yahoo.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T20:10:46.116Z
+  - [69c063761af60518d5991bb7] Selam  (selamabadi9@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T21:47:34.124Z
+
+Group: "sara" (2 accounts)
+  - [0gv8fLduOW6mgcRAgIWFyFYISu5tGuoy] sara (sarabanjaw11@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-17T20:47:14.652Z
+  - [XSQ1KaJ3A6OzNwXqfONAMNfJDBEN0P7K] Sara (sara.beyenee@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T14:30:30.950Z
+
+Group: "nat" (2 accounts)
+  - [qS2e4My7LYvFOd1LIobpgTfpW2m9d2pZ] Nat (nathnaelworku835@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-17T20:53:58.738Z
+  - [P2ElWwHFEuO9XnU73nPNEh0UhttWdkgn] Nat (nteshome36@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T07:10:16.906Z
+
+Group: "biruk" (9 accounts)
+  - [J3zBaj2rVzO79iOx3ouckb7Nk94J2tEa] Biruk (birukee365@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-17T20:57:44.564Z
+  - [CrwrtGlOPCSCsoVkQbcwBCwBXuNZo1ik] Biruk (b4972191@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T11:28:24.405Z
+  - [rnHPzs7t7XRJu2kkLb0fyK4bl6nEhOcl] Biruk (birukboss10@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T11:02:09.930Z
+  - [PQ6V7fzGCnwnakSTLbM750rN6PT2Z6kZ] Biruk  (birukadmassu68@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T11:05:50.839Z
+  - [83L17SUZSRtIKujiI5qGoacALCVzbqfp] Biruk  (birukbedlu@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T19:40:59.643Z
+  - [69c0249fbb00b114c5263861] Biruk (birukfiseha90@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T17:19:27.631Z
+  - [69c02acb246cb5715ea1647d] Biruk (birukayalew76@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T17:45:47.036Z
+  - [69c03d8ab9fa84d8a78ae2a4] Biruk (birukdejene33@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-22T19:05:46.311Z
+  - [69c055cb9f7d670cd8475231] Biruk (tesfayebiruk2127@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T20:49:15.310Z
+
+Group: "nige" (2 accounts)
+  - [nYgfgYL4L5oKMYSXe1IPHMG2flOOhKDR] Nige (nigatupetros2003@gmail.com) | ❌ Unverified | Voted for: Abushep | Created: 2026-03-17T20:57:44.980Z
+  - [MoKmMa8IJ7KTJHorgdodT4lRsgYni6kv] Nige (nigatupeter95@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-17T22:11:04.114Z
+
+Group: "yared" (9 accounts)
+  - [iSZBucIMYJYeEF5xtLLBmEFMeBNaO050] Yared (asefa6730@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-17T21:00:23.551Z
+  - [ZqAf8CpfmpEJV1qZpPEJDSqGXvxIymDl] Yared (blessedyared87@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T08:26:17.285Z
+  - [EGiz93hK0MUpilILeVrHYQ9hPauich5r] Yared (ydddeskobar@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T14:15:59.574Z
+  - [W3jcmA9cGA4VUKfFuEzc2Rs6MzFnPFX8] Yared (dreezytest1st@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T12:34:21.773Z
+  - [5MvuMB8ykmHmXqUS15ZIDOdcMxxwjQWb] Yared (yared211219@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T18:59:09.826Z
+  - [69bd347b427e6955da6d172d] Yared (yadamenga@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-20T11:50:19.173Z
+  - [69bf9867e4d31bca95860368] YARED (yared.tilahun123@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T07:21:11.256Z
+  - [69c03c222940e6ebe59468ec] Yared (yaredmuez10@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T18:59:46.483Z
+  - [69c04fc8aea013cb554d1a39] Yared  (yaredab97@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T20:23:36.753Z
+
+Group: "yabsra" (2 accounts)
+  - [ppgS25MSJZnm2aBvrng1XisujKk0YcAY] Yabsra (yabsraabebe18@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-17T21:01:54.588Z
+  - [69c04ca6aea013cb554d1a18] Yabsra (papikongdom@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T20:10:14.755Z
+
+Group: "surafel" (4 accounts)
+  - [aSgzh5GwDXlYAhnbQOPLzSSIojWDh9NW] Surafel  (surafelnegash2000@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-17T21:49:35.904Z
+  - [kjlsPEpcwt8HZnWPJQrqFF5vv3o22jgn] surafel (surafelabera13@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T20:15:45.131Z
+  - [69c0281950c200f80e16c00a] Surafel (surafel927@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T17:34:17.442Z
+  - [69c06e2c1af60518d5991bd8] Surafel (surafela180@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T22:33:16.700Z
+
+Group: "dagm" (3 accounts)
+  - [WhgObISZA5cWpUBBJur5IsVEGHM2YMsO] Dagm  (dagmsolomon7@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-17T21:58:35.888Z
+  - [69bed58bae10292e46ba62f3] Dagm (dagimanalex27@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-21T17:29:47.220Z
+  - [69c0301656f9bab9e306f584] Dagm (dagmwondafrash269@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T18:08:22.377Z
+
+Group: "tinsae" (3 accounts)
+  - [7TBwvGDjQ1dkQATMNMwwiLnRJk6sP3qV] Tinsae (reditinsa@yahoo.com) | ❌ Unverified | No vote cast | Created: 2026-03-17T22:02:26.879Z
+  - [69c024cfbb00b114c5263869] Tinsae (tmahteme@yahoo.ca) | ❌ Unverified | No vote cast | Created: 2026-03-22T17:20:15.955Z
+  - [69c02edc2183ce6cd64c32fa] Tinsae (tinsaefentaw@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T18:03:08.598Z
+
+Group: "kaleab" (6 accounts)
+  - [Mg4mfhhuys5xLIKINrF8quhRN3cmtZMp] kaleab (kaleabdenbel1921@gmail.com) | ✅ Verified | Voted for: anania_sound | Created: 2026-03-17T22:37:16.610Z
+  - [U4JJu4qhXTqPWUHEthqMe89vDBp5rovW] kaleab (kaleabdenbel2114@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-17T23:00:39.161Z
+  - [eJcoGvA11nVcdya3Vfc3M6vwK7ZYNsYr] Kaleab (ghoatwarriorsilencekill@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T12:01:25.171Z
+  - [EmF6jbnBC2tdW0P7PB2JHeUXX9Dtw7W8] Kaleab (kaleabalemayehu32@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T20:24:17.598Z
+  - [69bd258e9bed80f997fa7d63] Kaleab (kalabmos84@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T10:46:38.606Z
+  - [69c03a77b9fa84d8a78ae214] Kaleab (kaleabfisiha26@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-22T18:52:39.855Z
+
+Group: "yerosen" (2 accounts)
+  - [qdy1KZmQd053NbhHRHm89jM6yJHtuehk] yerosen  (yerotesfaye1@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-18T00:56:16.639Z
+  - [9Jf9ZZ6t0THZE6SDSTkfBvpkPxeqNAos] Yerosen (yerosentesfaye51@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T15:32:42.166Z
+
+Group: "yishak" (2 accounts)
+  - [OYhNMHFf2L6wwDPyxGbkYcpWjlEN89wF] Yishak (dubjazz8@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T02:17:57.404Z
+  - [69bd52c7080744b7333c14e3] Yishak (yesaksisay7@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T13:59:35.784Z
+
+Group: "hana" (6 accounts)
+  - [jJ79Qf31aQNMbdymnYkLTSaveraP2LCD] Hana (hkebede2820@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T02:34:52.208Z
+  - [4fF1FcA4D8VociRqe4CrXCLAJQ2ITc9o] Hana (davelucky065@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T11:19:48.215Z
+  - [69bc07850763d12314519f53] Hana (hanagezahegn409@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-19T14:26:13.001Z
+  - [69bd28cb9bed80f997fa7d8a] Hana (hanagudeta13@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T11:00:27.383Z
+  - [69bdad80f4ac6bf39f3f7d15] Hana (haniig1986@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T20:26:40.911Z
+  - [69bdd51fec90e58a98f68d4a] Hana  (yonas_hana@yahoo.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T23:15:43.627Z
+
+Group: "eden" (8 accounts)
+  - [r8iVDRZ8greZF0OL4ERmfqNCOhWcIjFM] eden  (edengenetu1@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T03:12:13.593Z
+  - [RPm427cld2uynN1DUDn8IVhaTphEJFIH] Eden  (edenedenalemayehu@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T08:58:59.902Z
+  - [CwsLQMVxeE2uDlQZC92ilsvmyx8trHTh] eden  (edenabera71@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T10:59:38.664Z
+  - [UCGHasWv3qazkqCfB1KGJ2xr2eCpQ6KW] Eden (edereje772@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T13:37:51.027Z
+  - [pgtouynSf3sOL711Y5pPXc0itHhCCt0M] Eden (edenbirgann@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T05:58:57.782Z
+  - [E8AsxhiJB2GbY7VcCTA1R3vhnmH7inFg] Eden (edenbirhann@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-19T06:00:31.774Z
+  - [eQ6eSyhWeFhb24NXYDOxmom3BKV4lmlC] Eden (shiferaweden2009@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T18:14:31.109Z
+  - [69bd4a5b8252bd3134e4c7f3] Eden (editesfsh.22@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T13:23:39.051Z
+
+Group: "sosina" (4 accounts)
+  - [7JLhNoWidykpwc0ZYwP9Rz2KImBixgla] Sosina  (sosenamandefro884@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T04:51:49.818Z
+  - [cyuLy4XVI0fgrPFlJKkeRVOhid2tCrxv] Sosina (sosinadobamo2@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T13:23:11.295Z
+  - [69c0323d5ee173ba3443e302] Sosina  (sosimitu14@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T18:17:33.552Z
+  - [69c03299d077a0db2bd049ba] Sosina  (sosimitu14@gmal.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T18:19:05.185Z
+
+Group: "habtamu" (4 accounts)
+  - [pf5NO5T4Y0G1ODgRRHoaxpOFO7dFO7BY] habtamu (habtamudejen699@gmail.con) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T05:18:41.806Z
+  - [CTx8D2x8DaIg2KvtIrZeubs9IXrlwMRG] Habtamu  (habtamugezu3250@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T07:16:08.910Z
+  - [dkXLg1hig29r3FtJKyGdFKPdEerMNIaG] Habtamu  (habtamutolasagc@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T17:35:49.597Z
+  - [69bffc01a6d6b42439807879] Habtamu (habtu@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T14:26:09.244Z
+
+Group: "betty" (8 accounts)
+  - [4JKfTm9uAIP7MLqAomLZLkZuFnAVztPm] Betty (betiseyoum2829@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T05:46:53.138Z
+  - [PXYHV3ocg5v3ooe5TogBomYgXMYzZFT5] BEtty (bettywalta267@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T08:25:49.296Z
+  - [e3huB1c29kQq34XNykYKv2aCbM6kNFXR] Betty (bettyayele21@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T18:58:16.416Z
+  - [69bc087e418d1ab031e1bf74] Betty (bett13y@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-19T14:30:22.560Z
+  - [c7qiPT0Skf9dFOzZ9F77q7df4TKBA1aq] Betty (bellastar9860@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-19T18:07:29.960Z
+  - [69bd793d4f4513e1bc23e29e] Betty  (betelhemtilahun387@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T16:43:41.280Z
+  - [69c0274ebb00b114c526388e] Betty (memehyohannese@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T17:30:54.625Z
+  - [69c057c5fd9fd34c9a636d7f] Betty (bbethelhem8@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T20:57:41.978Z
+
+Group: "rahel" (5 accounts)
+  - [cqWBg7fpjN5A4pO0cuLn61r5MIJySdzq] Rahel (rurayetemesgen@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T05:47:15.754Z
+  - [fQ1knoAfCRW1O12sHjV3xNo6qEfYlDrP] Rahel  (rahelseyoum0@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:46:40.785Z
+  - [j2YXy2ZL9yNkluKmaH1rXyJi82Eck2mh] Rahel  (rahelabate44@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T17:53:18.104Z
+  - [DGrCw7QMRR7Y9gxlF4bmhAyhXt76J8my] Rahel  (rahelteshome1358@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T18:28:31.421Z
+  - [69c0329ed077a0db2bd049bd] Rahel (rahelmessele@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T18:19:10.988Z
+
+Group: "blen" (3 accounts)
+  - [oLRB7g3z66GkOFAMBfj9ckbh3Flv56aS] Blen (blentadesseb@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T06:11:57.298Z
+  - [msr5DbbtUORoGCOzI61sQNJxXYW31tls] Blen (blentiti439@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T13:21:45.847Z
+  - [69bd208f9bed80f997fa7d47] Blen (blen.cba@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T10:25:19.107Z
+
+Group: "novel" (2 accounts)
+  - [bhQjBqRnrNZp28wmM53Giep25k5MBBAb] Novel (novel8278@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T06:14:27.933Z
+  - [69c035bf2940e6ebe5946804] Novel (novelayele1921@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T18:32:31.899Z
+
+Group: "haile" (4 accounts)
+  - [jXflOVXbNorMUMph4lmbmkCs9nQzi37d] Haile (hailebrhane880@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T06:14:37.955Z
+  - [Pl0r3DS9fVdZGh2epto3GXBCX9Umj9oj] Haile  (hailehirko758@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T10:58:25.472Z
+  - [69bef16be3f9228da33a1f62] Haile (brhanehayile71@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-21T19:28:43.909Z
+  - [69c04443c0fb86c734d4e727] Haile (kankoo8809@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T19:34:27.777Z
+
+Group: "jerusalem" (3 accounts)
+  - [tmqGHVtKJw9gyKK7Enn3MttSmY660bWN] Jerusalem (jerusalemj664@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T06:21:25.209Z
+  - [qJXd6WGqIS7xRNzbwpuuvgbS9BxD5i6k] Jerusalem  (jerrysjtd@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-18T10:35:45.520Z
+  - [gqR2oFLSDnYidBWHiJWumoNJHfetpLvM] Jerusalem  (eyerusalemtemesgen678@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T19:33:18.965Z
+
+Group: "amen" (4 accounts)
+  - [wRD1pCwXlWJg4fQvV1nvJe57DeME0uhj] Amen (amenawittizazu@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-18T06:27:56.420Z
+  - [8TZ1IfGzHiOaPP1Qa3HrOg1giGNXj6Qw] Amen (amenabwendi@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T17:42:03.141Z
+  - [n3vIEUJHjMpoYuMgCh2G3bzA0VInO86Y] Amen (amenasfaw095@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T17:18:10.502Z
+  - [69bf0ca07fcae042d27e0103] amen (amen@gmail.com) | ❌ Unverified | Voted for: Desyemil Amharic | Created: 2026-03-21T21:24:48.587Z
+
+Group: "elsa" (3 accounts)
+  - [oO6ukAiYGaR1l39n1kzHa5MQPxNFs0OX] Elsa (elsaworkum@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T06:45:50.578Z
+  - [ifgrmJZGsQ2cfbzczGCRayKO6K0Ppnoa] Elsa (elsaalemgena0@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T19:49:57.675Z
+  - [lSLby6cZZQG15avajGXDNsH4ndQ8FjrH] elsa (elsaijimensa@gmail.com) | ✅ Verified | Voted for: Captain Jimmy | Created: 2026-03-19T11:28:38.757Z
+
+Group: "hiwot" (6 accounts)
+  - [8P1jRE8yarjc3f4b5M2U94Kz6usoPJTC] Hiwot (hiwotferede313@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T06:52:48.679Z
+  - [RPSQV7L4ekoMFNESJAUnI2ybw0LNV3Pv] Hiwot  (hiwot3442@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-18T10:21:55.159Z
+  - [7Z8WRh3bg8C1YOV8NssNuYDvNWKTz8vJ] Hiwot  (lifehiwot101@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T13:09:29.347Z
+  - [rmeKfOW0vYR9nHytKkZSe2j3Tlu0mKQ9] Hiwot (hiwotlewoyehu6@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-19T17:15:54.197Z
+  - [69bd6a584f4513e1bc23e26b] Hiwot (kassahunhiwot598@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T15:40:08.586Z
+  - [69c049a2c0fb86c734d4e7da] Hiwot  (zowi617@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T19:57:22.059Z
+
+Group: "eyoel" (2 accounts)
+  - [s6xB4brWH1WjYlj5At0MhycZb1DOnbIf] Eyoel (nappyminda5@gmail.com) | ✅ Verified | Voted for: Menfesu Minda | Created: 2026-03-18T06:53:51.244Z
+  - [4ATHyM0zHaslYfiQgmze5vL3ireHv7QE] Eyoel (eyusole56@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T18:10:10.124Z
+
+Group: "miki" (2 accounts)
+  - [98QDyvDSlzuIHtYewQZGGCwobgXuIGbJ] Miki (mikishop1224@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T07:01:22.915Z
+  - [ve5qDYpgToO4F1kiEdREH9xv3j1NG8i8] Miki (mikiyasterit0905@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:59:53.375Z
+
+Group: "maki" (2 accounts)
+  - [D1UBeCRetKjtYdvt5cs1vD9Cyqeop06p] Maki (mahletforex16@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T07:03:18.102Z
+  - [O4IB4SsuRwvT23lnBYm33VjsokOtcT7P] Maki (fantahunmaki@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T16:07:55.706Z
+
+Group: "feven" (4 accounts)
+  - [atc0oE5K1MYxLXJyeYjawubHOpoUYYSF] Feven (fevenhailu455@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T07:05:37.234Z
+  - [nF84G9poZSCMKi3cmoHMK1Bv1C6SSbnw] Feven  (fevicake2004@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:19:00.604Z
+  - [4lLZdBWzpvYXYr9koTnxFCegMJi2yGsW] Feven  (feventeshome266@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T15:52:41.055Z
+  - [rUkf2sU7ikQ112mL8hvyTsQ7bJp0YCS5] Feven (fevijw@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T19:22:43.421Z
+
+Group: "daniel" (6 accounts)
+  - [wk0v2RJzuY3G9KMOtfb0D8sCSU1aIKAV] Daniel  (fezcooo788@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-18T07:07:06.700Z
+  - [aj0C8Z9DqbgYCPkNmjYkHJSgfTcCjVX9] Daniel (danielyeshigora@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T13:29:36.978Z
+  - [F9ZTfUOSn4w7x889a4UKM2rP1bdCJGFH] Daniel  (dobrein26@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T16:15:23.190Z
+  - [DsWz5FeBkVSzULBCRdNOtA8B5FkpX1lT] Daniel (dtsegaye955@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T18:15:37.051Z
+  - [69bd64a76a0d890ad49495d6] Daniel (db024189@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T15:15:51.052Z
+  - [69c0450fc0fb86c734d4e73c] daniel (danielman758@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T19:37:51.444Z
+
+Group: "sam" (4 accounts)
+  - [6uzylTmZxEpR5Xp8GdJcaM3g7DKhlBrL] Sam (tezetazeru879@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T07:10:29.682Z
+  - [lQf8ooMOymDgrT599UIqJepXLF2QMD6j] sam (samabera19@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T18:15:28.183Z
+  - [69bd695b6a0d890ad49495e3] Sam (wizxsami@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T15:35:55.142Z
+  - [69bfd5900527b0b95fbe7966] Sam (samrawitgebretsadik04@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T11:42:08.252Z
+
+Group: "nardos" (6 accounts)
+  - [MxmhEWDe310bn7CgWzz6QmcOqFdDeJGw] Nardos (nardosadugna4@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T07:17:38.809Z
+  - [mjs9UvQ6tGEnFTotCWZWnDNhVewOiIb6] Nardos  (mulugetanardos47@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T10:53:47.816Z
+  - [mZ277lfOs0c4hArXkKiCAbn3HdD9cog1] Nardos  (nardosyenesew@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T09:30:56.051Z
+  - [fviaNAx5dOR0fMOBpVABOeqYf8ipLwdi] Nardos (nardosteshalegirma@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T18:02:15.926Z
+  - [qQbLBpeTrzKWDEtgifsM0t1id5qiD7WL] Nardos (nardoshaile123@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T20:10:04.312Z
+  - [69bd208b9bed80f997fa7d44] Nardos (degemunardos960@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T10:25:15.967Z
+
+Group: "enat" (2 accounts)
+  - [TGWCocgatkLNx6uFI6PEirb9jNq8xarG] Enat (liyudegaga@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T07:29:18.462Z
+  - [xTVYINhAVl0ZDxSY83FtiooPjiyonM6D] Enat (liyuddgaga@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T07:33:09.469Z
+
+Group: "yonas" (5 accounts)
+  - [EYDdjBNOeoz0kSdBoophH4APjG1EHC9p] Yonas  (yoniontoro@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T07:29:24.576Z
+  - [rZAd63ngmvWlQ2CqLocXlOdJ1bSh0ZwL] Yonas  (yonasgyohannis@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:30:57.013Z
+  - [fFu6EtdrebCvc9Bn602MFkTbjRhOIJRG] Yonas  (yonietete7@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T19:29:26.045Z
+  - [69bea6b65c549f2df48d269d] Yonas  (yonastafesse20@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-21T14:09:58.116Z
+  - [69c027c4bb00b114c52638a1] Yonas (yoni106280@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T17:32:52.778Z
+
+Group: "hermon" (3 accounts)
+  - [UVsgb5JhnaO0tiNjFIXOq8Y5ps4OgF91] Hermon  (balchahermon658@gmail.com) | ✅ Verified | Voted for: Desyemil Amharic | Created: 2026-03-18T07:31:32.893Z
+  - [H7ElLWaL9diQG2hWN0AnMGOPQzMjatqP] Hermon  (hermonmanutd@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T19:54:55.858Z
+  - [69bc08510763d12314519f62] Hermon (hermonmanagdew@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-19T14:29:37.581Z
+
+Group: "beza" (7 accounts)
+  - [8GYPvdGewiWQizhBMhHuzouaH6lbl8Vn] Beza (bezawitdejene@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T07:34:14.300Z
+  - [EWNvocCtTHC0u961n4N5sMrzhwt5QUnJ] Beza (bezamesfin95@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T09:12:21.620Z
+  - [DpLIZcdv67R1Eyq9oc4u8ipH2MrHxsYL] Beza (bezateshome635@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:17:36.657Z
+  - [zOCvbTLCxbogYEFRVJhxy3cag4lbYR9p] Beza (bezabeza811@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T19:01:47.207Z
+  - [HIneYqVPrtkUlf6RL5as8JgyzE0Nv5XE] Beza (bezawit1983@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-19T15:43:24.522Z
+  - [W8JpX7cPYOJEcQx6Ks4uzKSfcLf422Hr] Beza (bezaregay@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T19:07:24.274Z
+  - [69be3dafc6316d27c51b86cf] Beza (dagmawitnahusenay83@gmail.com) | ❌ Unverified | Voted for: anania_sound | Created: 2026-03-21T06:41:51.238Z
+
+Group: "jo" (4 accounts)
+  - [3Wzja6ojo2WxVp9zjHrwug76jfGRhGTT] Jo (yohanisj27@gmail.com) | ✅ Verified | Voted for: Maria | Created: 2026-03-18T07:49:38.997Z
+  - [NOD4eVtgElIH2UBRqT8OawlVKQTNDcjE] Jo (yohannesfikadu.63@gmail.com) | ❌ Unverified | Voted for: Menfesu Minda | Created: 2026-03-18T14:32:51.742Z
+  - [kw13hLl7j6EtuhxECLXuXWTwYP66eXDx] Jo (fcatalyst435@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T16:24:18.313Z
+  - [69c038392940e6ebe5946866] Jo (yohanneskassaye523@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T18:43:05.132Z
+
+Group: "aman" (7 accounts)
+  - [aMWKLixYRwPIdK2FujXUKMmjfBCYWjuh] Aman (xoamanuale@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T07:50:39.957Z
+  - [Ryu1hn2A91qxM9TUe3poh2SV1g9YonNx] Aman (bitnami7@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T12:50:01.815Z
+  - [tQDDX1T09Uo7Ou9stvXvWnu48XejaMKq] aman (amankin677@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:57:41.658Z
+  - [qIdFsIju6aZ0COKCScBSUTPWeUr8vJV7] Aman (amangebisa182@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T13:11:26.617Z
+  - [PcCzFvyy1TRpDYvXzvZiAQfZyRfxI82g] Aman (man485533@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:52:59.531Z
+  - [69c02f8d2183ce6cd64c3307] Aman (amanyoo541@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T18:06:05.276Z
+  - [69c033674c1c5050a62687c6] Aman (aman.tcomputers@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T18:22:31.013Z
+
+Group: "fitsum" (5 accounts)
+  - [jRsBZpWt1TVHE0oJSMCrDi16TKdddwXC] Fitsum  (fhalmaryam@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-18T07:54:18.461Z
+  - [OIUfF1giwdwCCRkHzh0sfwISLROBVC9M] Fitsum (fitsumababa4989@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T15:35:17.823Z
+  - [ZIUFjaXRyKaL4RUWSkvGZEL0UqepS2au] Fitsum  (birhanuf861@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T16:21:03.407Z
+  - [hPGzCTbvbJGrHAmSaCFfb4oskAQhNt3k] Fitsum  (fitsumwoldu276@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T20:00:23.192Z
+  - [69be455bc6316d27c51b86f3] fitsum (mule1921@gmail.com) | ❌ Unverified | Voted for: Biniyam Desalegn | Created: 2026-03-21T07:14:35.752Z
+
+Group: "israel" (2 accounts)
+  - [qKcIXRR2fUQuwnJweGjgOxYpYCCsZzzP] Israel  (israelermias51@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T08:08:40.073Z
+  - [69c044be75e9be1153fa3a22] Israel  (israel.abebe.anulo.9@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-22T19:36:30.194Z
+
+Group: "emu" (3 accounts)
+  - [qC1LX4YHAh1wBl3zs8AtSrwdKBygg8VL] Emu (emanahemad465@gmail.com) | ✅ Verified | Voted for: Menfesu Minda | Created: 2026-03-18T08:08:43.394Z
+  - [yONRMtanK1GRyTdWNSYB46oz40p5SJjP] Emu (emuadene@gamil.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:50:31.129Z
+  - [LK7eTFmGYnYHsK4cD29sYiCz8rMP4NpU] Emu (kumnegeryisma1@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T09:39:06.778Z
+
+Group: "enku" (2 accounts)
+  - [ILZU3ZatSUrRYZ72OleDmubvtLEDUNXd] enku (enkutadele0@gamil.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T08:13:09.040Z
+  - [69bc0486c3b22015d6c6393d] Enku (enku@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T14:13:26.267Z
+
+Group: "amanuel" (7 accounts)
+  - [4oJnRyIHiWHj1AsldyytjR7Z3VcoR9ku] Amanuel  (meetamanuel20@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T08:14:41.305Z
+  - [GMJSW1gcHqtLHNRpXTuwEbcZ8YFf57gn] Amanuel (mazrawishiferaw@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T10:50:44.637Z
+  - [2XTSL8wQheVTaDIYGoqzeti5vipqu9GK] Amanuel  (amanuelwerkeneh6@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T19:52:23.994Z
+  - [9DG8iRQC6bxICoplhv7zMGOFmr7DDEP9] Amanuel (amanuels219@gmail.com) | ✅ Verified | Voted for: Dr. Mickey Anteneh | Created: 2026-03-19T15:28:32.643Z
+  - [69bd259c9bed80f997fa7d66] Amanuel  (amanuuum@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-20T10:46:52.425Z
+  - [69bd315c21639c8a993eb22d] Amanuel (afikadu340@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T11:37:00.311Z
+  - [69be71b494b5857b7679d3da] Amanuel (amanuelhailu675@gmail.com) | ❌ Unverified | Voted for: Dr Abel | Created: 2026-03-21T10:23:48.372Z
+
+Group: "mekdes" (4 accounts)
+  - [5kvVO6i7CZiO7LJLbz3sSOR37q3mOrIp] Mekdes (mekiwabi117@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-18T08:19:11.951Z
+  - [FoWHlSybjGKxl6vAX4YuaOPgJjcjtYAP] Mekdes (mekdimule1990@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T08:25:06.030Z
+  - [dHjFz7RkAQvfOovGMnal30pVkOoXSZCC] Mekdes (belaymekdi@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T08:54:09.081Z
+  - [KMRYGoCcb2IuIefsrhs76anP7YNVshvW] Mekdes  (mekdesayele354@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T16:45:09.231Z
+
+Group: "nana" (3 accounts)
+  - [mZ87N8mLna7VPYk4R6rOR56P5KvC8WmD] Nana (nananelu28@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T08:22:44.849Z
+  - [69befcafbe82d19f72975b0b] Nana (nana@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-21T20:16:47.351Z
+  - [69bf163bcd6748cb42a5457e] nana (nanye@gmail.com) | ❌ Unverified | Voted for: Nardyk | Created: 2026-03-21T22:05:47.099Z
+
+Group: "kalkidan" (5 accounts)
+  - [FNZPOAtlFAyYwauYvA4EmrcvpmcTTNrd] Kalkidan  (kalkidandesta47@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T08:26:50.592Z
+  - [iSpFiiddlhUKxlXQyX3H82pL3KI4pAZ9] Kalkidan (kalkidanwon@gmail.com) | ❌ Unverified | Voted for: Maria | Created: 2026-03-18T13:04:40.720Z
+  - [oZuBttRTygJN8dw5uVuhgstFPud0SmdI] Kalkidan (kalkidankaluna@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T13:26:16.252Z
+  - [8E1ZZbrHvdDmgPYVu5kjFV8yS1JvCbYa] Kalkidan (kalkidanmekonnen@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T13:41:14.847Z
+  - [3Eqql7BbxXJaPL5bGl9uCy96V9F6PZta] Kalkidan  (kalkidanmandefro32@gmail.com) | ❌ Unverified | Voted for: Dr. Mickey Anteneh | Created: 2026-03-18T15:37:46.902Z
+
+Group: "genet" (4 accounts)
+  - [f2T8ZYxV1K2EwCet7aRLjC23bonJFraQ] Genet (genetyosef280@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T08:28:34.497Z
+  - [2LN2rw5fcy5fLYRmENa8eUiUNWvr9WxA] Genet (ggirma262@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:21:08.891Z
+  - [DPZIWwVzfDivJjMDlV5xxa8kN68grjwk] Genet (genetamsalu444@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:18:15.000Z
+  - [ABo6xBa1DmXT1cekMycnVFDkzdf1QZWz] Genet (ggenet957@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T19:27:43.919Z
+
+Group: "abdi" (4 accounts)
+  - [UjNVxVn7acbCQg2FaV6WzktGZxKzfk5d] Abdi (abdizerihun1@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T08:30:52.306Z
+  - [rvH2pX5RxUqFJd1UiNqyTFlqcMHudl0m] Abdi (abdimohammed9075@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T11:50:50.119Z
+  - [LGRFZnz1vNh6G3nJ5XmlTbtWSymY0lHF] Abdi (muhammed58sultan@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:52:51.699Z
+  - [Ga1usw0YL5d8v8c6Sz88v3B7zHDtPqmi] Abdi  (dopeh209@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:22:03.577Z
+
+Group: "kale" (2 accounts)
+  - [loOoXUey5LuewUJNeySPz5W5LXJQ5qvu] Kale  (kalkidansaleamlak5@gmail.com) | ✅ Verified | Voted for: Menfesu Minda | Created: 2026-03-18T08:31:12.964Z
+  - [DaZQ5rIpyZasReCXxB7viama1ykVNEik] Kale (kal626991@gmail.com) | ❌ Unverified | Voted for: Menfesu Minda | Created: 2026-03-18T14:27:27.603Z
+
+Group: "samri" (2 accounts)
+  - [B6dy4CEwuywEyDpgIOtXMeRgonY1nddw] Samri (samriabex@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-18T08:40:13.325Z
+  - [69c0074b74e3b0710080c87f] Samri (samr02978@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T15:14:19.265Z
+
+Group: "dawit" (5 accounts)
+  - [l4JlmOmH78pnIFiPXMlrLkCtrgxSapvS] Dawit (dawitgashawbeza2427@gmail.com) | ✅ Verified | Voted for: Menfesu Minda | Created: 2026-03-18T08:44:21.138Z
+  - [wd3VdomtpIr6LDVRwuYHwgNu3dnFJerW] Dawit  (dawitsolo8908@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T13:54:20.270Z
+  - [51zwmwjIs8Va3ZYGKZHd3rD0aQ5PTTTw] Dawit (devaghs41@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T14:32:53.285Z
+  - [knpGwYW3UW4wjZmAwVsBjLQmoAOgO1Vu] Dawit (dawitadenawsegndeved@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:18:37.474Z
+  - [69bff5a40c69331d86f1917d] Dawit (dawitgkid@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T13:59:00.396Z
+
+Group: "sami" (5 accounts)
+  - [tiRl0k99hu7RScDConnyKFZBRrR3oex6] Sami (samisonyeneneh@gmail.com) | ✅ Verified | Voted for: Menfesu Minda | Created: 2026-03-18T08:49:59.427Z
+  - [zn2Gy44Z3HNaMYzKz8Z06qDOvxyFXbUc] Sami (samiabgoo@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T11:17:37.811Z
+  - [mn9o1jLwIDuKnvhpGK8GpMBl0UxUgjyd] Sami (saymonsam97@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T09:30:55.848Z
+  - [c6ezBVWkonsBXemVvr0IgIpahwQXxG6j] Sami (yoombar36@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T15:39:27.864Z
+  - [69bd5d09080744b7333c1526] Sami (sami123lew@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-20T14:43:21.378Z
+
+Group: "saron" (5 accounts)
+  - [SJmfie044Z6mfbEkjs5qGVUxnkJPoQqW] Saron (saronworku09@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T08:51:49.115Z
+  - [Pj13p8qBhTQTapm8gdjIbV1rAOLMCK2Z] Saron (sd8971527@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T13:10:11.448Z
+  - [b5bciCSOAX0QqExHNwFHyMpo46oFkMt0] Saron (saronaklilu100@gmail.com) | ❌ Unverified | Voted for: Dr. Mickey Anteneh | Created: 2026-03-18T20:11:01.456Z
+  - [fqVzWBFFABiGRaJgr5IzFD55KUqO9GjH] Saron  (sariassefa0@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T15:43:05.162Z
+  - [qykUKYhk6QfgADih269YCgd2n7On06AE] Saron  (saronbinyam25@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T15:34:26.909Z
+
+Group: "yanet" (2 accounts)
+  - [agRG3Q5EZdecuboccp9RwYd1PNqY4L1w] Yanet  (yanettigistu092@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-18T08:51:52.239Z
+  - [qWOXGH9BrPiFvdnGUvMMQDlplOSiLw5I] Yanet (yanetab4@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T17:41:17.913Z
+
+Group: "kid" (2 accounts)
+  - [BQPUYn3v6Ax6khAXLj28aJwDhqi7wicc] Kid (kukuji603@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T08:59:13.214Z
+  - [B5v2bk7opH4vHqlIKF6rg3LijP0P65IR] Kid (kidistfeleke00@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:12:37.856Z
+
+Group: "nhne" (2 accounts)
+  - [j5hq9oPZqHIU8mDUGGgrk2L21sSGCYOU] Nhne (nhne1997neh@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T09:15:51.443Z
+  - [Or5VNKIKxKF2BnySTp8IgkRpbv5LnSrp] Nhne (abiman1997abi@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T09:18:13.861Z
+
+Group: "yohannes tesfaye" (2 accounts)
+  - [QMOvLwlxp0XgGCUQFh9jGruUowmnsCsr] Yohannes Tesfaye (yohannesgracealone@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T09:16:13.036Z
+  - [ZvvTW6m8syGC88U5hCWNGm2aJp3yur6n] Yohannes Tesfaye (yohannest718@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-18T12:29:58.191Z
+
+Group: "samrawit" (4 accounts)
+  - [MGxsu3Y5xTmedsLHsHjvzZ2eAUkBHQRd] Samrawit (samrawitgetahun10@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T09:25:18.693Z
+  - [8aZ2MRO0qiBNuBVZfMYzMeYlP9n5Rl2m] Samrawit  (samrawitfekade005@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:14:50.922Z
+  - [rZykulZ7h8wJXXpbQeV3KII3p1zoQ1tX] Samrawit  (samrawitzewdu05@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T13:25:26.783Z
+  - [DR8VUxr2rPR6qyAVNXq8HmEETb9hFOjJ] Samrawit (samriyared2@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T19:01:34.167Z
+
+Group: "mesfin" (4 accounts)
+  - [2WBeqyXbyvDqHcK7x2RONYwKyvHKsNXM] Mesfin  (mesfinhappy12@gmail.com) | ❌ Unverified | Voted for: Menfesu Minda | Created: 2026-03-18T09:26:13.192Z
+  - [iQi68i47pmVUcvqTKHqKWHmLby4RIQ6D] Mesfin  (mesfinmolla321@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T10:02:15.728Z
+  - [69bd499e8252bd3134e4c7ef] Mesfin (mesfints2012@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T13:20:30.036Z
+  - [69bd7c2c4f4513e1bc23e2a7] Mesfin (gosaye.mas78@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T16:56:12.439Z
+
+Group: "leul" (5 accounts)
+  - [ZRZGNMrUAntmA0bJBxgyIgUlkjD01Awu] LEUL  (leulteshager27@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-18T09:29:45.717Z
+  - [GNo7wux8SyUlFNPRGBB5J9s2rNkCcRbD] Leul  (leulketsela771@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:47:52.000Z
+  - [fEdL6oWsgBzm7YZ1wn81krHBqBKHqM1o] Leul  (leulth5@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T12:04:24.006Z
+  - [kDKV5KP6IWBhdkWsOvMPYx4h0tBLWQTc] Leul (leulalem31@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T19:02:59.826Z
+  - [AA8Ish2BRs4gzzdbN9PFp7QwTXrqbEDf] Leul (leulmesfinha@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-19T12:41:44.176Z
+
+Group: "nuhamin" (2 accounts)
+  - [HiIaqlj7lO8933dQiPy1Qtg40El1Blnf] Nuhamin (nuhaminmoges@gamil.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T09:29:46.526Z
+  - [OqiCthdmlOrG3NlsxyNRfwfYy9qd3QqU] Nuhamin (hemblue19@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T15:27:15.004Z
+
+Group: "netsanet" (5 accounts)
+  - [xXWVtJbJ8QsPOtQOoMYQ90wQvrKlupJx] Netsanet (netsanethagos2006@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T09:39:50.180Z
+  - [9XC0Fhct2BPZ3UzKOkzymcwnJtQ9NVl9] Netsanet  (yemariam2127@icloud.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T09:46:34.074Z
+  - [wz5l1yBHfKlMwxH165bos82N0UBvRiYu] NETSANET  (miminetat@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T12:40:32.828Z
+  - [69bd20349bed80f997fa7d41] Netsanet  (netsanatg09@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T10:23:48.902Z
+  - [69c0222538205cf39897f8d1] Netsanet (netsanetzegeye90@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-22T17:08:53.590Z
+
+Group: "marta" (2 accounts)
+  - [RJdm3BnaaMIV6JVJRFufWFLM3ahTDXlu] Marta (mamartina1namaste.com@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-18T09:43:17.790Z
+  - [6bZDL9qZXjB2ZyGwW5z1ZrDed0ppv7Mu] Marta (martahsilemariam000@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T16:21:58.811Z
+
+Group: "tigist" (5 accounts)
+  - [wg9WOZxVByzfUc0WbqsKw5KAIwnQCsfC] Tigist (te612706@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T09:45:35.713Z
+  - [HS4w0nokZ770LPSfOgzYdqNlDyLP4R4r] tigist (tigist@gmail.com) | ❌ Unverified | Voted for: Biniyam Desalegn | Created: 2026-03-18T12:35:44.894Z
+  - [aROHAETz3F5qHVYuTuUWL1CdKLkrk5Uw] Tigist (tigist0031@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T15:10:52.303Z
+  - [69bd3826427e6955da6d1742] Tigist (tigistkya@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T12:05:58.439Z
+  - [69befe1abe82d19f72975b17] Tigist (tigistcc@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-21T20:22:50.275Z
+
+Group: "lucy" (2 accounts)
+  - [WjyxZGOI952jCbyPC1qHgCxR6u1ZXZz6] Lucy (lucyibeltal@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T09:47:39.411Z
+  - [GEtNkfUPlE77sYaKnbeUtE3SWqeXSvs9] Lucy (tsegayibeltale@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T09:48:59.954Z
+
+Group: "happy" (2 accounts)
+  - [fQRPewnUb4pspdOfWU4Tk3BEsiday5US] Happy (mesfinadamu62@gmail.com) | ✅ Verified | Voted for: Menfesu Minda | Created: 2026-03-18T09:49:31.847Z
+  - [69c02712bb00b114c5263887] Happy (kg832564@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T17:29:54.491Z
+
+Group: "beamlak" (2 accounts)
+  - [6kKbK1QlOhH9wIJiDUlxDMcPyU3ln32R] Beamlak (beamlaksalamu@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T09:57:24.017Z
+  - [RcCpRBFpsqQxs2VtFcCdJnVshiqvZ2FZ] Beamlak  (beamlakfekadu567@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T17:23:42.987Z
+
+Group: "hewan" (3 accounts)
+  - [knUFuuFn7yD7jSe3tinONrXWbg5MBjAK] hewan (selamhewan7@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T10:27:49.110Z
+  - [69bc05c4fdcf1c905de8422f] Hewan (hewandebebe37@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-19T14:18:44.496Z
+  - [69be90bb1c92b923227e2511] Hewan (hewanwegayehu@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-21T12:36:11.735Z
+
+Group: "bety" (2 accounts)
+  - [jkkKdiiic8pitqiTjg4AJTjF6I1oinl0] Bety  (betelehemtariku879@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T10:36:44.911Z
+  - [ZxyL5DREn79IDOlBCwLetRZq0g49n59V] Bety (betelhem6627@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T16:06:42.890Z
+
+Group: "hani" (3 accounts)
+  - [LFbi9B4Jgg62g1y7p1xnXYMP8V1ED5wA] Hani (hanimuse4444@gmail.com) | ✅ Verified | Voted for: Biniyam Desalegn | Created: 2026-03-18T10:40:22.881Z
+  - [j1IzaTdKcZzl4oZAM2SEH8SyWGlT5Ipm] Hani (fenu04@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T19:06:28.830Z
+  - [Ak7QRG0AsqGdmL9Dl7XJSCleVDlgq6Xv] Hani (hamdiyayasin33@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T13:22:51.123Z
+
+Group: "alex" (2 accounts)
+  - [lPXQ6Modzpqy8Gq71mOwl2rxITL6mG7p] Alex (tafaalex37@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T10:45:50.752Z
+  - [69bf36cd2228bb822d124d1d] Alex (alamudinawol63@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T00:24:45.665Z
+
+Group: "dawit teshome" (2 accounts)
+  - [l8nKo8kEiDlFxfhb8VcljeIf9f2h631D] Dawit Teshome (dawitt886@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T10:52:22.339Z
+  - [bHOfrUOVSKXJDZv5DSHXpqB2BZZy8MKL] Dawit Teshome (dawitteshome70@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T18:08:24.805Z
+
+Group: "dagi" (2 accounts)
+  - [a7jxP3LpOj7IoZtLhMnfW48hSMaeAGmR] Dagi (demekedagimawi22@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T10:54:02.062Z
+  - [69bf9740e4d31bca95860365] Dagi (dagimroyal@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T07:16:16.892Z
+
+Group: "mila" (2 accounts)
+  - [3aHRVm3cgT37PMSX1rzKC218kbhUUa8U] Mila (milkiabdurahman058@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T10:57:59.392Z
+  - [xcDAOduDWnp5dN1kU5IlkyDbcwlSIbPZ] Mila (milikifle@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T15:35:15.048Z
+
+Group: "melat" (6 accounts)
+  - [P5CeAmtmHpdgVjZsl7RxYOSkow9y9IhN] Melat (melatkiros7@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T11:00:46.177Z
+  - [JLMpUgKzxO8O0IOGjsLCIVNYRW3ziImZ] Melat  (melat.da@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T11:45:49.526Z
+  - [KA7p9XXgTbzASKWvfi1qp3GDXLhIFcuK] Melat (birhanumelat86@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:09:27.664Z
+  - [WAli8AKC97uKTt8TXLcavNE5IH1MVxhk] Melat  (melatreda21@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T17:39:09.817Z
+  - [69be28b3d2304b2a7c9d28b1] Melat  (melat@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-21T05:12:19.668Z
+  - [69c02459bb00b114c5263853] Melat (marakimelat@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T17:18:17.018Z
+
+Group: "nebiyu" (2 accounts)
+  - [X82GGIfDI8wwfyWRRPYThATbSBufI7Bt] nebiyu (nebau892@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:07:40.269Z
+  - [D1nJ0u2UqpulQRmFJryfGuAinRwvu864] Nebiyu  (nebiyutewodros99@gmail.com) | ❌ Unverified | Voted for: Miss Coffee | Created: 2026-03-18T20:32:01.958Z
+
+Group: "fraol" (3 accounts)
+  - [7PLvbj1RVLvXyCa8U7np5LxzqJcEwIao] fraol (aregafraol8@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T11:09:16.766Z
+  - [aGXk38UouXXxmJoWr2g0yj79pfKbiIQf] Fraol  (yadphraol@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T14:08:27.480Z
+  - [6bI7wm5tKc26w3YrIhVPL5LfNhQLccn0] FRAOL  (tubayef@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T17:22:49.754Z
+
+Group: "heni" (2 accounts)
+  - [51KfUSURUXaQdP786e1pS8Jteliu1b6t] Heni (henaa49@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:10:28.005Z
+  - [PLruJuW6NRWu6pzoJLTWEccjdL9LtLPT] Heni (yaseheni945@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:11:21.862Z
+
+Group: "naod" (4 accounts)
+  - [q9UqdChOjq0fC37i0wxFkGjPeWOjQ678] Naod (chunkinaod@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:11:56.065Z
+  - [1BE7PTIdmYQlJDxI4CGhoGjtluZvCzIQ] NAOD (naodatmedonus@gmail.com) | ✅ Verified | Voted for: Biniyam Desalegn | Created: 2026-03-18T12:49:35.252Z
+  - [yAH1BdevCdcFkO0BVqBHfMXzCMpHO5Vf] Naod (naodlvj@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T15:07:43.455Z
+  - [69c04147c0fb86c734d4e708] Naod (nmetiku@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T19:21:43.754Z
+
+Group: "dawit fikadu" (2 accounts)
+  - [vuZluPQhyevUmncZ0EB4a2B4JujFU8MC] Dawit Fikadu (dawitfikadu1212@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T11:12:31.173Z
+  - [69bd944f730f8eadeb82ea6e] Dawit Fikadu (dfikadu2026@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T18:39:11.177Z
+
+Group: "abrham" (2 accounts)
+  - [yrzfO3effM171SB8HrhQBxGyKd83Y7Ti] Abrham (abrhamdemeke415@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T11:13:39.148Z
+  - [OXbCFv9q5GjAUIlcLQXJy3Qoz6Nlqp5v] Abrham (abrhammolla@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T14:13:21.567Z
+
+Group: "mesay" (2 accounts)
+  - [yf6no50oQMVDZQyHG7hVR204kq2Iqryy] Mesay (mesaygetnet955@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:14:27.926Z
+  - [PSevq9EqfS1yeIcxkTtfwxCh04LtW6gK] mesay (mesaybarich@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-19T05:57:28.538Z
+
+Group: "etsub" (2 accounts)
+  - [ohTcNzGoRF5O0bBu9xo8GiimGd8Szd5W] Etsub (etsud208@gmai.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T11:26:48.928Z
+  - [69bfaf38895cb0d5c375c92d] Etsub (etsubderje@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T08:58:32.481Z
+
+Group: "alazar" (3 accounts)
+  - [DKv2pGDB49kx0qxwQNj4SVoPHLK4AVGT] Alazar (alazarhailu526@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T11:29:10.980Z
+  - [CUP3gb86uRUFubv6eCmmnFNqccVODENa] ALAzar (alazar12mulu@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:30:12.981Z
+  - [AQum4yCBqizmSJ0QZWaEvAs8kElqo7Jp] Alazar (ekramdhky@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T17:47:39.162Z
+
+Group: "jerry" (3 accounts)
+  - [tfMgv5JhZrCcjvfnMwXnRRNcHWSauXU1] Jerry  (eyajerry55@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:39:14.313Z
+  - [pdJ15WcYvFRwsLVfWliukXBaGu64O9eB] Jerry (eyerusalemguta@icloud.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T19:25:29.471Z
+  - [69bdad8df4ac6bf39f3f7d18] Jerry (jerusalem@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T20:26:53.997Z
+
+Group: "dave" (2 accounts)
+  - [8WB3PyqGdzFnruPMXvRoBLREdVdvb34S] Dave (dawitfikadu09@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T11:39:18.696Z
+  - [69c039de2940e6ebe594689b] Dave (gdave6877@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T18:50:06.108Z
+
+Group: "amir" (3 accounts)
+  - [t6lI4GG3wRgxILzdW701KxSwYDs0iXKc] Amir  (amirmustefa1212@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T11:40:44.069Z
+  - [kTjJckhxbVdP08usMRYQZAEmrhHuJJfQ] Amir (amirr.husen193@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:11:36.655Z
+  - [69bffba7a6d6b4243980786c] Amir (amirmo4311@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T14:24:39.266Z
+
+Group: "mer" (3 accounts)
+  - [1EdqNQJsckYknaw5aaEfjCIQGemxfQXs] mer (mefz246tt@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T11:41:08.482Z
+  - [R1Oi9Qy80Gm0aPXJtSewbuxdcgmUOeZT] Mer (meronshemeraid@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T13:48:00.751Z
+  - [69bd1f389bed80f997fa7d3d] MER (mercoffeelover@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T10:19:36.521Z
+
+Group: "henok" (5 accounts)
+  - [JgvXC1YcMRIHLgBcwd7AuFE61lPyirM5] Henok  (henokzegeyezewude@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:41:45.247Z
+  - [eU4QPc1clJCZiyiGRxefhqw06u8y84Os] Henok (henok604@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:11:45.443Z
+  - [T7ZX3W2rhWdLDkpt99zMGb7alGE1uWgg] Henok (letegabrel@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T11:13:26.802Z
+  - [15WLsUgOES87rx82SPeB8wVXn4FJimj5] Henok (henokshegute@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T12:52:32.550Z
+  - [69c05400aea013cb554d1a76] Henok (atakltihenok258@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T20:41:36.349Z
+
+Group: "nahom" (11 accounts)
+  - [GEPeDLzm5ZjHSBfh06gSRGh5vOuRHcxd] Nahom  (nahomwubshet26@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T11:45:13.046Z
+  - [8m2LweGMiBPra0hkA40ZzrficEGO8vdn] Nahom (nahimuler3333@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:02:59.723Z
+  - [8PNDjNBrWWYEmR0iFxmS9aSpiYZ49Fk1] Nahom  (alemituadmasu@gmail.com) | ✅ Verified | Voted for: 4Kilo Entertainment | Created: 2026-03-18T12:43:26.787Z
+  - [EVdRXDNzEhQ2xcPN6r5abJjLYspwfNMK] Nahom  (fordrop698@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T13:06:09.668Z
+  - [w3zB1QI2O1MRKfPpiROEaHjC9aDUSB9B] Nahom  (trahgggfft@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T13:28:09.862Z
+  - [7I82jSZj5eEUWBl7yW7WrwPepeZMQKP4] Nahom (nahomgetinet2@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T14:31:30.043Z
+  - [0EYX5qJT8mzvwwP0UBnSjMfXfsCFXOjn] Nahom (nahomwendwesen2003@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-19T07:09:37.064Z
+  - [YiFmMHQWCspuN44jB5i7BG2MrlKScNlv] Nahom  (natewonde832@gmil.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:21:08.805Z
+  - [YY6xn8OV8YYeKNqmJGAWyGY0IJbF6LRp] Nahom (nwondesen17@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T19:18:06.561Z
+  - [69bff7790c69331d86f191ab] Nahom (zaknahi332@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T14:06:49.279Z
+  - [69c01df1b36ddebc689abd1a] Nahom  (nahomgetachew727@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T16:50:57.928Z
+
+Group: "melala" (2 accounts)
+  - [r1BRrnso5nohP85R1YT6zBvYcBUx6rwN] Melala (naudsr77@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:49:04.398Z
+  - [2yHfHCApXuAfCsGEjRiP5dQIXvn6MFeg] Melala (lalabuze@gmail.com) | ❌ Unverified | Voted for: Sofoniyas | Created: 2026-03-18T19:07:04.570Z
+
+Group: "abel" (13 accounts)
+  - [VA9Jkn2VdjRIRm6iO8gC87FR7dfaNAeg] Abel (abelabiy81@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T11:49:31.514Z
+  - [De1JT2TdXc5uxwduVCMyCLNKovE5x9wv] Abel (papaabel91@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:56:44.363Z
+  - [BfP4si9U8eaJRjzgSQ9wgZHoQL542jbl] Abel (abelmilkiyas7@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T13:07:46.670Z
+  - [HUGGFr5HvKhMfaPfCT9WKABNwdRGP73h] Abel (getuabel334@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-19T05:57:34.505Z
+  - [ZTQGzkPxG1qr2J0R2AYUjsjD2NCKq0sF] Abel (abebz150@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:47:07.214Z
+  - [nj7oOL4qx5gR8EIZXJfvxzf9nj2zimLa] Abel  (abelmuez084@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T17:26:12.495Z
+  - [pEHIS0gSN4s2Dajq9HNWkRKcbWkYhW6T] Abel  (kassaabel817@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T16:16:52.442Z
+  - [69bc045fc3b22015d6c6393b] Abel (lemmaabel619@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T14:12:47.663Z
+  - [69bc04bbc3b22015d6c63941] Abel (lemmaabbel629@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T14:14:19.746Z
+  - [69c04212121f1d174f475da1] Abel (abeltekle5@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T19:25:06.596Z
+  - [69c04547c0fb86c734d4e742] Abel (abeljr268@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T19:38:47.671Z
+  - [69c065ca1af60518d5991bc3] Abel (beloisevol@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T21:57:30.737Z
+  - [69c06e8a1af60518d5991bdb] Abel (abelaab12@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T22:34:50.684Z
+
+Group: "nardy k" (2 accounts)
+  - [UEj1QTujIg6XcDBAxbM5ynDA1QGkJ7QF] Nardy k (nardoskassahun@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T11:54:25.697Z
+  - [tjPVCSlGrIrV64oHvfSktIE3CLJgjKNn] Nardy k (nardoskassahun2000@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T13:08:17.618Z
+
+Group: "yonatan" (5 accounts)
+  - [KOOFvySK2POaZx7CMVIJOBi76iDd1yLG] Yonatan  (yonimeseret2@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T11:57:12.070Z
+  - [6ijckt4S2CFXs7QmFLDUNZzFtUgo1X7s] Yonatan (yoniman2365@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T13:19:34.842Z
+  - [LJlfpxkeTJzK4sPQMXerP9UZeCFAYpIM] Yonatan  (yoniopiya@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T11:46:45.549Z
+  - [69c031db2183ce6cd64c3344] Yonatan (yonatanzera@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T18:15:55.475Z
+  - [69c06d761af60518d5991bd3] Yonatan (yonatantesfah@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T22:30:14.091Z
+
+Group: "hannah" (2 accounts)
+  - [9J4lqu6L3YltLyyA5qjg8YRyIdpQL9Dq] Hannah (hannahwubshet10@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:02:43.632Z
+  - [69be1e9bd2304b2a7c9d2893] Hannah (hannahmehariw8@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-21T04:29:15.141Z
+
+Group: "abenezer" (8 accounts)
+  - [mclFyizutdbhPbRGpmljRr7074W8gzJQ] Abenezer  (aabenezer310@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:06:22.378Z
+  - [z8XaKntg3UIftiOcoZb0uoBE8AkKxo2T] Abenezer  (abenidebebe@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T12:58:38.428Z
+  - [PlJiWvjNQhrFSeVTooMN30HwE4aYW7BY] ABENEZER (kapiteneabenezer@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T13:18:00.946Z
+  - [N5TWCx2wZmM5wwEP4BU2yweQsm8iO7xq] Abenezer (abenezerbelay12@yahoo.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T17:33:23.253Z
+  - [RL5ISWEQvxEm2UnguatDbSkNEPAw7CM3] Abenezer  (abenezertekalegn74@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T15:45:49.413Z
+  - [G3ZuHVPXeEbfkQe1FU4rbOVVyHnoiaKV] Abenezer  (abenezermulugeta621@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T19:36:34.903Z
+  - [69c03a972940e6ebe59468b1] Abenezer (abenial77@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T18:53:11.027Z
+  - [69c05f79fd9fd34c9a636dc2] Abenezer (babifikre1632@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T21:30:33.880Z
+
+Group: "beniyam" (2 accounts)
+  - [rNPZ4CxkTXYs0ig2gfybOdKB5YDNXTtS] Beniyam  (beniyordu26@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:07:27.383Z
+  - [69be650155502a8fd76996f6] Beniyam  (bubu71se@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-21T09:29:37.763Z
+
+Group: "lydia" (2 accounts)
+  - [16ogygIqkbByr2mSOtq2Ga7sxfRTepjw] Lydia  (lydiatessema973@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T12:10:46.062Z
+  - [69bea1e91c92b923227e2530] Lydia (lidu167moges@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-21T13:49:29.729Z
+
+Group: "firaol" (2 accounts)
+  - [es84xLIKjMkk5YxhYXIOUa1waR0PIH5N] Firaol  (firaolfetene7@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:13:28.343Z
+  - [1Joyq7na8MoXIzLas9jaVYLph8BLLvUJ] Firaol (firaolfira229@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-18T12:32:44.102Z
+
+Group: "eyu" (3 accounts)
+  - [WHYqYwIW8a9IknKn8KKXsxD23Jh5hlMJ] Eyu (harwgwyn305@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:14:12.464Z
+  - [tToqwZwhamiTwejuQU1c42oq8XQbNLde] Eyu16 (seeboy4@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:07:54.680Z
+  - [69bd560f080744b7333c14f7] Eyu (eyuderbe00@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T14:13:35.287Z
+
+Group: "melaku" (2 accounts)
+  - [CEUYzlcIv13e7sQvLatVu36e9OyX3bVZ] Melaku (melakuabrha64@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T12:32:39.630Z
+  - [QRGHsFIO3lTNCovCJWADgBfSFK4N5Lzd] Melaku (nigusemelaku22@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T16:12:47.554Z
+
+Group: "abraham" (2 accounts)
+  - [Va4H7lGCklGJvpcsfPkddFRqmNIwCP5s] Abraham (abrahamnigatuu@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:35:51.519Z
+  - [69c023fc38205cf39897f8dd] Abraham  (abrahamenat123@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-22T17:16:44.198Z
+
+Group: "kaleab denbel kebede" (5 accounts)
+  - [MXVpm7BE205Hn0OgB4QZg2TyhlArdIzW] Kaleab Denbel Kebede (kaleab.ugr-9777-1@aau.edu.et) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:43:32.929Z
+  - [0gNnQ2L60gFIrIqddHEI6m9FdTx93XQP] Kaleab Denbel Kebede (kaleab.ugr7-18@aau.edu.et) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:49:46.890Z
+  - [69bc0426c3b22015d6c63939] Kaleab Denbel Kebede (kaleabdenbelkebed@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T14:11:50.537Z
+  - [69bc569780fe2e7c211f9627] Kaleab Denbel Kebede (kaleab.ugr-9777-18@edu.et) | ❌ Unverified | No vote cast | Created: 2026-03-19T20:03:35.270Z
+  - [69bc58b31549674746e3b76b] Kaleab Denbel Kebede (kalea@aau.edu.et) | ❌ Unverified | No vote cast | Created: 2026-03-19T20:12:35.691Z
+
+Group: "birhan" (2 accounts)
+  - [41XCn5wV8jc2jggeXYzOhHwGQXarD0JN] Birhan (birhandemeke221@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T12:46:18.086Z
+  - [69bd69546a0d890ad49495e0] Birhan (birhantsegaw411@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T15:35:48.306Z
+
+Group: "mihret" (4 accounts)
+  - [h43VAHQsgPVVlTE2ZlwyUOO7PS5UD8Ln] Mihret (mihretmikre0@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T13:00:11.515Z
+  - [PXzzO3MPHkWg6lGHuVRkBzZH4KJz93Dq] Mihret (mihretmamo0@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:35:57.213Z
+  - [69bec5d8856d0931cddaff53] MIHRET (mihretdaneil8998@gmail.com) | ❌ Unverified | Voted for: Biniyam Desalegn | Created: 2026-03-21T16:22:48.499Z
+  - [69c05467aea013cb554d1a80] Mihret  (kidumercy2@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-22T20:43:19.263Z
+
+Group: "mahlet" (5 accounts)
+  - [5GSaHR6aM3B9vANK9AZ3p7k5DNuQx2wi] Mahlet (mahletdemsse08@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T13:08:15.440Z
+  - [71PFnsYkS8ijUEJXZD7C4SCqHZnBXaHy] Mahlet  (mahletazene21@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T16:56:18.015Z
+  - [tsqhW0T7NX01XuI7UpQoGeDPsJZNe1bW] Mahlet  (mah451840@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T16:52:52.937Z
+  - [69bd1c769bed80f997fa7d2a] Mahlet  (mahlettadele0@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T10:07:50.933Z
+  - [69be49cbc6316d27c51b870c] Mahlet (mahyetile@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-21T07:33:31.270Z
+
+Group: "bethelhem" (4 accounts)
+  - [HgNBs0Qh9JoWVhMb7oZiw31Cgp4AsmJa] Bethelhem  (bethelhem184@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T13:08:25.972Z
+  - [UCia2ievZxn99ulTB0kpGtieMHE5dNfP] Bethelhem  (bethelhemkassaw76@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T13:14:51.518Z
+  - [69bd4a658252bd3134e4c7f6] Bethelhem  (betikib28@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T13:23:49.492Z
+  - [69be875494b5857b7679d416] bethelhem (betelhemteseyasu@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-21T11:56:04.288Z
+
+Group: "desalegn" (2 accounts)
+  - [N00Ql8IspCEGKmIcZy9fl8OaXrwx9S0u] Desalegn (desalegnejo45@gmail.com) | ❌ Unverified | Voted for: Biniyam Desalegn | Created: 2026-03-18T13:21:53.955Z
+  - [69be4714c6316d27c51b86fd] Desalegn (biniyamt@gmail.com) | ❌ Unverified | Voted for: Biniyam Desalegn | Created: 2026-03-21T07:21:56.211Z
+
+Group: "kalab" (2 accounts)
+  - [rSEUSR6nXIJIgjHKoCtMmO8yAbiOgI4B] Kalab (abrhakalab51@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T13:32:44.487Z
+  - [yvLLXdavLSOfoRgLEjAd9SfDtGWu9KJy] Kalab (tadessekalab4@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T14:02:33.725Z
+
+Group: "abdu" (5 accounts)
+  - [wl48FpgfgomEv8P8TIij336f0gm7Kn9a] Abdu (a07905603@gmail.com) | ❌ Unverified | Voted for: Abushep | Created: 2026-03-18T13:35:12.394Z
+  - [MPxda707MpbAVkgc7h5LN7XRoUIQqpac] Abdu (abdumuzemil09@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T17:20:33.977Z
+  - [ylcmOhnkZHZThgsvKpfS4lt9E6gIHrta] Abdu (asmuabdu3@gmail.com) | ✅ Verified | Voted for: Selamawit Tegen | Created: 2026-03-19T16:55:28.868Z
+  - [69bd5b6c080744b7333c1516] Abdu (abdunesro77@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T14:36:28.743Z
+  - [69bd5bd9080744b7333c1519] Abdu (habeshan39@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T14:38:17.758Z
+
+Group: "mariamawit" (3 accounts)
+  - [BCqMMKFQK2aKhKbXXIzpqn8PRXzTYGpx] Mariamawit  (marleoul23@gmail.com) | ❌ Unverified | Voted for: Dr. Mickey Anteneh | Created: 2026-03-18T13:36:43.918Z
+  - [cifl6oJOjFXTJiQacasiihPfi7CfZZvx] Mariamawit  (kassahunmariamawit6@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-19T16:08:41.690Z
+  - [69bd53f2080744b7333c14ec] Mariamawit  (mariamawitbekele@icloud.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T14:04:34.183Z
+
+Group: "betelhem" (4 accounts)
+  - [sg0lmLOBq08GegiI48CR8WnqaQByuhPn] Betelhem  (betelhemnebiyat11h@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T13:36:48.257Z
+  - [MWii2odw6a5dnucxdpN2WelykOd7nRW1] Betelhem  (betelhimn@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T05:59:34.677Z
+  - [F7rXEVovBIUyrAGyM5h5scFTT7faPwgV] Betelhem  (hyohannesbetta@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T20:03:14.693Z
+  - [69c0297a39721d429e94649e] Betelhem  (betiadmamaw3@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T17:40:10.042Z
+
+Group: "samuel" (2 accounts)
+  - [zEYWvVozvIEO9Y0vysJ1835GeXzQmfrL] samuel  (samuelenguday@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T13:37:11.543Z
+  - [bLYeTDPhDKsjU16rRy5NzMzY4PjP4oTo] Samuel (senchg88@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T16:29:10.438Z
+
+Group: "rosa" (2 accounts)
+  - [J309etnBM15mcp1MMKHxZXmYktdnjwbT] Rosa  (rosadesolo6@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T13:43:10.199Z
+  - [WtlkoYWftDLCs2ufPMUVuFTWfRmka64l] Rosa (rosaabreham0@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T14:43:15.243Z
+
+Group: "bamlak" (3 accounts)
+  - [7NLBJLSf2RgfkT5x5Ka96XXXq1MqJZLE] Bamlak (bamlaktewodros7@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T13:52:31.907Z
+  - [1w2LJesltWw8YCAijIwlUq8eAYPyvXvs] Bamlak (bamlakatlabchew82@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T11:14:10.745Z
+  - [NRBdgafQZoofUiClE1Li0t5M1CfQcKwW] Bamlak (bamibamlak72@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T14:57:59.883Z
+
+Group: "tesfahun" (2 accounts)
+  - [D7h8iOoTTRUKkiWZED5uHQMOtoxXdoZo] Tesfahun  (tesojigesa@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T13:54:18.147Z
+  - [69bd1a799bed80f997fa7d1c] Tesfahun  (chillfisho4500@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T09:59:21.645Z
+
+Group: "helina" (2 accounts)
+  - [aY81O7iuDikelGks5IIwFA49hO4xbvQs] Helina (helinagizaw979@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T13:54:40.031Z
+  - [XhyqPafmvz2DNQAL64sOQtlobDD3tqjS] Helina (helinaeblu@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:53:26.248Z
+
+Group: "lidiya" (2 accounts)
+  - [whcl7SOTrmdt1Hb2klTZzaeomU3wuiqi] Lidiya  (lidyamishel05@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T14:02:24.596Z
+  - [69bd81784f4513e1bc23e2bc] Lidiya  (nani40152@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T17:18:48.754Z
+
+Group: "mame" (2 accounts)
+  - [PevUdFY1OBkWiM2bTG4Pg7BhK5dCI3xZ] Mame (makmel8@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T14:05:41.484Z
+  - [69c03ac6b9fa84d8a78ae225] Mame (ahmedkemal721@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T18:53:58.360Z
+
+Group: "sisay" (4 accounts)
+  - [1W0cHhPn5WyaIQPxIVTJ234QrhhPuGY4] Sisay (sisaygetachew93@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T14:14:13.058Z
+  - [nhZLePKMYpc1P2I9RfQL6zxPRlguLbsn] Sisay (sisayalemayehu2525@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:24:22.550Z
+  - [69c0399f2940e6ebe594688c] Sisay  (sisayworku76@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T18:49:03.715Z
+  - [69c05397aea013cb554d1a66] Sisay (sisaytafese05@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T20:39:51.601Z
+
+Group: "zion" (2 accounts)
+  - [lK7jH6JWTzVW6GdGheGKl0B3ggrazVUX] Zion (tsionmariyo@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T14:30:59.213Z
+  - [ZkPtyenLkYxrvSImg49A2SI0wkgKoJRx] Zion (shalomitigerbi@gmail.com) | ✅ Verified | Voted for: zionmeks | Created: 2026-03-19T05:58:29.748Z
+
+Group: "ephrem" (4 accounts)
+  - [MezSLNtd1bls0kvX6XybI9hf5qKQUZPm] Ephrem  (addiseephrem3@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T14:31:54.625Z
+  - [Q7mWqxWXmmLS67Bp3k85FWn1WvhRwkAO] Ephrem  (onephak2017@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T17:42:48.270Z
+  - [69c02b0e246cb5715ea16483] Ephrem (ephremdamte@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T17:46:54.292Z
+  - [69c03c232940e6ebe59468ef] Ephrem (ephremroman38@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T18:59:47.713Z
+
+Group: "semer" (2 accounts)
+  - [5EZ7cAWAA7aYZCtO7y9zN6MFkwLCCo6F] Semer (semerzeinu26@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T14:34:03.125Z
+  - [69bec4c9856d0931cddaff50] Semer (semir6120@gmail.com) | ❌ Unverified | Voted for: 4Kilo Entertainment | Created: 2026-03-21T16:18:17.505Z
+
+Group: "tihitina" (3 accounts)
+  - [Zv8yYJbBoMngP2gAJzbkqMbjXpLhCss5] Tihitina  (tetualex4@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T14:34:28.721Z
+  - [4AQ2akwILVbNa32hbgb1znFVAcNGcyiE] Tihitina (tihitinaasnake@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T18:03:22.699Z
+  - [69bff91a0c69331d86f191d7] Tihitina (tihitinagobena88@icloud.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T14:13:46.506Z
+
+Group: "tola" (2 accounts)
+  - [79uDytncDAMlFFbWoVLqOUxHAZs1ToVi] tola (jalanetola@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:06:22.193Z
+  - [z9D5NHIJZcmnEv73vKs4PM1mNiuNxSDE] tola (abrahammulugetaadebash@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T18:19:11.945Z
+
+Group: "tsega" (2 accounts)
+  - [R4Oszf6q3qB2xbpZKduruQH6NvxkhXhF] Tsega  (tsegamitku7@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:12:14.457Z
+  - [lUVwts5dg2t9hZncSg00yGJ5Xwe28Nc6] Tsega  (taegateka@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T19:18:00.539Z
+
+Group: "mulugeta" (2 accounts)
+  - [SGclEcNrFBjiNPrymDaU2DcxFGsEuA7I] Mulugeta  (mulugetak336@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:12:47.538Z
+  - [69beba5c5c549f2df48d26d0] Mulugeta  (mulugetakinde@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-21T15:33:48.002Z
+
+Group: "elnathan" (2 accounts)
+  - [EjQOH73g9mtgYiYJofQkNEwQcStXg9ci] Elnathan  (amanuelelnath@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:25:28.570Z
+  - [69c04a96aea013cb554d19c5] Elnathan  (elukaeli@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T20:01:26.558Z
+
+Group: "fanuel" (2 accounts)
+  - [kMDpn0RmDGwDOrFxKujxxRhQlKeOBZfD] Fanuel (fdbillyfun@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:27:11.158Z
+  - [3PJ5v4YFqP2akGtZ4z7p5FhGcIN9AfVb] Fanuel (fanualendawek416@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T20:04:10.524Z
+
+Group: "dani" (3 accounts)
+  - [ByauruWgISqXzsc2vjJOdPZbK96S9t0N] Dani (danieldamise887@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:35:37.216Z
+  - [TxciHZiApLkf8zeSqx1nAdTc11RE7cDf] Dani (modeeeee812@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T19:59:41.370Z
+  - [69bd28819bed80f997fa7d87] Dani (danitesfaye112@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T10:59:13.722Z
+
+Group: "tamerat melaku" (2 accounts)
+  - [Og4VA9grG4DuvOyImug60ajIw9jRzBJ7] Tamerat Melaku (tameratmelaku23@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:36:28.825Z
+  - [aN3hF27eqnh8KgdHSoBHhGY6oIveeBWW] Tamerat Melaku (tameratmelaku21@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:37:44.317Z
+
+Group: "gelila" (4 accounts)
+  - [0rKK9Y33C02yxxnkoCt7M5DOVlwwu7jF] Gelila  (gelilasisay89@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T06:47:46.692Z
+  - [je8YgU9KbLkMT9KNnYS9NU5d6yXrMr8d] Gelila  (gelila471@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T18:32:28.594Z
+  - [69be82f594b5857b7679d408] Gelila (gelila1201@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-21T11:37:25.648Z
+  - [69beefa3e3f9228da33a1f5c] GELILA  (gelilahabtesellassie0912@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-21T19:21:07.470Z
+
+Group: "rebecca" (3 accounts)
+  - [9iPIaGyINWZ1trNfjGeiK8BEi4ejp94d] Rebecca (rubynia2330@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:03:47.554Z
+  - [8RQmWtaRghDd8rsxapFsFhMG2R3jbek5] Rebecca  (ribk531@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T18:56:59.829Z
+  - [ntVaeT89sgUJMGQ6SGTIFOrUbZSxIodF] Rebecca (ribkabayu4@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T18:59:22.700Z
+
+Group: "tinbit" (2 accounts)
+  - [gmKeOWKWMoo3Ku9O46v96KSLSBJuk4gK] Tinbit (titishajo@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:04:00.502Z
+  - [lSfbvhyclteoEBlGsacgFn0M9ZObKeNS] Tinbit  (tinbittinu@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T20:06:16.313Z
+
+Group: "beti" (2 accounts)
+  - [FCOvG0n1AMpDjW7oUtbVkZM5TLHjLFHN] beti (betimeles21@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:04:13.090Z
+  - [yHGLUg5GcwHDBC933TFMyFn9GrEQVmcJ] Beti (beti30zewde@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T16:18:20.044Z
+
+Group: "ruhama" (2 accounts)
+  - [weEcb9Q0k4Od1cEzCcyl54OxGK2wEm2q] Ruhama  (ruhamakebere@gemail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:05:34.745Z
+  - [69c039a82940e6ebe594688f] Ruhama (ruhamaber@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-22T18:49:12.821Z
+
+Group: "yosef" (5 accounts)
+  - [DpnYgeIbouYgdYu4ijs9uV44GCxGGAUx] Yosef (yosefayalsew562@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:07:52.690Z
+  - [TR1yoEkUDfYPKqCW8msTcI5wV2nupUn1] Yosef (asmexjosy@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:18:55.867Z
+  - [lf4yqZXDnkrXmcqVWOq2kKH23CK8ocPn] Yosef (yosefdemeke156@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T11:06:00.387Z
+  - [ONznY3XOcR8PoLIl1mOZrlIGlOZv9vfI] Yosef (gelaw522@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T12:43:13.574Z
+  - [69be2abbd2304b2a7c9d28be] yosef (yoseftasfaye128@gmail.com) | ❌ Unverified | Voted for: 4Kilo Entertainment | Created: 2026-03-21T05:20:59.971Z
+
+Group: "solomon" (2 accounts)
+  - [EMuG8nX0OpvuLQ5mNsLFayxRWVRNBP0Q] Solomon  (asolo.abebe4@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T07:12:16.041Z
+  - [69be278cd2304b2a7c9d28aa] Solomon (sman28340@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-21T05:07:24.290Z
+
+Group: "selamawit" (5 accounts)
+  - [YKpjkWws7WmyuPCgGyGUGoj5DnMV8LA2] Selamawit (selamawitalebel79@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:18:40.914Z
+  - [wzgZ617pJdq0ZBTYw3hssIjyaQUleITg] Selamawit  (selamawitnigatu808@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-19T11:26:02.087Z
+  - [XHe9c6onEseT4SXKxO9xdzOAcX6BWlrw] Selamawit (gebremedhinselamawit@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T18:41:29.296Z
+  - [69be8a3494b5857b7679d41d] Selamawit  (abguselam@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-21T12:08:20.508Z
+  - [69c02e102183ce6cd64c32ef] Selamawit (jjselamawit@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T17:59:44.974Z
+
+Group: "rediet asmamaw" (2 accounts)
+  - [KoVuBQk04oftfDYQnKZdijG63e0ryCg9] Rediet Asmamaw (redietasmamaw925@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:20:01.077Z
+  - [09VeLRLEnaYQxX0LG02pp2DHzZziPXVh] Rediet Asmamaw (redietasmamaw8@gmail.com) | ✅ Verified | Voted for: Biniyam Desalegn | Created: 2026-03-19T07:21:09.183Z
+
+Group: "edlawit belay" (2 accounts)
+  - [TjdJA0if9ygeQEXsPoE8a9xtha7zv8Sp] Edlawit belay  (live57624@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T07:23:52.894Z
+  - [DlHGyBJt43o7HL2jMbkxo5HRAVoMjdR1] Edlawit Belay (ebelay374@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-19T07:27:12.399Z
+
+Group: "yeabtsega" (2 accounts)
+  - [HRvpZ7kGcr6qdtzrcesmCSuO5zb111nk] Yeabtsega (yeabtse14@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T09:45:29.411Z
+  - [69bd72d54f4513e1bc23e27c] Yeabtsega  (yeabtsegasintayehu0@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T16:16:21.149Z
+
+Group: "hilina" (2 accounts)
+  - [bS8BTYHVuT754s6h1OnQtnIuLGfJpHCr] Hilina (hilinaalem@yahoo.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T09:46:47.224Z
+  - [69bd1d0e9bed80f997fa7d32] Hilina (hilinamesfin53@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T10:10:22.828Z
+
+Group: "abel afewerk" (2 accounts)
+  - [BR8fcNrFxukMbWdmcJQ0PAnfk64AGy4r] Abel Afewerk (abelafewerk12512@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:06:53.319Z
+  - [tUEdOPkVoHVjjLBJFFCUBlU3K3kuYmSO] Abel Afewerk (abell.afewerk@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T10:08:10.033Z
+
+Group: "solome tesfaye" (2 accounts)
+  - [nYmxyceLhszPP4Vk1UPbG6GylXZPjI5t] solome Tesfaye (tessolome37@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-19T10:08:21.680Z
+  - [bjYkYbXe2dnKQxBmfwE4EEGArNYrDYte] Solome Tesfaye (solometesfaye878@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T10:11:46.926Z
+
+Group: "tesfaye deresse" (2 accounts)
+  - [qCngicu9GQu6rwvnD5SEN6kQVWiaX5JL] Tesfaye Deresse (tesfayedonkeytube@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:09:50.741Z
+  - [WilXoSpENDxFtPODEqDjOtE1mlsZXQmQ] Tesfaye Deresse (tderesse67@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T10:10:45.922Z
+
+Group: "husien mohammed" (2 accounts)
+  - [zbwkYVYbAN39hpnMrzm9jUvjFkzrX6tq] Husien Mohammed (husienmohammed98@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:16:47.099Z
+  - [OHtssfc1CTbxRjreAwvEdX3tpMEPLGqL] Husien Mohammed (husienmohamed112@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-19T10:18:12.648Z
+
+Group: "amraphel" (2 accounts)
+  - [f4nDhCsVmkd19wytL2jfdIue2qSEz0cH] Amraphel  (suramk12@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:19:14.919Z
+  - [BKbweGOARuPRynUN5R0U0KQ3PFcokGL0] Amraphel  (suramk05@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T10:22:20.368Z
+
+Group: "biniyam" (5 accounts)
+  - [ppzcOizToopM7p35VErWoebxyoAr4w1D] Biniyam  (biniyamsolomon023@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:21:59.926Z
+  - [USWALT2f3PoW7VZhGeR5ripuoxk1zNib] Biniyam  (biniyammoges32@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:43:14.617Z
+  - [79hFuHn6B2yjuUcryfGLJ6lhPpYk3b7c] Biniyam (adyam2712@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T20:19:29.334Z
+  - [WHWzO5T2hsDzMfO9fVXsW9Us1V8hWgC9] Biniyam (mbini82217@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T15:07:24.073Z
+  - [9eK4CyNaoyaU22eYCWgeQTamLr0BBOhC] biniyam (biniyamtewachew@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T18:49:55.745Z
+
+Group: "addisu" (2 accounts)
+  - [p3lw0u1IOfOEabVUcVTlDP66Nd4Tchk9] Addisu (addisucool244@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:24:47.693Z
+  - [69bd3b8b427e6955da6d175a] Addisu (adisshiwot0512@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T12:20:27.533Z
+
+Group: "robel mengistu" (2 accounts)
+  - [Q6807Nqsp6g8AdNNTcRPqnDO7IqyAR5F] Robel Mengistu (robelmengistu5@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:38:28.250Z
+  - [1dZuwpzFIsn3uCFQO2SgqUm1WJrIrd3Y] Robel Mengistu (robelmengistu@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T10:46:04.300Z
+
+Group: "yadiel" (2 accounts)
+  - [34Uac6dSkSnbNQFX8ndUg7sRSRn8fAJq] Yadiel (etue942@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T10:53:07.193Z
+  - [69c03cf7b9fa84d8a78ae27e] Yadiel (yadielbayu876@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T19:03:19.443Z
+
+Group: "bek" (2 accounts)
+  - [Y1p5UUIpoqDMEr7dgGPzjAnwikUEvMTt] Bek (latebek11@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T11:11:30.059Z
+  - [6ZXgoEked6omgpPs67xax9Oi1I7xVkOd] Bek (eyobmalvin@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T18:53:28.274Z
+
+Group: "meklit" (6 accounts)
+  - [3mC7a8VbxvmA05dcEopT1zP4APHpOykU] Meklit (meklitferede62@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T17:27:05.396Z
+  - [xq7qNUwZiVojvkC5IR4xmtrmFT4stLj5] Meklit (meklitzelalem2917@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T17:36:40.989Z
+  - [nx0w5WXtcSAWz93RhyILhHfheGaEVnn2] Meklit (meklittemtme@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T12:55:50.883Z
+  - [69bd4ba28252bd3134e4c806] Meklit (meklittesfaye2445@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T13:29:06.202Z
+  - [69be4da9c6316d27c51b8733] Meklit  (makimemgosyu564@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-21T07:50:01.442Z
+  - [69c043e8c0fb86c734d4e71d] meklit (binyammeklit5@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-22T19:32:56.822Z
+
+Group: "dagmawit" (2 accounts)
+  - [4MeXs5fnhB9eYPIBk0kfqGNKFa6X32ok] Dagmawit  (dagmawitgashaw4@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T18:43:39.111Z
+  - [hXh2Tup3ql9HeTVQITa77SlnLVBkeRGt] Dagmawit  (dagmawitberhe07@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T17:05:20.094Z
+
+Group: "yeab" (2 accounts)
+  - [4Vp4x5rMqf6u4BDXiLSpmSte54kNEUxY] yeab (yeab8698@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T17:23:48.732Z
+  - [69c0457bc0fb86c734d4e74e] Yeab (meresenior14232314@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-22T19:39:39.298Z
+
+Group: "bezawit" (2 accounts)
+  - [4WzUEwWQaDMwujE6QcO9rMUmImUG86v4] Bezawit (bezawittekalegne807@gmail.com) | ❌ Unverified | Voted for: Dr. Mickey Anteneh | Created: 2026-03-18T20:25:35.539Z
+  - [69c00d0807b0fef8271bd9e2] Bezawit (bezitiyee@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T15:38:48.363Z
+
+Group: "yohannis" (2 accounts)
+  - [4kDxRWgyzdq8gvHaQbSdYFih006j2sKc] Yohannis (yohannessolomon1993@gmail.com) | ❌ Unverified | Voted for: Sofoniyas | Created: 2026-03-18T19:18:22.012Z
+  - [zU37KzLDzZ6HwIDgcOJmsAZrftcyC9FU] Yohannis  (yohanishhdjd@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T18:44:51.696Z
+
+Group: "kirubel" (4 accounts)
+  - [BOY3XAovejOIcUV0teDZ6T3FuegbmbFe] Kirubel (kirubel807@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-18T14:57:12.924Z
+  - [8Bo0fOP7JzAyy7oytYJw526NVu8r98UL] Kirubel (kkirubel21@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T15:55:25.481Z
+  - [HG1IiWVF5YD4NXrdeS7XT14wZff53sSl] Kirubel (kirubeldesalew3@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T17:23:48.204Z
+  - [69c04fb8aea013cb554d1a34] kirubel  (kirubelteach@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T20:23:20.985Z
+
+Group: "yafet" (4 accounts)
+  - [Bc7maT658Xr5YW5W8ioD206j4K3ex32W] Yafet (yafetdereje9@gmail.com) | ❌ Unverified | Voted for: 4Kilo Entertainment | Created: 2026-03-18T17:49:15.796Z
+  - [69bd19639bed80f997fa7d14] Yafet (yafetyohanes@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T09:54:43.443Z
+  - [69c046f2c0fb86c734d4e79f] Yafet  (yafbrownie10@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T19:45:54.010Z
+  - [69c049f3c0fb86c734d4e7e6] Yafet  (yafaedmealem@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T19:58:43.868Z
+
+Group: "bk" (2 accounts)
+  - [EhZfvfoVenL0KrdXu44k8nuK2c5VLd43] Bk (bekere6556@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T16:32:09.277Z
+  - [aViFr9vmWMOzUymbMyWXeKMdxbSHuEvT] Bk (barkot1627@gmail.com) | ✅ Verified | Voted for: Ab Kassa | Created: 2026-03-19T19:21:18.152Z
+
+Group: "emran" (2 accounts)
+  - [FqFL2a3HtHQy8Y8xJMWZPUObiZ9ODZfd] Emran  (emranmustefa99686@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T14:55:15.504Z
+  - [jVtENf5gk0jTsXC43AnnCXCJZeL5Jnn0] Emran (abrshiworku2@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T18:28:19.547Z
+
+Group: "yohanns yismaw" (2 accounts)
+  - [HCAKdViSyWdvkJAhlesRpPnFvZ6wLTJ0] Yohanns yismaw (yohannsyismaw3@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T18:58:17.504Z
+  - [NR6JL3jpFQf7gIgL3ZOIGg5s7IOz1y1V] Yohanns yismaw (joabebe40@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T16:03:12.246Z
+
+Group: "mahder" (2 accounts)
+  - [IAQYSRm1fmwtOHdMKGdl4tgfHNPV0GZK] Mahder (mahderewnetu85@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T17:05:41.817Z
+  - [69c02ff42183ce6cd64c3313] Mahder (biraramahder55@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T18:07:48.606Z
+
+Group: "semir nuru" (2 accounts)
+  - [Imy3vK6QBW4Ie9UswQ21P2HSTQwlJFpM] Semir Nuru (sonosoplc@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T15:04:31.374Z
+  - [XOPwlDc84bm6BjV9sNReE8059E8k6aWC] Semir Nuru (semirnuru667@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T15:03:18.756Z
+
+Group: "simon" (2 accounts)
+  - [KrqmwC9XlRE7fKOvDFgwIlaoO6fmCRD0] Simon (carton.bet64@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T16:04:01.981Z
+  - [3bosGZurxgPg7Xr3AxZxA4sjk3pI2g0V] Simon (simonalemayehu505@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T20:20:04.219Z
+
+Group: "yordi" (2 accounts)
+  - [LtdjD5pLOQjP0oxbfYowv5okDRHcuA2x] Yordi (yordanosmanaye30@gmail.com) | ❌ Unverified | Voted for: Dr. Mickey Anteneh | Created: 2026-03-18T14:53:24.802Z
+  - [WHmQ016uGSgJcBhh1zAXzA8ugjkAxM7D] Yordi (yordanostamru74@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T18:06:17.574Z
+
+Group: "mintesnot" (2 accounts)
+  - [MCs8grPYbMaa5hBKXzGsoopUZ5BI40Hw] Mintesnot (mintesnotseleshi2@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T18:10:52.862Z
+  - [69be93801c92b923227e251b] Mintesnot  (mintesnotabera75@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-21T12:48:00.162Z
+
+Group: "liya" (2 accounts)
+  - [PpkYmLUKUQiUHAnTMazZmsowKf0awHCz] Liya (liyshimeles@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T17:38:06.973Z
+  - [69bc025159a5a42524527353] Liya (bedatubeka@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-19T14:04:01.290Z
+
+Group: "nahom girma" (2 accounts)
+  - [QNGjeuDst8cvxCs5JzLYrgq1TF96ITH6] Nahom Girma (nahomgenet1924@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-18T20:01:15.580Z
+  - [69bfe4959ecd158b7ef8adda] Nahom Girma (nahom.girma76@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T12:46:13.528Z
+
+Group: "muluken" (3 accounts)
+  - [RGGvFcUypkM8HcBSJN8ErE0BD62h50fr] Muluken  (lift8401@gmail.com) | ❌ Unverified | Voted for: Sofoniyas | Created: 2026-03-18T20:14:23.039Z
+  - [BUF7KfTGvQxTklLdF66h45hlOkHIJAEa] MULUKEN  (mulukenteklu0931@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T18:02:05.839Z
+  - [69c039b72940e6ebe5946892] Muluken (mulertechnology@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T18:49:27.866Z
+
+Group: "elroe" (2 accounts)
+  - [UpUIMGCuvswGdouCy309v0vgnh2sAm31] Elroe (elroeb24@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T15:27:30.459Z
+  - [ZGTmsoVORFDgfAt39x04Le1YjRiHDx5m] Elroe (eluzemariam21@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T19:01:51.650Z
+
+Group: "abdisa" (2 accounts)
+  - [WP14BxfOVavqDJVPpRFtbmoaZIsHBQr1] Abdisa (abdisabirhanu79@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T16:28:31.619Z
+  - [69be90421c92b923227e250b] Abdisa (abdisakasim57@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-21T12:34:10.895Z
+
+Group: "abush" (2 accounts)
+  - [X0qyE6RzYSGyTxXZaJakL82Oqqh12wCW] Abush (abushmovie@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T18:14:36.766Z
+  - [69bff9f80c69331d86f191f5] Abush (yeabatu66@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T14:17:28.106Z
+
+Group: "rita" (2 accounts)
+  - [ZHGNUowhD1x7jeVhw4l8T8RhGfZse5ih] Rita (getnetrahel5@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T18:56:01.762Z
+  - [69bd902956e1b626b120bbab] Rita (rahelmulugeta040@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T18:21:29.931Z
+
+Group: "kaleb" (2 accounts)
+  - [ZdYXFpCGWNO65WncXD2CJ24MQzFFDacu] kaleb (kalebtegegnework@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-18T17:56:51.465Z
+  - [69c062b1fd9fd34c9a636ddb] Kaleb (kalebmelese298@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-22T21:44:17.553Z
+
+Group: "amy" (2 accounts)
+  - [Zf2rvFh8MoxQ6ao4UiDI7nZEJiden0rg] Amy (ameneyob4@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T18:10:29.817Z
+  - [uMywZbVrtnFNl5ApLBVlXac3lw2VI6Q4] Amy (zelekeamen7@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T20:02:23.167Z
+
+Group: "beki" (2 accounts)
+  - [aCGatorJepWMs86iME2TDnA9iz6Y5etR] Beki (bekinega605@gmail.com) | ❌ Unverified | Voted for: Sofoniyas | Created: 2026-03-18T20:10:21.837Z
+  - [69bff73a0c69331d86f191a2] Beki (brkthgs@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T14:05:46.029Z
+
+Group: "rekik" (2 accounts)
+  - [bNJHmE8Q8n3kcaY1mHwiRN8yCZ46UhxR] Rekik (rekikmelkamu234@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T19:18:35.282Z
+  - [69bc030959a5a42524527359] Rekik  (rekiksiyum12@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T14:07:05.578Z
+
+Group: "ermias" (2 accounts)
+  - [Pevw9vB3D1WGaYQiLoDcLhwVKuHXX19T] Ermias (jeremiahbayena@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T11:27:07.777Z
+  - [69c0330b4c1c5050a62687ba] Ermias (ermiasabdurazak21@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T18:20:59.424Z
+
+Group: "abeni" (3 accounts)
+  - [h4uZseh4YeLqNES4I68qVZ4DqtP79aWI] Abeni (abenipablo@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T15:24:04.546Z
+  - [pjRzSuHFd1fTmxQbBQjOkIYGl2nCEfYh] Abeni (mulunehabenezer8@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-18T18:52:24.033Z
+  - [69bd30f021639c8a993eb224] abeni (abenidestaofficial@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T11:35:12.059Z
+
+Group: "bini" (3 accounts)
+  - [hIZx1AoXg1youGPatSgNJIUXSBNSm8HZ] Bini (biniyambogale213@gmail.com) | ❌ Unverified | Voted for: Menfesu Minda | Created: 2026-03-18T16:30:39.806Z
+  - [69bdb1a4f4ac6bf39f3f7d2d] Bini (mebateklewold3@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T20:44:20.926Z
+  - [69c00cab07b0fef8271bd9db] Bini (binisankara104@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T15:37:15.779Z
+
+Group: "seble" (2 accounts)
+  - [nKF9FUqKKfiKTKBvjf5AXzdxkBFE8Ort] Seble (seblewongeleyoas@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T15:54:13.761Z
+  - [FxC4spmXXMldcgEaaDr4D0YGd44qM71f] Seble  (seraseble62@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T20:11:14.071Z
+
+Group: "edom" (2 accounts)
+  - [uU98bpoNFIWWcd8b7jlCxDMdbWrR09cR] Edom  (edomelora@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-18T19:48:55.151Z
+  - [D1dWMQRnCEpK2noSi8sBnV2ELivJeQGz] Edom (edom.gessesse1@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T19:08:01.626Z
+
+Group: "dere" (2 accounts)
+  - [zSemjaZNrJfHLFXVcn9xe7bKvNZSmMqN] Dere (derejedegu54@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-18T17:32:24.051Z
+  - [69bd2b76b3abe8f87934313b] Dere (derejeaduna5@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T11:11:50.985Z
+
+Group: "tedy" (2 accounts)
+  - [APCOXqpIwviQDlGqDN7W0ssTmo1JXMYv] tedy (tedytameru@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T11:48:42.120Z
+  - [ZjCUMn9RCJBO8UsOXMoebHSPETg7NLWS] tedy (testrootusers@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-19T17:51:25.320Z
+
+Group: "mahider" (2 accounts)
+  - [sE1vBVqk8Jgc5v5zO2aElEzw8nqVLtP5] Mahider (prodmahider18@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T12:41:44.431Z
+  - [69c05967fd9fd34c9a636daa] Mahider  (madrilget@gmail.com) | ❌ Unverified | Voted for: 4Kilo Entertainment | Created: 2026-03-22T21:04:39.106Z
+
+Group: "yaf" (2 accounts)
+  - [qzEwQ5wOVHkaRajMEA1dK0ZzuyZOikur] Yaf (yafetworku12@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T13:03:47.600Z
+  - [69c034de931429333b9f146a] Yaf (yafetabebe5@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T18:28:46.804Z
+
+Group: "bereket desta" (2 accounts)
+  - [xk8ibzHFoo3DX8JXwdZ8Ojo2F7c699rD] Bereket Desta  (bkdesta74@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T13:19:22.360Z
+  - [vzSZyrkfTm4t7KNX6a2f7nQq1ZhrkTYv] Bereket Desta (bkdesta01@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T13:24:29.103Z
+
+Group: "asnake negash" (2 accounts)
+  - [uzgvbtiDigkjLcv1VVsJRkL85ahA0yVp] Asnake Negash  (benolnegashbn@outlook.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T13:45:36.655Z
+  - [69bd269a9bed80f997fa7d78] Asnake Negash (asnake.6424@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-20T10:51:06.839Z
+
+Group: "nahom denbel kebede" (3 accounts)
+  - [69bc00c7d21cea3fc438a3ed] Nahom Denbel Kebede (nahom.ugr-3541-16@aau.edu.et) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T13:57:27.515Z
+  - [gXmyX9rRrw1IPmHyzksF1e0iFRqACyXZ] Nahom Denbel Kebede (nahom-3541-16@aau.edu.et) | ❌ Unverified | No vote cast | Created: 2026-03-19T15:32:38.334Z
+  - [Fgx3rN9UP74QkYOCyHkTlg2FbsOCjp52] Nahom Denbel Kebede (nahom.ugr-3541-16@aau.edu) | ❌ Unverified | No vote cast | Created: 2026-03-19T19:53:28.387Z
+
+Group: "kaleabdenbel kebede" (2 accounts)
+  - [69bc03d0c3b22015d6c63931] Kaleabdenbel Kebede (kaleab.ugr-9777-8@aau.edu.et) | ❌ Unverified | No vote cast | Created: 2026-03-19T14:10:24.795Z
+  - [69bc03f0c3b22015d6c63934] Kaleabdenbel Kebede (kaleab.ugr@aau.edu.et) | ❌ Unverified | No vote cast | Created: 2026-03-19T14:10:56.125Z
+
+Group: "raf" (2 accounts)
+  - [Qrw3LstU1nnnqRaIfg2kJUUBxYyxc6ml] Raf (endalkref@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T15:17:58.240Z
+  - [g5OQXGJH909foPN56QUxtVugN2m7g8vs] Raf (endalkrato@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T15:28:08.511Z
+
+Group: "nardos birhane" (2 accounts)
+  - [DftEpLZZZwSY4V3dFsX0HUFhV2XH8gQZ] Nardos Birhane  (birhanenardos583@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T16:16:32.690Z
+  - [GNZn2TnnoRTfaey7xT5sFBWry6yIbGNL] Nardos Birhane  (nardosbirhane1739@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T16:50:11.743Z
+
+Group: "abenezer birhanu" (2 accounts)
+  - [dtAxBE71xlTUFzEPO9bCjiUPAthaVUNp] Abenezer Birhanu (abirhanu9558@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T16:56:22.110Z
+  - [jUv3rjUwswh7BRfNy01SUBoK6MgV7hN4] Abenezer Birhanu (abenezerbirhanu2001@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T16:58:39.235Z
+
+Group: "haylat yemane" (2 accounts)
+  - [FEdfuuqWIzxC6o4N0RvO51zUbWbbqAM3] Haylat Yemane (memahaylat@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T16:58:38.627Z
+  - [Fs7QEVmw3csH0KCxRx0VMMC3lgCXUBpn] Haylat yemane (haylatmame@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T17:03:17.160Z
+
+Group: "heran" (2 accounts)
+  - [WxpVcXH1IEUQRTYSiePaMuhUxupyQ0EF] Heran (heranisisay569@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T17:46:51.325Z
+  - [hM4fE5FGSHdHuCmqZACLTnl7Zvaa9fjj] Heran (heranisisay12@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T17:56:50.425Z
+
+Group: "biniyam abebe" (2 accounts)
+  - [1iWnOd0fbLP6Z65SFyrG3Rl6BZh9Zsbn] biniyam abebe (biniyamabebe200@gmail.com) | ✅ Verified | Voted for: Ante | Created: 2026-03-19T18:11:55.303Z
+  - [69bdac3ef4ac6bf39f3f7d0f] biniyam abebe (biniyamabebe1@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T20:21:18.253Z
+
+Group: "dirshaye fantu" (2 accounts)
+  - [KA233Qz3tqAKRWkAR9wwypdBGLepmEwF] Dirshaye fantu (jimmytina28@gmail.com) | ✅ Verified | Voted for: Captain Jimmy | Created: 2026-03-19T18:40:40.387Z
+  - [69bd3a62427e6955da6d1750] Dirshaye Fantu (dirshayefantu@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-20T12:15:30.297Z
+
+Group: "yohannes alebachew" (2 accounts)
+  - [y1NxZllJPewwhi5YO4jzCRxCI1gTyatY] Yohannes Alebachew (yonialebe51@gmail.com) | ✅ Verified | Voted for: Kebron (KB) | Created: 2026-03-19T19:12:45.155Z
+  - [f3lrplQbWDm7QPioUI1xW9ppujIWUsE6] Yohannes Alebachew  (yonialebe36@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T19:15:46.882Z
+
+Group: "esayas" (2 accounts)
+  - [J0oRP4yf5MTvt4LLBJK5BEu02TKi6hRx] Esayas (esayaspop@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-19T19:37:22.535Z
+  - [69bdb545b6c35237e34e0f85] Esayas (abutek23@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T20:59:49.866Z
+
+Group: "ashenafi ayele" (2 accounts)
+  - [69bd21d09bed80f997fa7d4b] Ashenafi ayele  (ashenafiayele1211@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T10:30:40.170Z
+  - [69bfed549ecd158b7ef8ae8f] Ashenafi Ayele (ashenafi.ayele63@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T13:23:32.496Z
+
+Group: "hemen" (2 accounts)
+  - [69bd29e29bed80f997fa7d9b] Hemen  (anberberhemen@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T11:05:06.910Z
+  - [69be94921c92b923227e251e] Hemen (tigisthabte2712@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-21T12:52:34.614Z
+
+Group: "mekdelawit" (2 accounts)
+  - [69bd2d7621639c8a993eb20d] Mekdelawit  (mekdiendalk@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T11:20:22.763Z
+  - [69bd91c9ee20b2cda9285ed5] Mekdelawit  (mekdelawitlantyderu@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T18:28:25.127Z
+
+Group: "matiyas" (2 accounts)
+  - [69bd373c427e6955da6d173c] Matiyas (matiyasseyfe@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T12:02:04.912Z
+  - [69be3729d2304b2a7c9d28e7] Matiyas  (loftyboi38@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-21T06:14:01.905Z
+
+Group: "abel bereket" (2 accounts)
+  - [69bd61cf6a0d890ad49495c3] Abel Bereket (abelbereket38@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T15:03:43.884Z
+  - [69bd62846a0d890ad49495c9] Abel bereket (abelbereket101@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T15:06:44.655Z
+
+Group: "kassa" (2 accounts)
+  - [69bd9462730f8eadeb82ea71] Kassa  (kassa6718@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-20T18:39:30.171Z
+  - [69be4543c6316d27c51b86ed] Kassa (kassa18@gmail.com) | ❌ Unverified | Voted for: Biniyam Desalegn | Created: 2026-03-21T07:14:11.671Z
+
+Group: "temesgen" (4 accounts)
+  - [69bdfd80797e2fa96e3492bb] Temesgen  (twtemesgen54@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-21T02:08:00.400Z
+  - [69bf80de6b82bc8cf79e6003] Temesgen (temusole7@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T05:40:46.645Z
+  - [69c031302183ce6cd64c3331] Temesgen (remhainegatha@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T18:13:04.023Z
+  - [69c04b03aea013cb554d19d5] Temesgen (precisionmediced@gmail.com) | ✅ Verified | No vote cast | Created: 2026-03-22T20:03:15.688Z
+
+Group: "peter" (2 accounts)
+  - [69be4d21c6316d27c51b872a] Peter (oetedebisnson34@gmail.com) | ❌ Unverified | Voted for: Biniyam Desalegn | Created: 2026-03-21T07:47:45.359Z
+  - [69bebe3a856d0931cddaff3d] Peter (petrostig52@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-21T15:50:18.841Z
+
+Group: "gulilat" (2 accounts)
+  - [69be4e41c6316d27c51b873c] Gulilat (gulilat576@gmail.com) | ❌ Unverified | Voted for: Biniyam Desalegn | Created: 2026-03-21T07:52:33.618Z
+  - [69bfaed9895cb0d5c375c92a] Gulilat (gulilatteshe@gmail.com) | ❌ Unverified | Voted for: Captain Jimmy | Created: 2026-03-22T08:56:57.289Z
+
+Group: "kidist birhanu" (2 accounts)
+  - [69be4f9e55502a8fd76996a9] kidist birhanu (kidistbirhanu@gmail.com) | ❌ Unverified | Voted for: anania_sound | Created: 2026-03-21T07:58:22.442Z
+  - [69c03e5e2940e6ebe594691f] Kidist birhanu  (kidistbirhanhkidu@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T19:09:18.690Z
+
+Group: "meti" (3 accounts)
+  - [69beb4dc5c549f2df48d26c1] Meti (matichala028@gmail.com) | ❌ Unverified | Voted for: Ab Kassa | Created: 2026-03-21T15:10:20.133Z
+  - [69bebfd8856d0931cddaff46] Meti (metimak11@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-21T15:57:12.781Z
+  - [69c04081c0fb86c734d4e6e9] Meti (metiwak5@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T19:18:25.768Z
+
+Group: "abebe girma" (4 accounts)
+  - [69bf161ccd6748cb42a5457b] Abebe Girma (dqxaoor5436@gmail.com) | ❌ Unverified | Voted for: 4Kilo Entertainment | Created: 2026-03-21T22:05:16.680Z
+  - [69bf17bdcd6748cb42a54581] Abebe Girma (wykpcxv4775@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-21T22:12:13.675Z
+  - [69bf18eecd6748cb42a54584] Abebe Girma (yjrmhjx8665@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-21T22:17:18.919Z
+  - [69bf19d6cd6748cb42a54587] Abebe Girma (pbngjwn5204@gmail.com) | ❌ Unverified | Voted for: Nardyk | Created: 2026-03-21T22:21:10.212Z
+
+Group: "demelash zala" (2 accounts)
+  - [69bf2737284711b54c00da9e] Demelash Zala (demelash.zala56@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-21T23:18:15.250Z
+  - [69c037532940e6ebe594684f] Demelash Zala (demelash.zala84@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T18:39:15.558Z
+
+Group: "abate fekadu" (2 accounts)
+  - [69bf33352228bb822d124ccf] Abate Fekadu (abate.fekadu27@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T00:09:25.830Z
+  - [69c0427d121f1d174f475db3] Abate Fekadu (abate.fekadu99@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T19:26:53.877Z
+
+Group: "selam abel" (2 accounts)
+  - [69bfba1c98e93e981d131c57] Selam Abel (selam.abel80@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T09:45:00.242Z
+  - [69c03a5eb9fa84d8a78ae20b] Selam Abel (selam.abel29@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T18:52:14.374Z
+
+Group: "hailay eshete" (2 accounts)
+  - [69bfbabd98e93e981d131c63] Hailay Eshete (hailay.eshete73@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T09:47:41.570Z
+  - [69bff8480c69331d86f191c0] Hailay Eshete (hailay.eshete40@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T14:10:16.363Z
+
+Group: "tesema brook" (2 accounts)
+  - [69bfc84198e93e981d131d45] Tesema Brook (tesema.brook85@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T10:45:21.226Z
+  - [69c0356e2940e6ebe5946801] Tesema Brook (tesema.brook91@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T18:31:10.051Z
+
+Group: "zak" (2 accounts)
+  - [69bfdc059481834532a1d7c4] Zak (zakir.ry123@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T12:09:41.707Z
+  - [69bfdc359481834532a1d7ca] Zak (zakir.ry1234@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-22T12:10:29.326Z
+
+Group: "kabede brook" (2 accounts)
+  - [69bfe4bd9ecd158b7ef8addd] Kabede Brook (kabede.brook43@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T12:46:53.562Z
+  - [69c03f26b9fa84d8a78ae2db] Kabede Brook (kabede.brook63@gmail.com) | ❌ Unverified | Voted for: zionmeks | Created: 2026-03-22T19:12:38.073Z
+
+Group: "summer" (2 accounts)
+  - [69bff4280c69331d86f19157] Summer (fikeraddiss@gmail.com) | ❌ Unverified | Voted for: 4Kilo Entertainment | Created: 2026-03-22T13:52:40.200Z
+  - [69c06f711af60518d5991bde] Summer (summerbeauty@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T22:38:41.748Z
+
+Group: "elias" (3 accounts)
+  - [69c0222738205cf39897f8d4] Elias (eliaskelemua@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T17:08:55.171Z
+  - [69c03cc3b9fa84d8a78ae26e] Elias (eliasseyu3@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T19:02:27.575Z
+  - [69c03f8fb9fa84d8a78ae2f9] Elias (eludream_01@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T19:14:23.016Z
+
+Group: "nebila" (2 accounts)
+  - [69c03f19b9fa84d8a78ae2d5] Nebila  (nebilausman1@gmail.com) | ❌ Unverified | No vote cast | Created: 2026-03-22T19:12:25.265Z
+  - [69c0420f121f1d174f475d9e] Nebila (saranebila@gmail.com) | ❌ Unverified | Voted for: Kebron (KB) | Created: 2026-03-22T19:25:03.501Z
+
+Group: "ahmed" (2 accounts)
+  - [69c040b98f0feefbf3627877] Ahmed (ahmedesma239@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T19:19:21.755Z
+  - [69c0626efd9fd34c9a636dd8] Ahmed (ahmed566@gmail.com) | ❌ Unverified | Voted for: Ante | Created: 2026-03-22T21:43:10.572Z
+
+Found 261 groups of potential duplicates.

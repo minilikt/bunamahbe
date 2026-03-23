@@ -1,0 +1,37 @@
+--- Zionmeks Voter Resolution (Optimized Batch) ---
+
+🔌 Connecting to database...
+📂 Reading user IDs from your-list.txt...
+📊 Extracted 928 unique voter IDs.
+🔍 Batch fetching users...
+👥 Resolved 928 from User table. Checking 0 in Account table...
+✅ Final Resolution: 928 successful, 0 failed.
+
+--- Found 6 Group(s) of Potential Duplicates ---
+
+Group: "abate fekadu" (2 accounts)
+  - [ID: 69c0427d121f1d174f475db3] abate.fekadu99@gmail.com
+  - [ID: 69bf33352228bb822d124ccf] abate.fekadu27@gmail.com
+
+Group: "kabede brook" (2 accounts)
+  - [ID: 69c03f26b9fa84d8a78ae2db] kabede.brook63@gmail.com
+  - [ID: 69bfe4bd9ecd158b7ef8addd] kabede.brook43@gmail.com
+
+Group: "selam abel" (2 accounts)
+  - [ID: 69c03a5eb9fa84d8a78ae20b] selam.abel29@gmail.com
+  - [ID: 69bfba1c98e93e981d131c57] selam.abel80@gmail.com
+
+Group: "demelash zala" (2 accounts)
+  - [ID: 69c037532940e6ebe594684f] demelash.zala84@gmail.com
+  - [ID: 69bf2737284711b54c00da9e] demelash.zala56@gmail.com
+
+Group: "tesema brook" (2 accounts)
+  - [ID: 69c0356e2940e6ebe5946801] tesema.brook91@gmail.com
+  - [ID: 69bfc84198e93e981d131d45] tesema.brook85@gmail.com
+
+Group: "hailay eshete" (2 accounts)
+  - [ID: 69bff8480c69331d86f191c0] hailay.eshete40@gmail.com
+  - [ID: 69bfbabd98e93e981d131c63] hailay.eshete73@gmail.com
+
+✅ Saved 928 emails to zionmeks_emails.txt
+✅ Saved pretty numbered list with timestamps to zionmeks_voters_list.txt
